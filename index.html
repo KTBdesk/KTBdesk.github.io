@@ -1,0 +1,375 @@
+<title>KTB 데스크 · 2026-08-14</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#f5f3ec; --panel:#fffdf8; --panel2:#efece2; --ink:#1c2129; --ink2:#4a525e; --ink3:#828b98;
+    --line:#ddd8ca; --line2:#e9e5d8; --gold:#9a7320; --gold-soft:#c8a24a;
+    --long:#1f7a5c; --long-bg:#e2efe7; --short:#b23b3b; --short-bg:#f4e3e0; --flat:#9a7320; --flat-bg:#f0e8d4;
+    --up:#1f7a5c; --down:#b23b3b;
+    --rate:#7a5bb2; --rate-bg:#ece5f5; --cpi:#2f6fb0; --cpi-bg:#e2edf6; --auc:#9a7320; --auc-bg:#f0e8d4;
+    --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+    --sans:system-ui,-apple-system,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root{
+      --bg:#0e1218; --panel:#161c25; --panel2:#1c232e; --ink:#e8eaed; --ink2:#a7b0bd; --ink3:#6b7480;
+      --line:#2a323d; --line2:#232b35; --gold:#d7ad52; --gold-soft:#8a6d2b;
+      --long:#3fae83; --long-bg:#16302a; --short:#e0716e; --short-bg:#331f1f; --flat:#d7ad52; --flat-bg:#2c2718;
+      --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}}
+  :root[data-theme="light"]{
+    --bg:#f5f3ec; --panel:#fffdf8; --panel2:#efece2; --ink:#1c2129; --ink2:#4a525e; --ink3:#828b98;
+    --line:#ddd8ca; --line2:#e9e5d8; --gold:#9a7320; --gold-soft:#c8a24a;
+    --long:#1f7a5c; --long-bg:#e2efe7; --short:#b23b3b; --short-bg:#f4e3e0; --flat:#9a7320; --flat-bg:#f0e8d4;
+    --up:#1f7a5c; --down:#b23b3b; --rate:#7a5bb2; --rate-bg:#ece5f5; --cpi:#2f6fb0; --cpi-bg:#e2edf6; --auc:#9a7320; --auc-bg:#f0e8d4;}
+  :root[data-theme="dark"]{
+    --bg:#0e1218; --panel:#161c25; --panel2:#1c232e; --ink:#e8eaed; --ink2:#a7b0bd; --ink3:#6b7480;
+    --line:#2a323d; --line2:#232b35; --gold:#d7ad52; --gold-soft:#8a6d2b;
+    --long:#3fae83; --long-bg:#16302a; --short:#e0716e; --short-bg:#331f1f; --flat:#d7ad52; --flat-bg:#2c2718;
+    --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:26px 22px 46px}
+  section{margin-top:22px}
+  .sec-h{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);font-weight:700;display:flex;align-items:center;gap:10px;margin:0 0 12px}
+  .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .sec-h .n{font-family:var(--mono);color:var(--ink3);font-weight:600}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;border-bottom:2px solid var(--ink);padding-bottom:12px;flex-wrap:wrap}
+  .mast h1{margin:0;font-size:24px;letter-spacing:-.01em;font-weight:800}
+  .mast h1 b{color:var(--gold)}
+  .mast .sub{color:var(--ink2);font-size:12.5px;margin-top:4px}
+  .contact{margin-top:7px;font-size:11.5px;color:var(--ink2)}
+  .contact b{color:var(--ink);font-weight:600}
+  .contact a{color:var(--gold);text-decoration:none}
+  .contact a:hover{text-decoration:underline}
+  .contact .sep{color:var(--line);margin:0 8px}
+  .brand{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+  .brand .emblem{height:26px;width:auto;flex:none;display:block}
+  .brand .bn{font-size:14.5px;font-weight:800;letter-spacing:-.01em;color:#00857a}
+  .brand .bn .en{color:var(--ink3);font-weight:600;font-size:11.5px;margin-left:6px;letter-spacing:.01em}
+  @media (prefers-color-scheme:dark){.brand .bn{color:#2fb3a6}}
+  :root[data-theme="dark"] .brand .bn{color:#2fb3a6}
+  :root[data-theme="light"] .brand .bn{color:#00857a}
+  .lang{display:flex;gap:5px;justify-content:flex-end;margin-bottom:7px}
+  .lang a{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink3);text-decoration:none;padding:1px 7px;border:1px solid var(--line);border-radius:4px}
+  .lang a.on{color:var(--gold);border-color:var(--gold-soft)}
+  .histwrap{display:flex;justify-content:flex-end;align-items:center;gap:5px;margin-bottom:7px;font-size:11px;color:var(--ink3)}
+  .histwrap select{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ink2);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:2px 5px;cursor:pointer}
+  .asof{text-align:right;font-size:11.5px;color:var(--ink2);line-height:1.7}
+  .asof .d{font-family:var(--mono);color:var(--ink);font-size:13px;font-weight:700}
+  .tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-soft);border-radius:3px;padding:1px 6px}
+
+  .keys{display:flex;gap:10px;margin:16px 0 0;flex-wrap:wrap}
+  .keychip{flex:1;min-width:150px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:9px 13px}
+  .keychip.hot{border-left-color:var(--down)}
+  .keychip .dd{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--gold);letter-spacing:.03em}
+  .keychip.hot .dd{color:var(--down)}
+  .keychip .ev{font-size:13px;font-weight:600;margin-top:2px}
+  .keychip .dt{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-top:1px}
+
+  .cal{columns:2;column-gap:16px}
+  @media(max-width:720px){.cal{columns:1}}
+  .cal .row{break-inside:avoid;display:flex;align-items:center;gap:9px;padding:5px 0;border-bottom:1px solid var(--line2);font-size:12.5px}
+  .cal .cd{font-family:var(--mono);font-weight:700;color:var(--ink);white-space:nowrap;font-size:12px}
+  .cal .cw{color:var(--ink3);font-size:11px}
+  .pill{font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;white-space:nowrap}
+  .pill.auc{color:var(--auc);background:var(--auc-bg)} .pill.rate{color:var(--rate);background:var(--rate-bg)} .pill.cpi{color:var(--cpi);background:var(--cpi-bg)}
+  .cal .ev{color:var(--ink2)}
+  .cal .row.today{background:var(--panel2);border-radius:5px;padding-left:6px;padding-right:6px}
+
+  .mc{display:grid;grid-template-columns:1.15fr 1fr;gap:16px}
+  @media(max-width:820px){.mc{grid-template-columns:1fr}}
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .box p{margin:0 0 8px;font-size:13px;color:var(--ink2)} .box p:last-child{margin-bottom:0} .box p b{color:var(--ink)}
+  .ctable{width:100%;border-collapse:collapse;font-size:12.5px}
+  .ctable th,.ctable td{padding:5px 8px;text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;border-bottom:1px solid var(--line2)}
+  .ctable th{font-family:var(--sans);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+  .ctable td:first-child,.ctable th:first-child{text-align:left;font-weight:700;color:var(--ink)}
+  .ctable tr:last-child td{border-bottom:0}
+  .zbar{color:var(--short);font-weight:700} .hot{color:var(--down)} .cool{color:var(--up)}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:15px 15px 13px;display:flex;flex-direction:column;gap:14px}
+  .chd{display:flex;justify-content:space-between;align-items:baseline}
+  .chd .name{font-weight:800;font-size:16px}
+  .chd .name span{color:var(--ink3);font-weight:500;font-size:11px;margin-left:2px}
+  .chd .px{font-family:var(--mono);font-size:20px;font-weight:800}
+  .pxwrap{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
+  .pxsub{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ink3);margin-top:1px}
+  .pxsub b{color:var(--gold)}
+  .chg{font-family:var(--mono);font-size:11.5px;font-weight:600}
+  .chg.u{color:var(--up)} .chg.d{color:var(--down)} .chg.f{color:var(--ink3)}
+
+  .bands{display:flex;flex-direction:column;gap:13px}
+  .bd .bl{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px}
+  .bd .bl .k{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+  .bd .bl .r{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink)}
+  .bd .bl .r .lo{color:var(--long)} .bd .bl .r .hi{color:var(--short)} .bd .bl .r .sep{color:var(--ink3);margin:0 3px}
+  .track{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,color-mix(in srgb,var(--long) 22%,transparent),var(--panel2),color-mix(in srgb,var(--short) 22%,transparent));border:1px solid var(--line2)}
+  .dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%);border:2px solid var(--panel);box-shadow:0 0 0 1px var(--gold-soft)}
+
+  .pos{display:flex;align-items:center;gap:8px;padding-top:11px;border-top:1px solid var(--line2)}
+  .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:5px;white-space:nowrap}
+  .badge.long{color:var(--long);background:var(--long-bg)} .badge.short{color:var(--short);background:var(--short-bg)} .badge.flat{color:var(--flat);background:var(--flat-bg)}
+  .pos .act{font-size:12px;color:var(--ink);font-weight:600}
+  .pos .meta{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:right}
+
+  .low{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:820px){.low{grid-template-columns:1fr}}
+  .flow table{width:100%;border-collapse:collapse;font-size:12px}
+  .flow th,.flow td{padding:6px 9px;text-align:right;font-family:var(--mono);border-bottom:1px solid var(--line2);font-variant-numeric:tabular-nums}
+  .flow th{font-family:var(--sans);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+  .flow td:first-child,.flow th:first-child{text-align:left;color:var(--ink2)}
+  .flow tr:last-child td{border-bottom:0}
+  .flow .pl{color:var(--up)} .flow .mn{color:var(--down)}
+  .pv{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .pv li{display:flex;gap:9px;font-size:12.5px;color:var(--ink2)}
+  .pv .t{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink);background:var(--panel2);border:1px solid var(--line2);border-radius:4px;padding:1px 6px;height:fit-content;white-space:nowrap;min-width:32px;text-align:center}
+  .pv b{color:var(--ink)}
+  .live{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:#fff;background:var(--down);padding:1px 7px;border-radius:3px;vertical-align:middle}
+  @media(prefers-reduced-motion:no-preference){.live{animation:pulse 2.2s infinite}}
+  @keyframes pulse{50%{opacity:.45}}
+  .feed-list{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+  .feed-item{display:flex;gap:13px;padding:10px 15px;border-bottom:1px solid var(--line2)}
+  .feed-item:last-child{border-bottom:0}
+  .feed-item:first-child{background:color-mix(in srgb,var(--gold) 6%,transparent)}
+  .feed-item.urgent{background:color-mix(in srgb,var(--short) 12%,transparent)}
+  .ubadge{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--down);padding:1px 5px;border-radius:3px;margin-right:5px;vertical-align:middle}
+  .feed-time{font-family:var(--mono);font-size:11px;color:var(--ink3);white-space:nowrap;min-width:104px;font-weight:600;padding-top:1px}
+  .feed-msg{font-size:13px;color:var(--ink);white-space:pre-wrap;line-height:1.55}
+  .feed-empty{padding:16px;color:var(--ink3);font-size:12.5px;text-align:center}
+  .foot{margin-top:20px;font-size:11px;color:var(--ink3);line-height:1.7;border-top:1px solid var(--line);padding-top:12px}
+  .foot b{color:var(--ink2)}
+</style>
+
+<div class="wrap">
+  <div class="mast">
+    <div>
+      <h1>KTB 데스크</h1>
+      <div class="sub">일정 · 커브 괴리 · 레벨 밴드 &amp; 포지션 · 수급 · 리뷰/프리뷰</div>
+    </div>
+    <div class="asof">
+      <div class="lang"><a class="on" href="index.html">KTB</a><a href="us.html">UST</a><a class="on" href="index.html">KO</a><a href="en.html">EN</a></div>
+      <div class="histwrap">📅 <select id="histsel" aria-label="지난 리포트"><option>지난 리포트</option></select></div>
+      <span class="tag">Desk Daily</span><br>
+      리포트 <span class="d">2026-08-14 (금)</span><br>
+      08-13 종가 기준<br><span style="font-size:10px;color:var(--ink3)">매일 08:30 KST 업데이트 (전일 19:30 뉴욕)</span>
+    </div>
+  </div>
+
+  <div class="keys">
+    <div class="keychip hot"><div class="dd">오늘 · D-day</div><div class="ev">🏛 국고 50년 입찰</div><div class="dt">08-14 (금)</div></div>
+    <div class="keychip"><div class="dd">D+3</div><div class="ev">🏛 국고 10년 입찰</div><div class="dt">08-17 (월)</div></div>
+    <div class="keychip"><div class="dd">D+12</div><div class="ev">📊 미국 7월 PCE</div><div class="dt">08-26 (수)</div></div>
+    <div class="keychip"><div class="dd">D+13</div><div class="ev">🏦 금통위 · 잭슨홀</div><div class="dt">08-27 (목)</div></div>
+  </div>
+
+  <section>
+    <h3 class="sec-h"><span class="n">01</span> 다가오는 일정</h3>
+    <div class="cal">
+      <div class="row today"><span class="cd">08/14</span><span class="cw">금</span><span class="pill auc">입찰</span><span class="ev">국고 50년 입찰 <span class="cw">(금일)</span></span></div>
+      <div class="row"><span class="cd">08/17</span><span class="cw">월</span><span class="pill auc">입찰</span><span class="ev">국고 10년</span></div>
+      <div class="row"><span class="cd">08/24</span><span class="cw">월</span><span class="pill auc">입찰</span><span class="ev">국고 5년</span></div>
+      <div class="row"><span class="cd">08/25</span><span class="cw">화</span><span class="pill auc">입찰</span><span class="ev">국고 20년</span></div>
+      <div class="row"><span class="cd">08/26</span><span class="cw">수</span><span class="pill cpi">물가</span><span class="ev">미국 7월 PCE</span></div>
+      <div class="row"><span class="cd">08/27</span><span class="cw">목</span><span class="pill rate">금리</span><span class="ev">한국은행 금통위 (기준금리)</span></div>
+      <div class="row"><span class="cd">08/27</span><span class="cw">목</span><span class="pill rate">금리</span><span class="ev">잭슨홀 심포지엄 (~08/29)</span></div>
+      <div class="row"><span class="cd">09/01</span><span class="cw">화</span><span class="pill auc">입찰</span><span class="ev">국고 30년</span></div>
+      <div class="row"><span class="cd">09/11</span><span class="cw">금</span><span class="pill cpi">물가</span><span class="ev">미국 8월 CPI</span></div>
+      <div class="row"><span class="cd">09/16</span><span class="cw">수</span><span class="pill rate">금리</span><span class="ev">미국 FOMC (점도표)</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">02</span> 매크로 현안 &amp; 커브 괴리</h3>
+    <div class="mc">
+      <div class="box">
+        <p><b>미국 금리 급락 — 갭업 출발 예상.</b> 밤사이 미국 30년 입찰이 무난히 소화되며 <b>2Y −5.9bp(4.144%)·10Y −5.1bp(4.644%)·30Y −4.5bp</b> 일제 하락, 국내에 우호적. 다만 <b>외국인이 3선 −10,541 대량 매도</b>로 이틀째 순매도 — 수급 경계. 오늘 <b>국고 50년 입찰</b>.</p>
+        <p><b>커브: 스티프닝 과열이 벨리로 확산.</b> <b>5-10 +2.2σ(28.3bp)</b>가 최대 리치, 5-30 <b>1M +29bp</b>·3-30 +27bp. RV 1~3순위가 모두 플래트너 계열 — <b>10-30·20-30 플래트너(86점)</b> 우선.</p>
+      </div>
+      <div class="box">
+        <table class="ctable">
+          <thead><tr><th>과대 괴리 커브</th><th>현재(bp)</th><th>1M Δ</th><th>z(60d)</th></tr></thead>
+          <tbody>
+            <tr><td>5-10</td><td>28.3</td><td class="hot">+8.8</td><td class="zbar">+2.22σ</td></tr>
+            <tr><td>5-30</td><td>65.8</td><td class="hot">+28.7</td><td class="zbar">+2.01σ</td></tr>
+            <tr><td>3-10</td><td>52.3</td><td class="hot">+7.5</td><td class="zbar">+2.00σ</td></tr>
+            <tr><td>3-30</td><td>89.8</td><td class="hot">+27.4</td><td class="zbar">+1.95σ</td></tr>
+            <tr><td>10-30</td><td>37.5</td><td class="hot">+19.9</td><td class="zbar">+1.81σ</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ 커브의 3년·10년은 <b>선물 내재수익률</b> 기준 (그 외 만기는 국고 현물)</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">03</span> 레벨 밴드 &amp; 추천 포지션</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="chd"><div class="name">3년 <span>KTB Fut</span></div><div class="pxwrap"><span class="px">103.29</span><span class="pxsub">예상시초 <b>103.37</b></span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">103.18</span><span class="sep">~</span><span class="hi">103.46</span></span></div>
+            <div class="track"><div class="dot" style="left:39%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">주간 상·하단</span><span class="r"><span class="lo">103.14</span><span class="sep">~</span><span class="hi">103.46</span></span></div>
+            <div class="track"><div class="dot" style="left:47%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">중립 · 대기</span><span class="act">중립 유지</span><span class="meta">점수 −6<br>방향성 낮음</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">10년 <span>KTB Fut</span></div><div class="pxwrap"><span class="px">105.63</span><span class="pxsub">예상시초 <b>105.95</b></span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">105.41</span><span class="sep">~</span><span class="hi">106.26</span></span></div>
+            <div class="track"><div class="dot" style="left:26%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">주간 상·하단</span><span class="r"><span class="lo">105.41</span><span class="sep">~</span><span class="hi">106.59</span></span></div>
+            <div class="track"><div class="dot" style="left:19%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge short">숏 · 약화</span><span class="act">숏 유지·축소</span><span class="meta">점수 −25<br>숏 약화·혼조</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">30년 <span>국고 현물·금리</span></div><div class="pxwrap"><span class="px">4.675</span><span class="pxsub" style="color:var(--up)">−1.0bp d/d</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">주간 금리밴드</span><span class="r"><span class="lo">4.522</span><span class="sep">~</span><span class="hi">4.685</span></span></div>
+            <div class="track"><div class="dot" style="left:94%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">10–30 스프레드</span><span class="r">37.5bp <span class="cw" style="color:var(--ink3);font-size:10px">· +1.8σ</span></span></div>
+            <div class="track"><div class="dot" style="left:95%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge long">10–30 플래트너</span><span class="act">30Y 상대 롱</span><span class="meta">RV 점수 86<br>1순위</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">04</span> 수급 · 리뷰 &amp; 프리뷰</h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>외국인 선물 순매수 (계약)</th><th>3년</th><th>10년</th></tr></thead>
+          <tbody>
+            <tr><td>전일 (08-13)</td><td class="mn">−10,541</td><td class="mn">−2,641</td></tr>
+            <tr><td>5일 누적</td><td class="mn">−24,816</td><td class="mn">−3,918</td></tr>
+            <tr><td>20일 누적</td><td class="pl">+128,147</td><td class="pl">+7,466</td></tr>
+            <tr><td>누적 순매수</td><td class="pl">+103,904</td><td class="pl">+74,718</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11.5px;color:var(--ink3)">외국인 <b style="color:var(--down)">3선 −10,541 대량 매도</b>로 이틀째 순매도 — 5일 누적도 <b style="color:var(--down)">−2.5만</b>으로 전환. 20일 기준 +12.8만은 유지되나 단기 수급 경계.</p>
+      </div>
+      <div class="box">
+        <ul class="pv">
+          <li><span class="t">리뷰</span><span>08-13 <b>3선 103.29(−0.02)·10선 105.63(−0.15)</b>, 30년 금리 −1.0bp. 외국인 3선 −10,541 대량 매도 속 약보합.</span></li>
+          <li><span class="t">3Y</span><span><b>갭업 출발.</b> 미 금리 급락 반영 시초 <b>103.37</b>, 레인지 <b>103.18~103.46</b>. 상단 103.46 저항, 외국인 매도 지속 여부가 관건.</span></li>
+          <li><span class="t">10Y</span><span><b>갭업 출발.</b> 시초 <b>105.95</b>, 레인지 <b>105.41~106.26</b>. 106.26 상단 저항 — 50년 입찰 수요가 장기물 심리 가늠자.</span></li>
+          <li><span class="t">커브</span><span><b>10–30·20–30 플래트너</b>(RV 86점) 우선. 벨리 스티프닝 5-10 +2.2σ까지 확산 — 되돌림 관점 유지.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">05</span> 외국인 현물 순매수 · 순매도 Top 5 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">08-13 · 억원</span></h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>순매수 상위</th><th>만기</th><th>수량</th></tr></thead>
+          <tbody>
+            <tr><td>국고02750-4509 (25-9)</td><td>2045.09</td><td class="pl">+2,025</td></tr>
+            <tr><td>국고03125-5209 (22-9)</td><td>2052.09</td><td class="pl">+346</td></tr>
+            <tr><td>국고04125-3312 (23-11)</td><td>2033.12</td><td class="pl">+300</td></tr>
+            <tr><td>국고03375-3103 (26-3)</td><td>2031.03</td><td class="pl">+203</td></tr>
+            <tr><td>국고01500-2612 (16-8)</td><td>2026.12</td><td class="pl">+200</td></tr>
+            <tr><td><b>전체 순매수 합계</b></td><td></td><td class="pl"><b>+3,741</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="box flow">
+        <table>
+          <thead><tr><th>순매도 상위</th><th>만기</th><th>수량</th></tr></thead>
+          <tbody>
+            <tr><td>국고02250-2709 (25-6)</td><td>2027.09</td><td class="mn">−500</td></tr>
+            <tr><td>국고04500-5609 (26-8)</td><td>2056.09</td><td class="mn">−470</td></tr>
+            <tr><td>국고03000-2803 (26-1)</td><td>2028.03</td><td class="mn">−445</td></tr>
+            <tr><td>국고03000-3412 (24-13)</td><td>2034.12</td><td class="mn">−400</td></tr>
+            <tr><td>국고03250-3512 (25-3)</td><td>2035.12</td><td class="mn">−199</td></tr>
+            <tr><td><b>전체 순매도 합계</b></td><td></td><td class="mn"><b>−2,779</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p style="margin:8px 0 0;font-size:11px;color:var(--ink3)">매수 상위가 25-9(2045)·22-9(2052) 등 <b style="color:var(--ink2)">초장기물에 집중</b> — 금리 급등 구간 저가 매수. 매도는 단·중기 지표물(25-6·26-1) 중심.</p>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">06</span> 대차잔고 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">08-11 기준</span></h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>대차잔고 상위 (억원)</th><th>잔고</th><th>전일비</th></tr></thead>
+          <tbody>
+            <tr><td>25-4</td><td>63,489</td><td class="mn">−1,387</td></tr>
+            <tr><td>25-10</td><td>54,520</td><td class="cw">0</td></tr>
+            <tr><td>26-3</td><td>40,670</td><td class="mn">−1,177</td></tr>
+            <tr><td>26-2</td><td>17,735</td><td class="mn">−1,140</td></tr>
+            <tr><td>24-13</td><td>17,093</td><td class="mn">−10</td></tr>
+            <tr><td>26-5</td><td>16,030</td><td class="mn">−4,910</td></tr>
+            <tr><td>26-1 <span style="color:var(--ink3)">3Y지표</span></td><td>11,295</td><td class="pl">+47</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)">대차잔고↑ = 공매도(숏) 수요 많음. 26-5(−4,910)·26-3 잔고 감소 = 숏 커버 유입.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">07</span> 시황 피드 <span class="live">LIVE</span></h3>
+    <div id="feed" class="feed-list"><div class="feed-empty">불러오는 중…</div></div>
+  </section>
+  <script>
+  (function(){
+    var el=document.getElementById('feed');
+    function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+    function render(d){
+      var es=(d&&d.entries)||[];
+      if(!es.length){el.innerHTML='<div class="feed-empty">아직 업데이트가 없습니다.</div>';return;}
+      el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-msg">'+(e.u?'<span class="ubadge">긴급</span>':'')+esc(e.m)+'</div></div>';}).join('');
+    }
+    function load(){fetch('feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">피드를 불러오지 못했습니다.</div>';});}
+    load();setInterval(load,60000);
+  })();
+  </script>
+
+</div>
+<script>
+(function(){
+  var sel=document.getElementById('histsel'); if(!sel) return;
+  var inArc=location.pathname.indexOf('/archive/')>=0;
+  var root=inArc?'../../':'';
+  var parts=location.pathname.split('/');
+  var page=parts[parts.length-1]||'index.html';
+  fetch(root+'archive/dates.json?_='+Date.now()).then(function(r){return r.json();}).then(function(dates){
+    var cur=inArc?location.pathname.split('/archive/')[1].split('/')[0]:'latest';
+    var h='<option value="latest"'+(cur==='latest'?' selected':'')+'>최신</option>';
+    dates.slice().sort().reverse().forEach(function(d){h+='<option value="'+d+'"'+(cur===d?' selected':'')+'>'+d+'</option>';});
+    sel.innerHTML=h;
+    sel.onchange=function(){
+      var v=sel.value;
+      location.href=(v==='latest')?(root+page):(root+'archive/'+v+'/'+page);
+    };
+  }).catch(function(){ if(sel.parentNode) sel.parentNode.style.display='none'; });
+})();
+</script>
