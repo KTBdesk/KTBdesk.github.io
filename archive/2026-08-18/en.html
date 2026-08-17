@@ -1,4 +1,4 @@
-<title>KTB 데스크 · 2026-08-18</title>
+<title>KTB Desk · 2026-08-18</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root{
@@ -35,7 +35,6 @@
 
   .mast{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;border-bottom:2px solid var(--ink);padding-bottom:12px;flex-wrap:wrap}
   .mast h1{margin:0;font-size:24px;letter-spacing:-.01em;font-weight:800}
-  .mast h1 b{color:var(--gold)}
   .mast .sub{color:var(--ink2);font-size:12.5px;margin-top:4px}
   .contact{margin-top:7px;font-size:11.5px;color:var(--ink2)}
   .contact b{color:var(--ink);font-weight:600}
@@ -59,7 +58,7 @@
   .tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-soft);border-radius:3px;padding:1px 6px}
 
   .keys{display:flex;gap:10px;margin:16px 0 0;flex-wrap:wrap}
-  .keychip{flex:1;min-width:150px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:9px 13px}
+  .keychip{flex:1;min-width:158px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:9px 13px}
   .keychip.hot{border-left-color:var(--down)}
   .keychip .dd{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--gold);letter-spacing:.03em}
   .keychip.hot .dd{color:var(--down)}
@@ -95,21 +94,17 @@
   .chd .name span{color:var(--ink3);font-weight:500;font-size:11px;margin-left:2px}
   .chd .px{font-family:var(--mono);font-size:20px;font-weight:800}
   .pxwrap{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
-  .pxsub{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ink3);margin-top:1px}
+  .pxsub{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink3);margin-top:1px}
   .pxsub b{color:var(--gold)}
-  .chg{font-family:var(--mono);font-size:11.5px;font-weight:600}
-  .chg.u{color:var(--up)} .chg.d{color:var(--down)} .chg.f{color:var(--ink3)}
-
   .bands{display:flex;flex-direction:column;gap:13px}
   .bd .bl{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px}
-  .bd .bl .k{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+  .bd .bl .k{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:700}
   .bd .bl .r{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink)}
   .bd .bl .r .lo{color:var(--long)} .bd .bl .r .hi{color:var(--short)} .bd .bl .r .sep{color:var(--ink3);margin:0 3px}
   .track{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,color-mix(in srgb,var(--long) 22%,transparent),var(--panel2),color-mix(in srgb,var(--short) 22%,transparent));border:1px solid var(--line2)}
   .dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%);border:2px solid var(--panel);box-shadow:0 0 0 1px var(--gold-soft)}
-
   .pos{display:flex;align-items:center;gap:8px;padding-top:11px;border-top:1px solid var(--line2)}
-  .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:5px;white-space:nowrap}
+  .badge{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:5px;white-space:nowrap}
   .badge.long{color:var(--long);background:var(--long-bg)} .badge.short{color:var(--short);background:var(--short-bg)} .badge.flat{color:var(--flat);background:var(--flat-bg)}
   .pos .act{font-size:12px;color:var(--ink);font-weight:600}
   .pos .meta{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:right}
@@ -124,7 +119,7 @@
   .flow .pl{color:var(--up)} .flow .mn{color:var(--down)}
   .pv{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
   .pv li{display:flex;gap:9px;font-size:12.5px;color:var(--ink2)}
-  .pv .t{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink);background:var(--panel2);border:1px solid var(--line2);border-radius:4px;padding:1px 6px;height:fit-content;white-space:nowrap;min-width:32px;text-align:center}
+  .pv .t{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--ink);background:var(--panel2);border:1px solid var(--line2);border-radius:4px;padding:1px 6px;height:fit-content;white-space:nowrap;min-width:44px;text-align:center}
   .pv b{color:var(--ink)}
   .live{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:#fff;background:var(--down);padding:1px 7px;border-radius:3px;vertical-align:middle}
   @media(prefers-reduced-motion:no-preference){.live{animation:pulse 2.2s infinite}}
@@ -145,50 +140,50 @@
 <div class="wrap">
   <div class="mast">
     <div>
-      <h1>KTB 데스크</h1>
-      <div class="sub">일정 · 커브 괴리 · 레벨 밴드 &amp; 포지션 · 수급 · 리뷰/프리뷰</div>
+      <h1>KTB Desk</h1>
+      <div class="sub">Calendar · Curve dislocations · Level bands &amp; positioning · Flows · Review/Preview</div>
     </div>
     <div class="asof">
-      <div class="lang"><a class="on" href="index.html">KTB</a><a href="us.html">UST</a><a class="on" href="index.html">KO</a><a href="en.html">EN</a></div>
-      <div class="histwrap">📅 <select id="histsel" aria-label="지난 리포트"><option>지난 리포트</option></select></div>
+      <div class="lang"><a class="on" href="en.html">KTB</a><a href="us_en.html">UST</a><a href="index.html">KO</a><a class="on" href="en.html">EN</a></div>
+      <div class="histwrap">📅 <select id="histsel" aria-label="Past reports"><option>Past reports</option></select></div>
       <span class="tag">Desk Daily</span><br>
-      리포트 <span class="d">2026-08-18 (화)</span><br>
-      08-14 종가 기준<br><span style="font-size:10px;color:var(--ink3)">매일 08:30 KST 업데이트 (전일 19:30 뉴욕)</span>
+      Report <span class="d">2026-08-18 (Tue)</span><br>
+      Based on 08-14 close<br><span style="font-size:10px;color:var(--ink3)">Updated daily 08:30 KST (7:30pm prior day NY)</span>
     </div>
   </div>
 
   <div class="keys">
-    <div class="keychip hot"><div class="dd">D+1 · 내일</div><div class="ev">🏛 미국 20년 입찰</div><div class="dt">08-19 (수)</div></div>
-    <div class="keychip"><div class="dd">D+6</div><div class="ev">🏛 국고 5년 입찰</div><div class="dt">08-24 (월)</div></div>
-    <div class="keychip"><div class="dd">D+8</div><div class="ev">📊 미국 7월 PCE</div><div class="dt">08-26 (수)</div></div>
-    <div class="keychip hot"><div class="dd">D+9</div><div class="ev">🏦 금통위 · 잭슨홀</div><div class="dt">08-27 (목)</div></div>
+    <div class="keychip hot"><div class="dd">D+1 · Tomorrow</div><div class="ev">🏛 UST 20Y auction</div><div class="dt">08-19 (Wed)</div></div>
+    <div class="keychip"><div class="dd">D+6</div><div class="ev">🏛 KTB 5Y auction</div><div class="dt">08-24 (Mon)</div></div>
+    <div class="keychip"><div class="dd">D+8</div><div class="ev">📊 US July PCE</div><div class="dt">08-26 (Wed)</div></div>
+    <div class="keychip hot"><div class="dd">D+9</div><div class="ev">🏦 BOK MPC · Jackson Hole</div><div class="dt">08-27 (Thu)</div></div>
   </div>
 
   <section>
-    <h3 class="sec-h"><span class="n">01</span> 다가오는 일정</h3>
+    <h3 class="sec-h"><span class="n">01</span> Upcoming Calendar</h3>
     <div class="cal">
-      <div class="row"><span class="cd">08/19</span><span class="cw">수</span><span class="pill auc">입찰</span><span class="ev">미국 20년 입찰</span></div>
-      <div class="row"><span class="cd">08/24</span><span class="cw">월</span><span class="pill auc">입찰</span><span class="ev">국고 5년</span></div>
-      <div class="row"><span class="cd">08/25</span><span class="cw">화</span><span class="pill auc">입찰</span><span class="ev">국고 20년</span></div>
-      <div class="row"><span class="cd">08/26</span><span class="cw">수</span><span class="pill cpi">물가</span><span class="ev">미국 7월 PCE</span></div>
-      <div class="row"><span class="cd">08/27</span><span class="cw">목</span><span class="pill rate">금리</span><span class="ev">한국은행 금통위 (기준금리)</span></div>
-      <div class="row"><span class="cd">08/27</span><span class="cw">목</span><span class="pill rate">금리</span><span class="ev">잭슨홀 심포지엄 (~08/29)</span></div>
-      <div class="row"><span class="cd">09/01</span><span class="cw">화</span><span class="pill auc">입찰</span><span class="ev">국고 30년</span></div>
-      <div class="row"><span class="cd">09/11</span><span class="cw">금</span><span class="pill cpi">물가</span><span class="ev">미국 8월 CPI</span></div>
-      <div class="row"><span class="cd">09/16</span><span class="cw">수</span><span class="pill rate">금리</span><span class="ev">미국 FOMC (점도표)</span></div>
+      <div class="row"><span class="cd">08/19</span><span class="cw">Wed</span><span class="pill auc">Auction</span><span class="ev">UST 20Y auction</span></div>
+      <div class="row"><span class="cd">08/24</span><span class="cw">Mon</span><span class="pill auc">Auction</span><span class="ev">KTB 5Y</span></div>
+      <div class="row"><span class="cd">08/25</span><span class="cw">Tue</span><span class="pill auc">Auction</span><span class="ev">KTB 20Y</span></div>
+      <div class="row"><span class="cd">08/26</span><span class="cw">Wed</span><span class="pill cpi">CPI</span><span class="ev">US July PCE</span></div>
+      <div class="row"><span class="cd">08/27</span><span class="cw">Thu</span><span class="pill rate">Rate</span><span class="ev">BOK MPC (base rate)</span></div>
+      <div class="row"><span class="cd">08/27</span><span class="cw">Thu</span><span class="pill rate">Rate</span><span class="ev">Jackson Hole Symposium (~08/29)</span></div>
+      <div class="row"><span class="cd">09/01</span><span class="cw">Tue</span><span class="pill auc">Auction</span><span class="ev">KTB 30Y</span></div>
+      <div class="row"><span class="cd">09/11</span><span class="cw">Fri</span><span class="pill cpi">CPI</span><span class="ev">US Aug CPI</span></div>
+      <div class="row"><span class="cd">09/16</span><span class="cw">Wed</span><span class="pill rate">Rate</span><span class="ev">US FOMC (dot plot)</span></div>
     </div>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">02</span> 매크로 현안 &amp; 커브 괴리</h3>
+    <h3 class="sec-h"><span class="n">02</span> Macro &amp; Curve Dislocations</h3>
     <div class="mc">
       <div class="box">
-        <p><b>미국 금리 반등 — 약세 출발 예상.</b> 금요일 미국 <b>2Y +2.9bp(4.173%)·10Y +5.0bp(4.694%)·30Y +4.5bp</b> 되돌림, 장기물 주도 약세. 국내 <b>외국인은 3선 +5,730 매수 전환</b>(3일 만) — 수급은 우호적. 어제 국고 10년 입찰 소화 후 오늘은 이벤트 공백, 이번 주 <b>PCE·금통위·잭슨홀</b> 대기.</p>
-        <p><b>커브: 초장기 구간이 새 리치.</b> <b>20-30 +2.6σ(11.5bp)</b> — 하루 +5bp 급확대로 최대 괴리. 장기 스티프닝은 1M 기준 여전(5-30 +25bp)이나 1D는 되돌림 시작(10-30 −2.5bp). RV 1~2순위 <b>10-30·20-30 플래트너(86점)</b> 유지.</p>
+        <p><b>US yields bounce — softer open expected.</b> Friday US <b>2Y +2.9bp (4.173%), 10Y +5.0bp (4.694%), 30Y +4.5bp</b> retraced, long-end led. Onshore, <b>foreigners turned buyers of 3Y (+5,730)</b> after three days — flows supportive. Yesterday's KTB 10Y auction digested; today is an event gap ahead of <b>PCE, BOK MPC and Jackson Hole</b> this week.</p>
+        <p><b>Curve: the ultra-long sector is the new stretch.</b> <b>20-30 at +2.6σ (11.5bp)</b> after a +5bp jump in a day. Long-end steepening still large on 1M (5-30 +25bp) but 1D reversal has begun (10-30 −2.5bp). RV keeps <b>10-30 / 20-30 flatteners (score 86)</b> on top.</p>
       </div>
       <div class="box">
         <table class="ctable">
-          <thead><tr><th>과대 괴리 커브</th><th>현재(bp)</th><th>1M Δ</th><th>z(60d)</th></tr></thead>
+          <thead><tr><th>Stretched curves</th><th>Now (bp)</th><th>1M Δ</th><th>z(60d)</th></tr></thead>
           <tbody>
             <tr><td>20-30</td><td>11.5</td><td class="hot">+9.9</td><td class="zbar">+2.55σ</td></tr>
             <tr><td>3-10</td><td>51.5</td><td class="hot">+6.7</td><td class="zbar">+1.75σ</td></tr>
@@ -197,128 +192,128 @@
             <tr><td>5-30</td><td>61.7</td><td class="hot">+24.6</td><td class="zbar">+1.66σ</td></tr>
           </tbody>
         </table>
-        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ 커브의 3년·10년은 <b>선물 내재수익률</b> 기준 (그 외 만기는 국고 현물)</p>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">Note: 3Y &amp; 10Y on a <b>futures-implied yield</b> basis (other tenors are cash KTB)</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">03</span> 레벨 밴드 &amp; 추천 포지션</h3>
+    <h3 class="sec-h"><span class="n">03</span> Level Bands &amp; Positioning</h3>
     <div class="cards">
 
       <div class="card">
-        <div class="chd"><div class="name">3년 <span>KTB Fut</span></div><div class="pxwrap"><span class="px">103.24</span><span class="pxsub">예상시초 <b>103.19</b></span></div></div>
+        <div class="chd"><div class="name">3Y <span>KTB Fut</span></div><div class="pxwrap"><span class="px">103.24</span><span class="pxsub">exp. open <b>103.19</b></span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">103.11</span><span class="sep">~</span><span class="hi">103.32</span></span></div>
+            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">103.11</span><span class="sep">~</span><span class="hi">103.32</span></span></div>
             <div class="track"><div class="dot" style="left:62%"></div></div>
           </div>
           <div class="bd">
-            <div class="bl"><span class="k">주간 상·하단</span><span class="r"><span class="lo">103.11</span><span class="sep">~</span><span class="hi">103.44</span></span></div>
+            <div class="bl"><span class="k">Weekly hi / lo</span><span class="r"><span class="lo">103.11</span><span class="sep">~</span><span class="hi">103.44</span></span></div>
             <div class="track"><div class="dot" style="left:39%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">중립 · 대기</span><span class="act">중립 유지</span><span class="meta">점수 −5<br>방향성 낮음</span></div>
+        <div class="pos"><span class="badge flat">Neutral · Wait</span><span class="act">Stay neutral</span><span class="meta">Score −5<br>Low conviction</span></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="name">10년 <span>KTB Fut</span></div><div class="pxwrap"><span class="px">105.67</span><span class="pxsub">예상시초 <b>105.43</b></span></div></div>
+        <div class="chd"><div class="name">10Y <span>KTB Fut</span></div><div class="pxwrap"><span class="px">105.67</span><span class="pxsub">exp. open <b>105.43</b></span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">105.09</span><span class="sep">~</span><span class="hi">105.87</span></span></div>
+            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">105.09</span><span class="sep">~</span><span class="hi">105.87</span></span></div>
             <div class="track"><div class="dot" style="left:74%"></div></div>
           </div>
           <div class="bd">
-            <div class="bl"><span class="k">주간 상·하단</span><span class="r"><span class="lo">105.09</span><span class="sep">~</span><span class="hi">106.47</span></span></div>
+            <div class="bl"><span class="k">Weekly hi / lo</span><span class="r"><span class="lo">105.09</span><span class="sep">~</span><span class="hi">106.47</span></span></div>
             <div class="track"><div class="dot" style="left:42%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge short">숏 · 약화</span><span class="act">숏 유지·축소</span><span class="meta">점수 −23<br>숏 약화·혼조</span></div>
+        <div class="pos"><span class="badge short">Short · fading</span><span class="act">Hold / trim short</span><span class="meta">Score −23<br>Short fading·mixed</span></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="name">30년 <span>국고 현물·금리</span></div><div class="pxwrap"><span class="px">4.660</span><span class="pxsub" style="color:var(--up)">−1.5bp d/d</span></div></div>
+        <div class="chd"><div class="name">30Y <span>KTB cash yield</span></div><div class="pxwrap"><span class="px">4.660</span><span class="pxsub" style="color:var(--up)">−1.5bp d/d</span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">주간 금리밴드</span><span class="r"><span class="lo">4.582</span><span class="sep">~</span><span class="hi">4.685</span></span></div>
+            <div class="bl"><span class="k">Weekly yield band</span><span class="r"><span class="lo">4.582</span><span class="sep">~</span><span class="hi">4.685</span></span></div>
             <div class="track"><div class="dot" style="left:76%"></div></div>
           </div>
           <div class="bd">
-            <div class="bl"><span class="k">10–30 스프레드</span><span class="r">35.0bp <span class="cw" style="color:var(--ink3);font-size:10px">· +1.5σ</span></span></div>
+            <div class="bl"><span class="k">10–30 spread</span><span class="r">35.0bp <span style="color:var(--ink3);font-size:10px">· +1.5σ</span></span></div>
             <div class="track"><div class="dot" style="left:88%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge long">10–30 플래트너</span><span class="act">30Y 상대 롱</span><span class="meta">RV 점수 86<br>1순위</span></div>
+        <div class="pos"><span class="badge long">10–30 flattener</span><span class="act">30Y rel. long</span><span class="meta">RV score 86<br>Top pick</span></div>
       </div>
 
     </div>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">04</span> 수급 · 리뷰 &amp; 프리뷰</h3>
+    <h3 class="sec-h"><span class="n">04</span> Flows · Review &amp; Preview</h3>
     <div class="low">
       <div class="box flow">
         <table>
-          <thead><tr><th>외국인 선물 순매수 (계약)</th><th>3년</th><th>10년</th></tr></thead>
+          <thead><tr><th>Foreign futures net buying (contracts)</th><th>3Y</th><th>10Y</th></tr></thead>
           <tbody>
-            <tr><td>전일 (08-14)</td><td class="pl">+5,730</td><td class="pl">+265</td></tr>
-            <tr><td>5일 누적</td><td class="mn">−21,546</td><td class="mn">−3,279</td></tr>
-            <tr><td>20일 누적</td><td class="pl">+129,447</td><td class="pl">+9,930</td></tr>
-            <tr><td>누적 순매수</td><td class="pl">+109,634</td><td class="pl">+74,983</td></tr>
+            <tr><td>Prev day (08-14)</td><td class="pl">+5,730</td><td class="pl">+265</td></tr>
+            <tr><td>5-day</td><td class="mn">−21,546</td><td class="mn">−3,279</td></tr>
+            <tr><td>20-day</td><td class="pl">+129,447</td><td class="pl">+9,930</td></tr>
+            <tr><td>Cumulative</td><td class="pl">+109,634</td><td class="pl">+74,983</td></tr>
           </tbody>
         </table>
-        <p style="margin:9px 0 0;font-size:11.5px;color:var(--ink3)">외국인 <b style="color:var(--up)">3선 +5,730 매수 전환</b>(3일 만) — 5일 누적은 아직 <b style="color:var(--down)">−2.2만</b>이나 20일 +12.9만 기조 견고. 10선도 소폭 매수(+265).</p>
+        <p style="margin:9px 0 0;font-size:11.5px;color:var(--ink3)">Foreigners <b style="color:var(--up)">turned buyers of 3Y (+5,730)</b> after three days — 5-day still <b style="color:var(--down)">−22k</b> but the 20-day +129k bias is intact. 10Y also a small buy (+265).</p>
       </div>
       <div class="box">
         <ul class="pv">
-          <li><span class="t">리뷰</span><span>08-14 <b>3선 103.24(−0.05)·10선 105.67(+0.04)</b>, 30년 금리 −1.5bp. 외국인 3선 매수 전환(+5,730) 속 혼조. 어제(8/17) 국고 10년 입찰.</span></li>
-          <li><span class="t">3Y</span><span><b>약세 출발.</b> 미 금리 반등 반영 시초 <b>103.19</b>, 레인지 <b>103.11~103.32</b>. 하단 103.11 지지 — 외국인 매수 재개가 방어선.</span></li>
-          <li><span class="t">10Y</span><span><b>갭다운 출발.</b> 미 장기물 약세 반영 시초 <b>105.43</b>, 레인지 <b>105.09~105.87</b>. 105.09 하단 지지 여부가 관건, 반등 시 105.87.</span></li>
-          <li><span class="t">커브</span><span><b>20–30 +2.6σ</b> 급확대 — <b>20-30 플래트너</b>(RV 86점) 되돌림 기회. 10-30 플래트너도 병행.</span></li>
+          <li><span class="t">Review</span><span>08-14 <b>3Y 103.24 (−0.05) · 10Y 105.67 (+0.04)</b>; 30Y yield −1.5bp. Mixed close as foreigners turned 3Y buyers (+5,730). KTB 10Y auction yesterday (8/17).</span></li>
+          <li><span class="t">3Y</span><span><b>Softer open.</b> US bounce → exp. open <b>103.19</b>, range <b>103.11~103.32</b>. 103.11 support — renewed foreign buying is the defence.</span></li>
+          <li><span class="t">10Y</span><span><b>Gap-down open.</b> US long-end weakness → exp. open <b>105.43</b>, range <b>105.09~105.87</b>. Whether 105.09 holds is key; rebound target 105.87.</span></li>
+          <li><span class="t">Curve</span><span><b>20–30 at +2.6σ</b> after a sharp widening — <b>20-30 flattener</b> (RV 86) reversion setup; keep 10-30 flattener alongside.</span></li>
         </ul>
       </div>
     </div>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">05</span> 외국인 현물 순매수 · 순매도 Top 5 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">08-14 · 억원 · 미제공(전일 유지)</span></h3>
+    <h3 class="sec-h"><span class="n">05</span> Foreign Cash Bond Net Buying · Top 5 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">08-14 · KRW 100mn · not provided (prev day)</span></h3>
     <div class="low">
       <div class="box flow">
         <table>
-          <thead><tr><th>순매수 상위</th><th>만기</th><th>수량</th></tr></thead>
+          <thead><tr><th>Top buys</th><th>Maturity</th><th>Amt</th></tr></thead>
           <tbody>
-            <tr><td>국고02750-4509 (25-9)</td><td>2045.09</td><td class="pl">+2,025</td></tr>
-            <tr><td>국고03125-5209 (22-9)</td><td>2052.09</td><td class="pl">+346</td></tr>
-            <tr><td>국고04125-3312 (23-11)</td><td>2033.12</td><td class="pl">+300</td></tr>
-            <tr><td>국고03375-3103 (26-3)</td><td>2031.03</td><td class="pl">+203</td></tr>
-            <tr><td>국고01500-2612 (16-8)</td><td>2026.12</td><td class="pl">+200</td></tr>
-            <tr><td><b>전체 순매수 합계</b></td><td></td><td class="pl"><b>+3,741</b></td></tr>
+            <tr><td>KTB 02750-4509 (25-9)</td><td>2045.09</td><td class="pl">+2,025</td></tr>
+            <tr><td>KTB 03125-5209 (22-9)</td><td>2052.09</td><td class="pl">+346</td></tr>
+            <tr><td>KTB 04125-3312 (23-11)</td><td>2033.12</td><td class="pl">+300</td></tr>
+            <tr><td>KTB 03375-3103 (26-3)</td><td>2031.03</td><td class="pl">+203</td></tr>
+            <tr><td>KTB 01500-2612 (16-8)</td><td>2026.12</td><td class="pl">+200</td></tr>
+            <tr><td><b>Total net buys</b></td><td></td><td class="pl"><b>+3,741</b></td></tr>
           </tbody>
         </table>
       </div>
       <div class="box flow">
         <table>
-          <thead><tr><th>순매도 상위</th><th>만기</th><th>수량</th></tr></thead>
+          <thead><tr><th>Top sells</th><th>Maturity</th><th>Amt</th></tr></thead>
           <tbody>
-            <tr><td>국고02250-2709 (25-6)</td><td>2027.09</td><td class="mn">−500</td></tr>
-            <tr><td>국고04500-5609 (26-8)</td><td>2056.09</td><td class="mn">−470</td></tr>
-            <tr><td>국고03000-2803 (26-1)</td><td>2028.03</td><td class="mn">−445</td></tr>
-            <tr><td>국고03000-3412 (24-13)</td><td>2034.12</td><td class="mn">−400</td></tr>
-            <tr><td>국고03250-3512 (25-3)</td><td>2035.12</td><td class="mn">−199</td></tr>
-            <tr><td><b>전체 순매도 합계</b></td><td></td><td class="mn"><b>−2,779</b></td></tr>
+            <tr><td>KTB 02250-2709 (25-6)</td><td>2027.09</td><td class="mn">−500</td></tr>
+            <tr><td>KTB 04500-5609 (26-8)</td><td>2056.09</td><td class="mn">−470</td></tr>
+            <tr><td>KTB 03000-2803 (26-1)</td><td>2028.03</td><td class="mn">−445</td></tr>
+            <tr><td>KTB 03000-3412 (24-13)</td><td>2034.12</td><td class="mn">−400</td></tr>
+            <tr><td>KTB 03250-3512 (25-3)</td><td>2035.12</td><td class="mn">−199</td></tr>
+            <tr><td><b>Total net sells</b></td><td></td><td class="mn"><b>−2,779</b></td></tr>
           </tbody>
         </table>
       </div>
     </div>
-    <p style="margin:8px 0 0;font-size:11px;color:var(--ink3)">매수 상위가 25-9(2045)·22-9(2052) 등 <b style="color:var(--ink2)">초장기물에 집중</b> — 금리 급등 구간 저가 매수. 매도는 단·중기 지표물(25-6·26-1) 중심.</p>
+    <p style="margin:8px 0 0;font-size:11px;color:var(--ink3)">Buying concentrated in <b style="color:var(--ink2)">ultra-long bonds</b> (25-9 due 2045, 22-9 due 2052) — dip-buying into the yield spike. Selling centred on short/belly benchmarks (25-6, 26-1).</p>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">06</span> 대차잔고 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">08-17 기준</span></h3>
+    <h3 class="sec-h"><span class="n">06</span> Securities Lending <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">as of 08-17</span></h3>
     <div class="low">
       <div class="box flow">
         <table>
-          <thead><tr><th>대차잔고 상위 (억원)</th><th>잔고</th><th>전일비</th></tr></thead>
+          <thead><tr><th>Securities lending outstanding (KRW 100mn)</th><th>Bal</th><th>DoD</th></tr></thead>
           <tbody>
             <tr><td>25-4</td><td>60,246</td><td class="mn">−2,262</td></tr>
             <tr><td>25-10</td><td>51,050</td><td class="mn">−1,650</td></tr>
@@ -326,17 +321,17 @@
             <tr><td>24-13</td><td>18,316</td><td class="pl">+1,180</td></tr>
             <tr><td>26-2</td><td>16,680</td><td class="mn">−1,050</td></tr>
             <tr><td>25-8</td><td>15,050</td><td class="pl">+300</td></tr>
-            <tr><td>26-1 <span style="color:var(--ink3)">3Y지표</span></td><td>10,655</td><td class="mn">−320</td></tr>
+            <tr><td>26-1 <span style="color:var(--ink3)">3Y bmk</span></td><td>10,655</td><td class="mn">−320</td></tr>
           </tbody>
         </table>
-        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)">대차잔고↑ = 공매도(숏) 수요 많음. 25-4·25-10 잔고 감소(숏 커버) vs 26-3·24-13 증가(신규 숏) 엇갈림.</p>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)">Higher lending = more short interest. Mixed: 25-4/25-10 balances fell (short-covering) while 26-3/24-13 rose (new shorts).</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">07</span> 시황 피드 <span class="live">LIVE</span></h3>
-    <div id="feed" class="feed-list"><div class="feed-empty">불러오는 중…</div></div>
+    <h3 class="sec-h"><span class="n">07</span> Live Feed <span class="live">LIVE</span></h3>
+    <div id="feed" class="feed-list"><div class="feed-empty">Loading…</div></div>
   </section>
   <script>
   (function(){
@@ -344,10 +339,10 @@
     function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
     function render(d){
       var es=(d&&d.entries)||[];
-      if(!es.length){el.innerHTML='<div class="feed-empty">아직 업데이트가 없습니다.</div>';return;}
-      el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-msg">'+(e.u?'<span class="ubadge">긴급</span>':'')+esc(e.m)+'</div></div>';}).join('');
+      if(!es.length){el.innerHTML='<div class="feed-empty">No updates yet.</div>';return;}
+      el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-msg">'+(e.u?'<span class="ubadge">URGENT</span>':'')+esc(e.m)+'</div></div>';}).join('');
     }
-    function load(){fetch('feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">피드를 불러오지 못했습니다.</div>';});}
+    function load(){fetch('../../feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">Could not load feed.</div>';});}
     load();setInterval(load,60000);
   })();
   </script>
@@ -362,7 +357,7 @@
   var page=parts[parts.length-1]||'index.html';
   fetch(root+'archive/dates.json?_='+Date.now()).then(function(r){return r.json();}).then(function(dates){
     var cur=inArc?location.pathname.split('/archive/')[1].split('/')[0]:'latest';
-    var h='<option value="latest"'+(cur==='latest'?' selected':'')+'>최신</option>';
+    var h='<option value="latest"'+(cur==='latest'?' selected':'')+'>Latest</option>';
     dates.slice().sort().reverse().forEach(function(d){h+='<option value="'+d+'"'+(cur===d?' selected':'')+'>'+d+'</option>';});
     sel.innerHTML=h;
     sel.onchange=function(){
