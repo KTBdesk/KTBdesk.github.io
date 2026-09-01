@@ -386,7 +386,7 @@
       if(!es.length){el.innerHTML='<div class="feed-empty">아직 업데이트가 없습니다.</div>';return;}
       el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-msg">'+(e.u?'<span class="ubadge">긴급</span>':'')+esc(e.m)+'</div></div>';}).join('');
     }
-    function load(){fetch('feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">피드를 불러오지 못했습니다.</div>';});}
+    function load(){fetch('../../feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">피드를 불러오지 못했습니다.</div>';});}
     load();setInterval(load,60000);
   })();
   </script>
