@@ -30,7 +30,7 @@
     --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1120px;margin:0 auto;padding:26px 22px 46px}
+  .wrap{max-width:1400px;margin:0 auto;padding:26px 22px 46px}
   section{margin-top:22px}
   .sec-h{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);font-weight:700;display:flex;align-items:center;gap:10px;margin:0 0 12px}
   .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
@@ -140,6 +140,22 @@
   .feed-empty{padding:16px;color:var(--ink3);font-size:12.5px;text-align:center}
   .foot{margin-top:20px;font-size:11px;color:var(--ink3);line-height:1.7;border-top:1px solid var(--line);padding-top:12px}
   .foot b{color:var(--ink2)}
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:24px;align-items:start}
+  .colmain{min-width:0}
+  .colside{position:sticky;top:14px;align-self:start;min-width:0}
+  .colside section{margin-top:0}
+  .colside .feed-list{max-height:calc(100vh - 46px);overflow-y:auto;overscroll-behavior:contain}
+  .colside .feed-item{flex-direction:column;gap:4px;padding:11px 14px}
+  .colside .feed-time{min-width:0;font-size:10.5px}
+  .colside .feed-msg{font-size:12.5px;line-height:1.5}
+  .feed-body{flex:1;min-width:0}
+  .feed-msg.clip{max-height:16.5em;overflow:hidden;position:relative}
+  .feed-msg.clip:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3.4em;background:linear-gradient(to bottom,transparent,var(--panel))}
+  .feed-item:first-child .feed-msg.clip:after{background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--gold) 6%,var(--panel)))}
+  .feed-more{margin-top:7px;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--gold);background:none;border:1px solid var(--line);border-radius:4px;padding:3px 9px;cursor:pointer}
+  .feed-more:hover{border-color:var(--gold-soft)}
+  @media(max-width:1180px){.cols{grid-template-columns:1fr}.colside{position:static}.colside section{margin-top:22px}.colside .feed-list{max-height:none}.colside .feed-item{flex-direction:row;gap:13px}.colside .feed-time{min-width:104px;font-size:11px}.colside .feed-msg{font-size:13px}}
+  @media print{.cols{display:block}.colside{position:static}.colside section{margin-top:22px}.colside .feed-list{max-height:none;overflow:visible}.feed-msg.clip{max-height:none}.feed-msg.clip:after{display:none}.feed-more{display:none}}
 </style>
 
 <div class="wrap">
@@ -158,6 +174,8 @@
     </div>
   </div>
 
+  <div class="cols">
+  <div class="colmain">
   <div class="keys">
     <div class="keychip hot"><div class="dd">Tonight</div><div class="ev">📊 US August payrolls</div><div class="dt">09-04 (Fri)</div></div>
     <div class="keychip"><div class="dd">D+5</div><div class="ev">💵 US Treasury buyback</div><div class="dt">09-09 (Wed)</div></div>
@@ -370,10 +388,14 @@
       </div>
     </div>
   </section>
+  </div><!--/colmain-->
+  <aside class="colside">
   <section>
     <h3 class="sec-h"><span class="n">08</span> Live Feed <span class="live">LIVE</span></h3>
     <div id="feed" class="feed-list"><div class="feed-empty">Loading…</div></div>
   </section>
+  </aside>
+  </div><!--/cols-->
   <script>
   (function(){
     var el=document.getElementById('feed');
@@ -382,7 +404,12 @@
     function render(d){
       var es=(d&&d.entries)||[];
       if(!es.length){el.innerHTML='<div class="feed-empty">No updates yet.</div>';return;}
-      el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-msg">'+(e.u?'<span class="ubadge">URGENT</span>':'')+fmt(e.m)+'</div></div>';}).join('');
+      el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-body"><div class="feed-msg clip">'+(e.u?'<span class="ubadge">URGENT</span>':'')+fmt(e.m)+'</div></div></div>';}).join('');
+      Array.prototype.forEach.call(el.querySelectorAll('.feed-msg.clip'),function(m){
+        if(m.scrollHeight<=m.clientHeight+4){m.classList.remove('clip');return;}
+        var b=document.createElement('button');b.className='feed-more';b.textContent='More';
+        b.onclick=function(){b.textContent=m.classList.toggle('clip')?'More':'Less';};
+        m.parentNode.appendChild(b);});
     }
     function load(){fetch('feed_en.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">Could not load feed.</div>';});}
     load();setInterval(load,60000);
