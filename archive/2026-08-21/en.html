@@ -348,7 +348,7 @@
       if(!es.length){el.innerHTML='<div class="feed-empty">No updates yet.</div>';return;}
       el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-msg">'+(e.u?'<span class="ubadge">URGENT</span>':'')+esc(e.m)+'</div></div>';}).join('');
     }
-    function load(){fetch('../../feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">Could not load feed.</div>';});}
+    function load(){fetch('../../feed_en.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">Could not load feed.</div>';});}
     load();setInterval(load,60000);
   })();
   </script>
