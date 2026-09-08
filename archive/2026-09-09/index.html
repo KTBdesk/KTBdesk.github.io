@@ -432,7 +432,7 @@
         b.onclick=function(){b.textContent=m.classList.toggle('clip')?'더보기':'접기';};
         m.parentNode.appendChild(b);});
     }
-    function load(){fetch('feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">피드를 불러오지 못했습니다.</div>';});}
+    function load(){fetch('../../feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">피드를 불러오지 못했습니다.</div>';});}
     load();setInterval(load,60000);
   })();
   </script>
