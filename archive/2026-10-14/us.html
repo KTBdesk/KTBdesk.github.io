@@ -101,11 +101,11 @@
   .bd .bl .r .lo{color:var(--long)} .bd .bl .r .hi{color:var(--short)} .bd .bl .r .sep{color:var(--ink3);margin:0 3px}
   .track{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,color-mix(in srgb,var(--long) 22%,transparent),var(--panel2),color-mix(in srgb,var(--short) 22%,transparent));border:1px solid var(--line2)}
   .dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%);border:2px solid var(--panel);box-shadow:0 0 0 1px var(--gold-soft)}
-  .pos{display:flex;align-items:center;gap:8px;padding-top:11px;border-top:1px solid var(--line2)}
+  .pos{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding-top:11px;border-top:1px solid var(--line2)}
   .badge{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:5px;white-space:nowrap}
   .badge.long{color:var(--long);background:var(--long-bg)} .badge.short{color:var(--short);background:var(--short-bg)} .badge.flat{color:var(--flat);background:var(--flat-bg)}
-  .pos .act{font-size:12px;color:var(--ink);font-weight:600}
-  .pos .meta{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:right}
+  .pos .act{font-size:12px;color:var(--ink);font-weight:600;white-space:nowrap}
+  .pos .meta{flex-basis:100%;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:left;line-height:1.55}
   .foot{margin-top:20px;font-size:11px;color:var(--ink3);line-height:1.7;border-top:1px solid var(--line);padding-top:12px}
   .foot b{color:var(--ink2)}
 </style>
