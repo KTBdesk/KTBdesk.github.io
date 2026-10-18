@@ -1,0 +1,484 @@
+<title>KTB Desk · 2026-10-19</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#f5f3ec; --panel:#fffdf8; --panel2:#efece2; --ink:#1c2129; --ink2:#4a525e; --ink3:#828b98;
+    --line:#ddd8ca; --line2:#e9e5d8; --gold:#9a7320; --gold-soft:#c8a24a;
+    --long:#1f7a5c; --long-bg:#e2efe7; --short:#b23b3b; --short-bg:#f4e3e0; --flat:#9a7320; --flat-bg:#f0e8d4;
+    --up:#1f7a5c; --down:#b23b3b;
+    --rate:#7a5bb2; --rate-bg:#ece5f5; --cpi:#2f6fb0; --cpi-bg:#e2edf6; --auc:#9a7320; --auc-bg:#f0e8d4;
+    --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+    --sans:system-ui,-apple-system,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root{
+      --bg:#0e1218; --panel:#161c25; --panel2:#1c232e; --ink:#e8eaed; --ink2:#a7b0bd; --ink3:#6b7480;
+      --line:#2a323d; --line2:#232b35; --gold:#d7ad52; --gold-soft:#8a6d2b;
+      --long:#3fae83; --long-bg:#16302a; --short:#e0716e; --short-bg:#331f1f; --flat:#d7ad52; --flat-bg:#2c2718;
+      --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}}
+  :root[data-theme="light"]{
+    --bg:#f5f3ec; --panel:#fffdf8; --panel2:#efece2; --ink:#1c2129; --ink2:#4a525e; --ink3:#828b98;
+    --line:#ddd8ca; --line2:#e9e5d8; --gold:#9a7320; --gold-soft:#c8a24a;
+    --long:#1f7a5c; --long-bg:#e2efe7; --short:#b23b3b; --short-bg:#f4e3e0; --flat:#9a7320; --flat-bg:#f0e8d4;
+    --up:#1f7a5c; --down:#b23b3b; --rate:#7a5bb2; --rate-bg:#ece5f5; --cpi:#2f6fb0; --cpi-bg:#e2edf6; --auc:#9a7320; --auc-bg:#f0e8d4;}
+  :root[data-theme="dark"]{
+    --bg:#0e1218; --panel:#161c25; --panel2:#1c232e; --ink:#e8eaed; --ink2:#a7b0bd; --ink3:#6b7480;
+    --line:#2a323d; --line2:#232b35; --gold:#d7ad52; --gold-soft:#8a6d2b;
+    --long:#3fae83; --long-bg:#16302a; --short:#e0716e; --short-bg:#331f1f; --flat:#d7ad52; --flat-bg:#2c2718;
+    --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1400px;margin:0 auto;padding:26px 22px 46px}
+  section{margin-top:22px}
+  .sec-h{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);font-weight:700;display:flex;align-items:center;gap:10px;margin:0 0 12px}
+  .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .sec-h .n{font-family:var(--mono);color:var(--ink3);font-weight:600}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;border-bottom:2px solid var(--ink);padding-bottom:12px;flex-wrap:wrap}
+  .mast h1{margin:0;font-size:24px;letter-spacing:-.01em;font-weight:800}
+  .mast .sub{color:var(--ink2);font-size:12.5px;margin-top:4px}
+  .upd{display:inline-block;margin-top:9px;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--gold);background:var(--flat-bg);border:1px solid var(--gold-soft);border-radius:999px;padding:4px 12px}
+  .upd b{color:var(--ink);font-weight:800}
+  .contact{margin-top:7px;font-size:11.5px;color:var(--ink2)}
+  .contact b{color:var(--ink);font-weight:600}
+  .contact a{color:var(--gold);text-decoration:none}
+  .contact a:hover{text-decoration:underline}
+  .contact .sep{color:var(--line);margin:0 8px}
+  .brand{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+  .brand .emblem{height:26px;width:auto;flex:none;display:block}
+  .brand .bn{font-size:14.5px;font-weight:800;letter-spacing:-.01em;color:#00857a}
+  .brand .bn .en{color:var(--ink3);font-weight:600;font-size:11.5px;margin-left:6px;letter-spacing:.01em}
+  @media (prefers-color-scheme:dark){.brand .bn{color:#2fb3a6}}
+  :root[data-theme="dark"] .brand .bn{color:#2fb3a6}
+  :root[data-theme="light"] .brand .bn{color:#00857a}
+  .lang{display:flex;gap:5px;justify-content:flex-end;margin-bottom:7px}
+  .lang a{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink3);text-decoration:none;padding:1px 7px;border:1px solid var(--line);border-radius:4px}
+  .lang a.on{color:var(--gold);border-color:var(--gold-soft)}
+  .histwrap{display:flex;justify-content:flex-end;align-items:center;gap:5px;margin-bottom:7px;font-size:11px;color:var(--ink3)}
+  .histwrap select{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ink2);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:2px 5px;cursor:pointer}
+  .asof{text-align:right;font-size:11.5px;color:var(--ink2);line-height:1.7}
+  .asof .d{font-family:var(--mono);color:var(--ink);font-size:13px;font-weight:700}
+  .tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-soft);border-radius:3px;padding:1px 6px}
+
+  .keys{display:flex;gap:10px;margin:16px 0 0;flex-wrap:wrap}
+  .keychip{flex:1;min-width:158px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:9px 13px}
+  .keychip.hot{border-left-color:var(--down)}
+  .keychip .dd{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--gold);letter-spacing:.03em}
+  .keychip.hot .dd{color:var(--down)}
+  .keychip .ev{font-size:13px;font-weight:600;margin-top:2px}
+  .keychip .dt{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-top:1px}
+
+  .cal{columns:2;column-gap:16px}
+  @media(max-width:720px){.cal{columns:1}}
+  .cal .row{break-inside:avoid;display:flex;align-items:center;gap:9px;padding:5px 0;border-bottom:1px solid var(--line2);font-size:12.5px}
+  .cal .cd{font-family:var(--mono);font-weight:700;color:var(--ink);white-space:nowrap;font-size:12px}
+  .cal .cw{color:var(--ink3);font-size:11px}
+  .pill{font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;white-space:nowrap}
+  .pill.auc{color:var(--auc);background:var(--auc-bg)} .pill.rate{color:var(--rate);background:var(--rate-bg)} .pill.cpi{color:var(--cpi);background:var(--cpi-bg)} .pill.fut{color:var(--long);background:var(--long-bg)}
+  .cal .ev{color:var(--ink2)}
+  .cal .row.today{background:var(--panel2);border-radius:5px;padding-left:6px;padding-right:6px}
+
+  .mc{display:grid;grid-template-columns:1.15fr 1fr;gap:16px}
+  @media(max-width:820px){.mc{grid-template-columns:1fr}}
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .box p{margin:0 0 8px;font-size:13px;color:var(--ink2)} .box p:last-child{margin-bottom:0} .box p b{color:var(--ink)}
+  .ctable{width:100%;border-collapse:collapse;font-size:12.5px}
+  .ctable th,.ctable td{padding:5px 8px;text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;border-bottom:1px solid var(--line2)}
+  .ctable th{font-family:var(--sans);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+  .ctable td:first-child,.ctable th:first-child{text-align:left;font-weight:700;color:var(--ink)}
+  .ctable tr:last-child td{border-bottom:0}
+  .zbar{color:var(--short);font-weight:700} .hot{color:var(--down)} .cool{color:var(--up)}
+
+  .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 13px 11px;display:flex;flex-direction:column;gap:10px;min-width:0}
+  .chd{display:flex;justify-content:space-between;align-items:baseline}
+  .chd .name{font-weight:800;font-size:16px}
+  .chd .name span{color:var(--ink3);font-weight:500;font-size:11px;margin-left:2px}
+  .chd .px{font-family:var(--mono);font-size:18px;font-weight:800}
+  .pxwrap{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
+  .pxsub{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink3);margin-top:1px}
+  .pxsub b{color:var(--gold)}
+  .bands{display:flex;flex-direction:column;gap:9px}
+  .bd .bl{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;flex-wrap:wrap;gap:0 6px}
+  .bd .bl .k{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+  .bd .bl .r{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink)}
+  .bd .bl .r .lo{color:var(--long)} .bd .bl .r .hi{color:var(--short)} .bd .bl .r .sep{color:var(--ink3);margin:0 3px}
+  .track{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,color-mix(in srgb,var(--long) 22%,transparent),var(--panel2),color-mix(in srgb,var(--short) 22%,transparent));border:1px solid var(--line2)}
+  .dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%);border:2px solid var(--panel);box-shadow:0 0 0 1px var(--gold-soft)}
+  .pos{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-top:9px;border-top:1px solid var(--line2)}
+  .badge{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:5px;white-space:nowrap}
+  .badge.long{color:var(--long);background:var(--long-bg)} .badge.short{color:var(--short);background:var(--short-bg)} .badge.flat{color:var(--flat);background:var(--flat-bg)}
+  .pos .act{font-size:11.5px;color:var(--ink);font-weight:600}
+  .pos .meta{flex-basis:100%;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:left;line-height:1.55}
+
+  .low{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:820px){.low{grid-template-columns:1fr}}
+  .flow table{width:100%;border-collapse:collapse;font-size:12px}
+  .flow th,.flow td{padding:6px 9px;text-align:right;font-family:var(--mono);border-bottom:1px solid var(--line2);font-variant-numeric:tabular-nums}
+  .flow th{font-family:var(--sans);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+  .flow td:first-child,.flow th:first-child{text-align:left;color:var(--ink2)}
+  .flow tr:last-child td{border-bottom:0}
+  .flow .pl{color:var(--up)} .flow .mn{color:var(--down)}
+  .pv{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .pv li{display:flex;gap:9px;font-size:12.5px;color:var(--ink2)}
+  .pv .t{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--ink);background:var(--panel2);border:1px solid var(--line2);border-radius:4px;padding:1px 6px;height:fit-content;white-space:nowrap;min-width:44px;text-align:center}
+  .pv b{color:var(--ink)}
+  .live{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:#fff;background:var(--down);padding:1px 7px;border-radius:3px;vertical-align:middle}
+  @media(prefers-reduced-motion:no-preference){.live{animation:pulse 2.2s infinite}}
+  @keyframes pulse{50%{opacity:.45}}
+  .feed-list{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+  .feed-item{display:flex;gap:13px;padding:10px 15px;border-bottom:1px solid var(--line2)}
+  .feed-item:last-child{border-bottom:0}
+  .feed-item:first-child{background:color-mix(in srgb,var(--gold) 6%,transparent)}
+  .feed-item.urgent{background:color-mix(in srgb,var(--short) 12%,transparent)}
+  .ubadge{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--down);padding:1px 5px;border-radius:3px;margin-right:5px;vertical-align:middle}
+  .feed-time{font-family:var(--mono);font-size:11px;color:var(--ink3);white-space:nowrap;min-width:104px;font-weight:600;padding-top:1px}
+  .feed-msg{font-size:13px;color:var(--ink);white-space:pre-wrap;line-height:1.55}
+  .feed-empty{padding:16px;color:var(--ink3);font-size:12.5px;text-align:center}
+  .foot{margin-top:20px;font-size:11px;color:var(--ink3);line-height:1.7;border-top:1px solid var(--line);padding-top:12px}
+  .foot b{color:var(--ink2)}
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:24px;align-items:start}
+  .colmain{min-width:0}
+  .colside{position:sticky;top:14px;align-self:start;min-width:0}
+  .colside section{margin-top:0}
+  .colside .feed-list{max-height:calc(100vh - 46px);overflow-y:auto;overscroll-behavior:contain}
+  .colside .feed-item{flex-direction:column;gap:4px;padding:11px 14px}
+  .colside .feed-time{min-width:0;font-size:10.5px}
+  .colside .feed-msg{font-size:12.5px;line-height:1.5}
+  .feed-body{flex:1;min-width:0}
+  .feed-msg.clip{max-height:16.5em;overflow:hidden;position:relative}
+  .feed-msg.clip:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3.4em;background:linear-gradient(to bottom,transparent,var(--panel))}
+  .feed-item:first-child .feed-msg.clip:after{background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--gold) 6%,var(--panel)))}
+  .feed-more{margin-top:7px;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--gold);background:none;border:1px solid var(--line);border-radius:4px;padding:3px 9px;cursor:pointer}
+  .feed-more:hover{border-color:var(--gold-soft)}
+  @media(max-width:1180px){.cols{grid-template-columns:1fr}.colside{position:static}.colside section{margin-top:22px}.colside .feed-list{max-height:none}.colside .feed-item{flex-direction:row;gap:13px}.colside .feed-time{min-width:104px;font-size:11px}.colside .feed-msg{font-size:13px}}
+  @media print{.cols{display:block}.colside{position:static}.colside section{margin-top:22px}.colside .feed-list{max-height:none;overflow:visible}.feed-msg.clip{max-height:none}.feed-msg.clip:after{display:none}.feed-more{display:none}}
+</style>
+
+<div class="wrap">
+  <div class="mast">
+    <div>
+      <h1>KTB Desk</h1>
+      <div class="sub">Calendar · Curve dislocations · Level bands &amp; positioning · Flows · Review/Preview</div>
+      <div class="upd">Updated daily <b>08:30~09:00</b> KST · reflects the prior 19:30 NY close</div>
+    </div>
+    <div class="asof">
+      <div class="lang"><a class="on" href="en.html">KTB</a><a href="us_en.html">UST</a><a href="index.html">KO</a><a class="on" href="en.html">EN</a></div>
+      <div class="histwrap">📅 <select id="histsel" aria-label="Past reports"><option>Past reports</option></select></div>
+      <span class="tag">Desk Daily</span><br>
+      Report <span class="d">2026-10-19 (Mon)</span><br>
+      Based on 10-16 close
+    </div>
+  </div>
+
+  <div class="cols">
+  <div class="colmain">
+  <div class="keys">
+    <div class="keychip hot"><div class="dd">10-16</div><div class="ev">📈 KOSPI +2.05%, yet KTBs <b>3Y −3.7 (3.835) · 10Y −3.0 (4.165) · 30Y −4.0 · 50Y −11.3</b>, futures +10 / +34 ticks — <b>offshore +13,683 3Y · +6,283 10Y</b>, led by IRS offers · <b>50Y awarded at 4.195%, 8bp through</b></div><div class="dt">rally through an equity bounce</div></div>
+    <div class="keychip hot"><div class="dd">Curve</div><div class="ev">📐 <b>2-3 3.0 · 2-5 16.5 · 3-5 13.5 · 3-30 42.2 · futures 3-10 26.8 — five 60-day lows</b> · 3Y 83.5 over base (−3.7) · bond-swap 3Y −0.5 (z −2.03), IRS outperformed cash</div><div class="dt">front-end-led flattening</div></div>
+    <div class="keychip"><div class="dd">10-16 US</div><div class="ev">🇺🇸 2Y 4.709 (−3.0) · 10Y 5.075 (+1.45) · 30Y 5.4225 (+1.55) — <b>bull steepening (2-10 36.6, +4.45)</b> · Nasdaq −2.14% · SOX down eight days · WTI 101.41 (+3.5%)</div><div class="dt">KR−US −91</div></div>
+    <div class="keychip"><div class="dd">Today</div><div class="ev">🎯 <b>KTB 10Y 26-6 KRW 2.1tn auction 10:40</b> · 91-day MSB 600bn 10:00 · China Q3 GDP 11:00 · ranges and opens to be updated when the desk's levels arrive</div><div class="dt">Mon</div></div>
+  </div>
+
+  <section>
+    <h3 class="sec-h"><span class="n">01</span> Upcoming Calendar</h3>
+    <div class="cal">
+      <div class="row today"><span class="cd">10/19</span><span class="cw">Mon</span><span class="pill auc">Auction</span><span class="ev"><b>KTB 10Y 26-6, KRW 2.1tn</b> <span class="cw">10:40–11:00</span> · 91-day MSB 600bn <span class="cw">10:00</span> · China Q3 GDP, September IP <span class="cw">11:00</span></span></div>
+      <div class="row"><span class="cd">10/20</span><span class="cw">Tue</span><span class="pill auc">Exchange</span><span class="ev"><b>Exchange KRW 500bn</b> <span class="cw">issues 26-8 against 12-5·21-2·23-7·24-2·24-8</span> · US housing starts <span class="cw">21:30</span></span></div>
+      <div class="row"><span class="cd">10/21</span><span class="cw">Wed</span><span class="pill auc">Buyback</span><span class="ev"><b>Buyback KRW 3.5tn</b> <span class="cw">24-4·25-6·24-12·25-4·23-6·22-5·22-14·23-11</span></span></div>
+      <div class="row"><span class="cd">10/22</span><span class="cw">Thu</span><span class="pill rate">Rate</span><span class="ev"><b>BOK</b> <span class="cw">base 3.00% · first meeting after the July–August back-to-back hikes · next 11/26</span></span></div>
+      <div class="row"><span class="cd">10/23</span><span class="cw">Fri</span><span class="pill cpi">Data</span><span class="ev">US October PMI <span class="cw">22:45</span> · Korea Q3 GDP advance <span class="cw">10/28 08:00</span></span></div>
+      <div class="row"><span class="cd">10/26</span><span class="cw">Mon</span><span class="pill auc">Auction</span><span class="ev"><b>KTB 5Y 26-9, KRW 2.2tn</b> <span class="cw">· KTB 20Y 26-10 KRW 700bn increase on 10/27</span></span></div>
+      <div class="row"><span class="cd">10/28</span><span class="cw">Wed</span><span class="pill rate">Rate</span><span class="ev"><b>FOMC</b> <span class="cw">· KTB 2Y 11/2 · 30Y 11/3 · 3Y 11/9 auctions · BOK 11/26 with revised forecasts</span></span></div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">02</span> Level Bands &amp; Positions</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="chd"><div class="name">3Y <span>KTB Fut · Dec</span></div><div class="pxwrap"><span class="px">103.05</span><span class="pxsub" style="color:var(--ink3)">Exp. open to follow</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">RV signal support–resistance</span><span class="r"><span class="lo">102.97</span><span class="sep">~</span><span class="hi">103.11</span></span></div>
+            <div class="track"><div class="dot" style="left:57%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">10-16 high–low</span><span class="r"><span class="lo">102.90</span><span class="sep">~</span><span class="hi">103.05</span></span></div>
+            <div class="track"><div class="dot" style="left:100%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">Hold while offshore buys</span><span class="act">1.1 ticks rich · 3.913%</span><span class="meta">Offshore +13,683 · IRS offers<br>2-3 at 3.0, a 60-day low — switch into 1–2Y brought forward</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">10Y <span>KTB Fut · Dec</span></div><div class="pxwrap"><span class="px">106.64</span><span class="pxsub" style="color:var(--ink3)">Exp. open to follow</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">RV signal support–resistance</span><span class="r"><span class="lo">106.38</span><span class="sep">~</span><span class="hi">106.74</span></span></div>
+            <div class="track"><div class="dot" style="left:72%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">10-16 high–low</span><span class="r"><span class="lo">106.13</span><span class="sep">~</span><span class="hi">106.64</span></span></div>
+            <div class="track"><div class="dot" style="left:100%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">No chasing before the auction</span><span class="act">0.2 ticks rich · 4.181%</span><span class="meta">10:40 26-6 KRW 2.1tn · 26-6 borrow −1bn (no short)<br>US 10Y 5.075 (+1.45) · Nasdaq −2.14%</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">KTB 2-3 <span>3Y − 2Y cash</span></div><div class="pxwrap"><span class="px">3.0bp</span><span class="pxsub" style="color:var(--down)">−1.2bp · 60-day low</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">z(60d)</span><span class="r">−1.74σ <span class="cw" style="color:var(--ink3);font-size:10px">· 60-day mean 11.8</span></span></div>
+            <div class="track"><div class="dot" style="left:5%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">3-10</span><span class="r">33.0bp <span class="cw" style="color:var(--ink3);font-size:10px">· +0.7 · z −2.65</span></span></div>
+            <div class="track"><div class="dot" style="left:6%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">Steepener on watch</span><span class="act">November hike approaching → 2Y relatively weaker</span><span class="meta">Offshore 3Y futures and IRS pull the 3Y<br>Switch 3Y → 1–2Y before the BOK (10/22)</span></div>
+      </div>
+
+    </div>
+    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ <b>Daily expected ranges and opens will be updated when the desk's levels arrive.</b> The second band on each card is the RV signal's resistance and support; the high–low is 10/16. US data is the <b>10-16 close</b>.</p>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">03</span> Macro &amp; Curve Dislocations</h3>
+    <div class="mc">
+      <div class="box">
+        <p><b>Equities bounced and bonds rallied anyway — led by the front end.</b> Friday's cash KTBs <b>2Y −2.5 (3.805) · 3Y −3.7 (3.835) · 5Y −3.9 (3.970) · 10Y −3.0 (4.165) · 20Y −4.2 (4.198) · 30Y −4.0 (4.257) · 50Y −11.3 (4.162)</b>. Futures <b>3Y +10 ticks (103.05) · 10Y +34 (106.64)</b>. Yields fell through KOSPI +2.05% (5,668) and KOSDAQ +4.46% because <b>offshore bought 13,683 3Y and 6,283 10Y contracts and poured offers into IRS</b> — bond-swap 3Y −0.5 (z −2.03) and 2Y −4.25, swaps outperforming cash. <b>2-3 3.0 · 2-5 16.5 · 3-5 13.5 · 3-30 42.2 · futures 3-10 26.8 are all 60-day lows</b>, 3-10 33.0 (+0.7), 10-30 9.2 (−1.0), and <b>30-50 −9.5 (−7.3)</b> is the 50Y rallying after its auction. 3Y 83.5bp over base (−3.7). Friday's "bear steepening if equities hold" was wrong — offshore bought duration regardless of equities.</p>
+        <p><b>The nature of the offshore bid — fear of not owning it.</b> Market talk has hedge funds looking at Korea's AI and semiconductor exposure as a reason to own Korean duration, and adding it first through IRS and futures, which tie up less cash. With CTAs buying on technical signals, the read is that a "reluctant rally" can keep going. The same accounts, though, put <b>front-end downside at about 20bp if the terminal rate is 3.50–3.75</b> — the 3Y at 3.835 is 83.5bp over a 3.00 base, 58bp once a November hike to 3.25 is counted. A front-end-led move that has pushed 2-3 to 3.0 also means <b>the short end gets relatively weaker as the November hike approaches</b>. The Philadelphia semiconductor index fell for an eighth straight day (first since 2008); Nasdaq −2.14%.</p>
+        <p><b>After the 50Y auction — insurers took 26-11, and the 26-8 short is rebuilding.</b> KRW 600bn of 26-11 cleared at 4.195% (8bp through the mid) on a 246% bid-to-cover, the 50Y rallied 11.3bp and 30-50 went to −9.5. Insurers' +653bn beyond 10 years (+486bn in KTBs) is the auction allocation, and <b>excluding auction days insurer/pension ultra-long buying in October is still net selling</b>. Offshore sold −92bn beyond 10 years (the off-the-runs around 26-8 again), pensions −47. Borrow: 26-8 +24bn (1,410bn, 18.33%) rebuilding after Thursday's −99, <b>26-5 −332bn (1,761bn, 9.83%), −1,958bn on the week — the auction-line short is done</b>. 26-6 −1bn (1,937bn): no short built into today's KRW 2.1tn auction, which reads as accounts wanting the option after the auction — leave room for a strong result.</p>
+        <p><b>The US rallied only at the front.</b> 10/16 <b>2Y 4.709 (−3.0) · 5Y 4.8685 (−0.9) · 10Y 5.075 (+1.45) · 30Y 5.4225 (+1.55)</b>, 2-10 36.6 (+4.45), a bull steepening. After Thursday's −12.7 the long end paused while more hike pricing came out of the front. Warsh told the IMF meetings in Bangkok (10/16) that "AI is obviously hitting the demand side of the economy before the supply side" and that central bankers should treat it as a shock — the same line as Governor Shin's remark (10/13) on a possibly higher neutral rate. <b>Equities are selling off on AI worries while central banks read AI as demand-side inflation pressure.</b> The worst case for bonds is growth forecasts being revised up at Q3 GDP (10/28) and the BOK's November update. WTI 101.41 (+3.5%). KR10−US10 −91 (−4.5).</p>
+        <p><b>Strategy — offshore flow, not risk assets, is setting rates now.</b> ① The 10Y auction (KRW 2.1tn, 10:40) can clear strongly if option demand meets the global rally. No chasing the 10Y contract before it; direction after the result. ② 2-3 at 3.0 and 3-5 at 13.5 are 60-day lows — the 3Y stays the strongest tenor while offshore keeps buying 3Y futures and IRS, but <b>2Y vs 3Y is a retracement candidate as the November hike approaches</b>. Keep the 3Y futures long into the BOK (10/22) but bring forward the switch into the 1–2Y. ③ 10-30 9.2: no auction pullback came; the 5~6bp entry rule stands. ④ Credit keeps underperforming on bank issuance — if credit cannot support a KTB rally, the rally's durability is short. No added exposure. ⑤ Keep buy 26-5 / sell 26-3 at 15.5 (z −2.51); the 26-5 short is fully repaid.</p>
+      </div>
+      <div class="box">
+        <table class="ctable">
+          <thead><tr><th>Curve</th><th>10-16 (bp)</th><th>1D</th><th>z(60d)</th></tr></thead>
+          <tbody>
+            <tr><td>3-5</td><td>13.5</td><td class="cool">−0.2</td><td class="zbar">−2.78σ</td></tr>
+            <tr><td>3-10</td><td>33.0</td><td class="hot">+0.7</td><td class="zbar">−2.65σ</td></tr>
+            <tr><td>2-5</td><td>16.5</td><td class="cool">−1.4</td><td class="zbar">−2.34σ</td></tr>
+            <tr><td>3-30</td><td>42.2</td><td class="cool">−0.3</td><td class="zbar">−2.03σ</td></tr>
+            <tr><td>선물 3-10</td><td>26.8</td><td class="cool">−0.5</td><td class="zbar">−1.97σ</td></tr>
+            <tr><td>2-3</td><td>3.0</td><td class="cool">−1.2</td><td class="zbar">−1.74σ</td></tr>
+            <tr><td>5-30</td><td>28.7</td><td class="cool">−0.1</td><td class="zbar">−1.64σ</td></tr>
+            <tr><td>30-50</td><td>−9.5</td><td class="cool">−7.3</td><td class="zbar">−1.59σ</td></tr>
+            <tr><td>5-10</td><td>19.5</td><td class="hot">+0.9</td><td class="zbar">−1.57σ</td></tr>
+            <tr><td>10-30</td><td>9.2</td><td class="cool">−1.0</td><td class="zbar">−1.48σ</td></tr>
+            <tr><td>5-10-30 fly</td><td>−10.3</td><td class="cool">−1.9</td><td class="zbar">−1.14σ</td></tr>
+            <tr><td>20-30</td><td>5.9</td><td class="hot">+0.2</td><td class="zbar">−0.06σ</td></tr>
+            <tr><td>3-10-30 fly</td><td>−23.8</td><td class="cool">−1.7</td><td class="zbar">−0.05σ</td></tr>
+            <tr><td>10-20-30 fly</td><td>2.6</td><td class="hot">+1.4</td><td class="zbar">+1.02σ</td></tr>
+            <tr><td>3-5-10 fly</td><td>6.0</td><td class="hot">+1.1</td><td class="zbar">+1.29σ</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ Curves from <b>10-16 on-the-run KTB cash yields</b> (three-vendor average) · z on a <b>60-business-day rolling window, population stdev</b><br>※ <b>2-3 3.0 · 2-5 16.5 · 3-5 13.5 · 3-30 42.2 · futures 3-10 26.8 — five 60-day lows</b><br>※ <b>30-50 −9.5 (−7.3)</b> — the 50Y fell 11.3 after its auction · 10-30 9.2 (−1.0)<br>※ <b>3Y 83.5bp over base (−3.7)</b> · bond-swap 3Y −0.5 (z −2.03) · KR10−US10 −91</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">04</span> Futures Fair Value &amp; Baskets <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-16 · Dec 2026 · 57 days left</span></h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>Contract</th><th>Close</th><th>Cash</th><th>Market basis</th><th>Fair value</th><th>Rich / cheap</th></tr></thead>
+          <tbody>
+            <tr><td>3Y <span style="color:var(--ink3);font-size:10px">KTB3F2612 · implied 3.913%</span></td><td>103.05</td><td>103.159</td><td class="pl">−10.9 ticks</td><td>103.039</td><td class="mn">1.1 ticks rich</td></tr>
+            <tr><td>10Y <span style="color:var(--ink3);font-size:10px">KTB10F2612 · implied 4.181%</span></td><td>106.64</td><td>106.806</td><td class="pl">−16.6 ticks</td><td>106.638</td><td class="mn">0.2 ticks rich</td></tr>
+          </tbody>
+        </table>
+        <table style="margin-top:10px">
+          <thead><tr><th>Basket</th><th>Spot</th><th>Forward</th><th>F−S</th><th>On loan</th><th>Offshore held</th></tr></thead>
+          <tbody>
+            <tr><td>3Y · 25-10</td><td>3.798</td><td>3.848</td><td>+5.0</td><td>15.78%</td><td>15.00%</td></tr>
+            <tr><td>3Y · 26-5 <span style="color:var(--ink3);font-size:10px">3Y bmk</span></td><td>3.835</td><td>3.878</td><td>+4.3</td><td>9.83%</td><td>7.91%</td></tr>
+            <tr><td>3Y · 26-3 <span style="color:var(--ink3);font-size:10px">old 5Y bmk</span></td><td>3.990</td><td>4.023</td><td>+3.3</td><td>10.33%</td><td>41.40%</td></tr>
+            <tr><td>10Y · 25-11</td><td>4.157</td><td>4.177</td><td>+2.0</td><td>6.21%</td><td>32.58%</td></tr>
+            <tr><td>10Y · 26-6 <span style="color:var(--ink3);font-size:10px">10Y bmk · auction today</span></td><td>4.165</td><td>4.185</td><td>+2.0</td><td>12.59%</td><td>35.60%</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>Both contracts are rich — 3Y +1.1 ticks, 10Y +0.2.</b> Thursday's 5.1-tick discount in the 10Y vanished in a day (offshore +6,283). The 3Y printed +4 ticks rich intraday and closed at 1.1 — offshore +13,683 against securities −8,556 and banks −5,243, the classic offshore-led session in which futures move ahead of cash. PVBP 2.8564 and 8.4240, 57 days left. <b>The +3-tick transition is not in yet (1.1)</b> — all 11 transitions since 2020 crossed +3 within 20 sessions, and this is the approach<br>· Basket borrow 26-5 9.83% (−332bn), 25-10 15.78% (−83), 26-3 10.33% (−66) — the 3Y basket short is below half its pre-auction level (25%)<br>· On the 240-minute chart the 3Y at 103.05 is just under its upper band (103.11) and the 10Y at 106.64 is 10 ticks under its band (106.74) — both closed Friday near the top of their bands</p>
+      </div>
+      <div class="box flow">
+        <table>
+          <thead><tr><th>Pair (right − left)</th><th>Spread</th><th>1D</th><th>3M avg</th><th>z(3M)</th></tr></thead>
+          <tbody>
+            <tr><td>25-3 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">old 5Y bmk · basket</span></td><td>6.6</td><td class="pl">−0.3</td><td>11.1</td><td class="zbar">−3.15σ</td></tr>
+            <tr><td>25-10 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">3Y fut basket</span></td><td>19.2</td><td class="pl">−1.0</td><td>29.3</td><td class="zbar">−2.78σ</td></tr>
+            <tr><td>26-5 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">3Y bmk</span></td><td>15.5</td><td class="mn">+0.5</td><td>22.6</td><td class="zbar">−2.51σ</td></tr>
+            <tr><td>25-4 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">old 5Y bmk · basket</span></td><td>23.5</td><td class="pl">−0.7</td><td>36.2</td><td class="zbar">−2.40σ</td></tr>
+            <tr><td>25-10 vs <b>26-5</b> <span style="color:var(--ink3);font-size:10px">3Y fut basket</span></td><td>3.7</td><td class="pl">−1.5</td><td>6.7</td><td class="zbar">−1.77σ</td></tr>
+            <tr><td>25-4 vs <b>26-5</b> <span style="color:var(--ink3);font-size:10px">3Y bmk</span></td><td>8.0</td><td class="pl">−1.2</td><td>13.6</td><td class="zbar">−1.74σ</td></tr>
+            <tr><td>24-12 vs 25-4 <span style="color:var(--ink3);font-size:10px">on the 10/21 buyback list</span></td><td>5.9</td><td class="pl">−1.0</td><td>11.6</td><td>−1.39σ</td></tr>
+            <tr><td>26-7 vs <b>25-10</b> <span style="color:var(--ink3);font-size:10px">2Y bmk</span></td><td>−0.7</td><td class="mn">+0.3</td><td>1.3</td><td>−1.02σ</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>26-3's richness deepened — 6.6 over 25-3 (−3.15σ), 19.2 over 25-10 (−2.78σ).</b> Borrow was repaid (−66bn) and the 41% offshore holding still does not move; against the new 5Y benchmark 26-9 it is now −2.0, old over new. <b>26-5 vs 26-3 15.5 (+0.5)</b> retraced a day once insurer selling stopped — with 26-5 borrow −332bn the short is gone, keep the position. The issuance → repayment → recovery sequence in the auction line is running on schedule<br>· <b>25-10 vs 26-5 3.7 (−1.5)</b> — the 3Y benchmark richened against the older basket bond (z −1.77), the same picture as 2-3 at 3.0<br>· 24-12 vs 25-4 5.9 (−1.0) — ahead of the 10/21 buyback, no re-entry</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">05</span> Flows · Futures Positioning</h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>Offshore futures net buying (contracts)</th><th>3Y</th><th>10Y</th></tr></thead>
+          <tbody>
+            <tr><td>10-16</td><td class="pl">+13,683</td><td class="pl">+6,283</td></tr>
+            <tr><td>5 days</td><td class="pl">+110,651</td><td class="pl">+46,293</td></tr>
+            <tr><td>10 days</td><td class="pl">+64,097</td><td class="pl">+16,946</td></tr>
+            <tr><td>20 days</td><td class="pl">+79,067</td><td class="pl">+18,564</td></tr>
+            <tr><td>6 months</td><td class="pl">+84,868</td><td class="mn">−6,601</td></tr>
+          </tbody>
+        </table>
+        <table style="margin-top:10px">
+          <thead><tr><th>By investor (10-16)</th><th>3Y</th><th>10Y</th></tr></thead>
+          <tbody>
+            <tr><td>Offshore</td><td class="pl">+13,683</td><td class="pl">+6,283</td></tr>
+            <tr><td>Securities</td><td class="mn">−8,556</td><td class="mn">−4,951</td></tr>
+            <tr><td>Banks</td><td class="mn">−5,243</td><td class="mn">−592</td></tr>
+            <tr><td>Asset mgmt</td><td class="mn">−134</td><td class="mn">−663</td></tr>
+            <tr><td>Insurers</td><td class="pl">+158</td><td class="mn">−143</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11.5px;color:var(--ink3)"><b>Offshore are back — +13,683 3Y, +6,283 10Y.</b> After three quiet sessions (+406, +907, +601) the big hand returned on Friday. Domestic accounts were the other side: securities −8,556 3Y (five days −87,235) and banks −5,243, securities −4,951 10Y. 10Y OI −234 (254,587), flat, so much of the offshore buying absorbed domestic long liquidation. Five-day totals +110,651 and +46,293; six-month 3Y +84,868.</p>
+      </div>
+      <div class="box">
+        <ul class="pv">
+          <li><span class="t">Review</span><span>10-16 cash KTBs <b>2Y −2.5 · 3Y −3.7 · 5Y −3.9 · 10Y −3.0 · 20Y −4.2 · 30Y −4.0 · 50Y −11.3bp</b>, futures <b>+10 ticks (103.05) and +34 ticks (106.64)</b>. 2-3 3.0, 2-5 16.5, 3-5 13.5 and 3-30 42.2 at 60-day lows, 3-10 33.0 (+0.7), 10-30 9.2 (−1.0), 30-50 −9.5. KOSPI +2.05%, KOSDAQ +4.46%, USD/KRW 1,331 (−13), WTI 101.41 (+3.5%).</span></li>
+          <li><span class="t">Lending</span><span><b>26-5 −332bn — 36,389 → 17,609 (9.83%), −1,958bn on the week. The auction-line short is finished.</b> 25-10 −83, 26-3 −66 and 25-11 −79 also repaid. Added: <b>25-3 +100bn (1,145bn), 25-4 +69 (ahead of the buyback), 26-8 +24 (1,410bn, 18.33%)</b>. 26-6 −1 — no short built into today's auction. 26-11 is 4.29% after 1.2tn listed.</span></li>
+          <li><span class="t">Futures</span><span><b>3Y 1.1 ticks rich · 10Y 0.2 ticks rich — both positive.</b> Offshore +13,683 3Y and +6,283 10Y with IRS offers alongside. 10Y OI −234. Two ticks from the +3 transition in the 3Y — if offshore keeps buying it comes this week.</span></li>
+          <li><span class="t">Cash</span><span><b>Insurers' +486bn is the 50Y auction allocation (+653bn beyond 10 years).</b> Excluding auction days, insurer/pension ultra-long buying in October is net selling. Offshore +202bn (sub-1Y +130, 1–2Y +132, beyond 10Y −92), asset managers +50, banks −100, pensions −63. The four domestic groups' +372bn in KTBs is entirely the insurer allocation. Of offshore's +1,293bn on the week, sub-one-year is +1,301bn.</span></li>
+          <li><span class="t">Strategy</span><span><b>Offshore flow sets rates — no chasing before the 10Y auction (10:40), direction after the result.</b> 2-3 3.0 and 3-5 13.5 at 60-day lows: hold the 3Y long while offshore buys 3Y futures and IRS, bring forward the switch into the 1–2Y as the November hike approaches. 10-30 steepener rule 5~6 unchanged (now 9.2). Keep buy 26-5 / sell 26-3 at 15.5.</span></li>
+          <li><span class="t">Credit</span><span><b>Still not following KTBs — bank issuance on top.</b> The short end is soft on November hike pricing, and if credit cannot support KTBs the rally's durability is short. Only 2–3Y card paper is firm; finance-company 2–3Y 2~3bp cheap to MSBs; agency issuance weak. No added exposure.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">06</span> Cash KTB Net Buying — Offshore vs Domestic <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-16 · KRW bn</span></h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>Maturity bucket</th><th>Offshore, 10-16</th><th>Offshore, week (10/09–10/16)</th></tr></thead>
+          <tbody>
+            <tr><td>Under 1Y</td><td class="pl">+130</td><td class="pl">+1,301</td></tr>
+            <tr><td>1–2Y</td><td class="pl">+132</td><td class="mn">−66</td></tr>
+            <tr><td>2–3Y</td><td class="pl">+67</td><td class="pl">+92</td></tr>
+            <tr><td>3–5Y</td><td class="mn">−130</td><td class="mn">−333</td></tr>
+            <tr><td>5–10Y</td><td class="pl">+93</td><td class="pl">+320</td></tr>
+            <tr><td>Over 10Y</td><td class="mn">−92</td><td class="mn">−20</td></tr>
+            <tr><td><b>Total</b></td><td class="pl"><b>+202</b></td><td class="pl"><b>+1,293</b></td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>Cash at the front only; duration through futures and IRS.</b> Friday's offshore cash +202bn was +130 under one year, +132 in 1–2Y and +67 in 2–3Y (+329 under three years) against −130 in 3–5Y and −92 beyond 10 years. Of the week's +1,293bn, <b>+1,301bn is sub-one-year</b> — the cash book buys bills while duration is added through 3Y futures (+110,651 in five days), 10Y futures (+46,293) and IRS offers. In the ultra-long the pattern holds: pick 26-8, sell the neighbours (−20 on the week).</p>
+      </div>
+      <div class="box flow">
+        <table>
+          <thead><tr><th>Investor (10-16)</th><th>Total KTB</th><th style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px">Over 10Y</th></tr></thead>
+          <tbody>
+            <tr><td>Insurers</td><td class="pl">+486</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+653</td></tr>
+            <tr><td>Asset mgmt</td><td class="pl">+50</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−15</td></tr>
+            <tr><td>Banks</td><td class="mn">−100</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−42</td></tr>
+            <tr><td>Pensions</td><td class="mn">−63</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−47</td></tr>
+            <tr><td>Offshore</td><td class="pl">+202</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−92</td></tr>
+            <tr><td><b>Total</b></td><td class="pl"><b>+574</b></td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl"><b>+459</b></td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>Insurers' +653bn beyond 10 years is the 50Y 26-11 allocation.</b> Under 10 years they sold −147bn — the belly is still being sold. Pensions −63 (beyond 10Y −47), banks −100 (beyond 10Y −42, MSBs +30), asset managers +50 (under 3Y +137). <b>Excluding auction days, insurer/pension ultra-long buying in October is more than 100bn of net selling</b>, so the real-money case for the 10-30 flattening rests only on offshore's selective 26-8 buying and the expected cut in 30Y supply into year-end. On the week insurers −76bn in KTBs (+757 beyond 10Y, two auctions), pensions −612, asset managers −1,109.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">07</span> Securities Lending Balances <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-16 · KRW bn</span></h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>Bond</th><th>Balance</th><th>% of issue</th><th>1D</th><th>Week</th><th>Month</th></tr></thead>
+          <tbody>
+            <tr><td>25-10 <span style="color:var(--ink3);font-size:10px">3Y fut basket</span></td><td>30,470</td><td>15.78%</td><td class="pl">−830</td><td class="pl">−5,680</td><td class="pl">−6,940</td></tr>
+            <tr><td>26-2 <span style="color:var(--ink3);font-size:10px">old 30Y bmk</span></td><td>27,260</td><td>9.58%</td><td class="pl">−70</td><td class="mn">+4,610</td><td class="mn">+11,740</td></tr>
+            <tr><td>26-3 <span style="color:var(--ink3);font-size:10px">old 5Y bmk · basket</span></td><td>22,275</td><td>10.33%</td><td class="pl">−660</td><td class="pl">−1,413</td><td class="pl">−10,235</td></tr>
+            <tr><td>26-6 <span style="color:var(--ink3);font-size:10px">10Y bmk · auction today 2.1tn</span></td><td>19,370</td><td>12.59%</td><td class="pl">−10</td><td class="mn">+910</td><td class="pl">−470</td></tr>
+            <tr><td>26-5 <span style="color:var(--ink3);font-size:10px">3Y bmk</span></td><td>17,609</td><td>9.83%</td><td class="pl">−3,320</td><td class="pl">−19,580</td><td class="pl">−12,750</td></tr>
+            <tr><td>26-8 <span style="color:var(--ink3);font-size:10px">30Y bmk</span></td><td>14,104</td><td>18.33%</td><td class="mn">+244</td><td class="mn">+4</td><td class="mn">+5,864</td></tr>
+            <tr><td>25-4 <span style="color:var(--ink3);font-size:10px">on the 10/21 buyback list</span></td><td>13,559</td><td>4.84%</td><td class="mn">+691</td><td class="pl">−835</td><td class="pl">−23,826</td></tr>
+            <tr><td>24-13</td><td>13,549</td><td>8.57%</td><td class="pl">−200</td><td class="pl">−412</td><td class="pl">−736</td></tr>
+            <tr><td>25-3</td><td>11,451</td><td>5.58%</td><td class="mn">+1,000</td><td class="mn">+872</td><td class="pl">−114</td></tr>
+            <tr><td>25-11 <span style="color:var(--ink3);font-size:10px">10Y fut basket</span></td><td>10,971</td><td>6.21%</td><td class="pl">−790</td><td class="pl">−1,999</td><td class="pl">−3,592</td></tr>
+            <tr><td>25-8</td><td>10,734</td><td>6.68%</td><td class="pl">−200</td><td class="pl">−1,411</td><td class="pl">−2,356</td></tr>
+            <tr><td>26-9 <span style="color:var(--ink3);font-size:10px">5Y bmk · auction 10/26</span></td><td>9,680</td><td>19.72%</td><td class="pl">−50</td><td class="mn">+850</td><td class="mn">+5,280</td></tr>
+            <tr><td>24-7 <span style="color:var(--ink3);font-size:10px">on the 10/21 buyback list</span></td><td>6,969</td><td>6.71%</td><td class="pl">−200</td><td class="pl">−1,520</td><td class="mn">+553</td></tr>
+            <tr><td>24-11</td><td>6,813</td><td>4.16%</td><td>0</td><td class="pl">−90</td><td class="mn">+4,236</td></tr>
+            <tr><td>25-5 <span style="color:var(--ink3);font-size:10px">off-the-run 10Y</span></td><td>5,731</td><td>4.25%</td><td class="mn">+90</td><td class="pl">−400</td><td class="pl">−3,190</td></tr>
+            <tr><td>25-9 <span style="color:var(--ink3);font-size:10px">old 20Y bmk</span></td><td>5,410</td><td>8.35%</td><td class="pl">−350</td><td class="pl">−1,490</td><td class="pl">−4,310</td></tr>
+            <tr><td>26-10 <span style="color:var(--ink3);font-size:10px">20Y bmk · increase 10/27</span></td><td>3,600</td><td>42.76%</td><td>0</td><td class="pl">−120</td><td class="mn">+2,800</td></tr>
+            <tr><td>26-1</td><td>2,660</td><td>1.36%</td><td class="pl">−20</td><td class="pl">−408</td><td class="pl">−1,778</td></tr>
+            <tr><td>24-12 <span style="color:var(--ink3);font-size:10px">on the 10/21 buyback list</span></td><td>1,619</td><td>1.09%</td><td>0</td><td>0</td><td class="pl">−858</td></tr>
+            <tr><td>26-7 <span style="color:var(--ink3);font-size:10px">2Y bmk</span></td><td>730</td><td>0.94%</td><td class="pl">−50</td><td class="pl">−220</td><td class="pl">−3,570</td></tr>
+            <tr><td>26-11 <span style="color:var(--ink3);font-size:10px">50Y bmk · 1.2tn listed after 10/16</span></td><td>600</td><td>4.29%</td><td class="mn">+100</td><td class="mn">+100</td><td class="mn">+600</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>26-5 −332bn — the auction-line short is finished.</b> 36,389 (25.34%) → 17,609 (9.83%), −1,958bn on the week. 25-10 −83, 26-3 −66 and 25-11 −79 were repaid alongside, bringing the whole 3Y and 10Y basket short down — on the same day offshore bought 13,683 3Y contracts, so <b>this was not covering but offshore absorbing domestic long liquidation (securities −8,556, banks −5,243)</b>. Newly added: <b>25-3 +100bn (1,145bn, 5.58%), 25-4 +69 (1,356bn, on the 10/21 buyback list), 26-8 +24 (1,410bn, 18.33%)</b>. The 30Y benchmark short is rebuilding after Thursday's −99, while the 10Y benchmark 26-6 at −1 (1,937bn, 12.59%) shows no short built into today's KRW 2.1tn auction — read as accounts preferring to hold the option after the auction. The 50Y 26-11 is at 4.29% (+10bn) after KRW 1.2tn listed. <b>The 20Y benchmark 26-10 stays at 42.76% (0) until the 10/27 increase.</b></p>
+      </div>
+    </div>
+  </section>  </div><!--/colmain-->
+  <aside class="colside">
+  <section>
+    <h3 class="sec-h"><span class="n">08</span> Live Feed <span class="live">LIVE</span></h3>
+    <div id="feed" class="feed-list"><div class="feed-empty">Loading…</div></div>
+  </section>
+  </aside>
+  </div><!--/cols-->
+  <script>
+  (function(){
+    var el=document.getElementById('feed');
+    function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+    function fmt(s){return esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');}
+    function render(d){
+      var es=(d&&d.entries)||[];
+      if(!es.length){el.innerHTML='<div class="feed-empty">No updates yet.</div>';return;}
+      el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-body"><div class="feed-msg clip">'+(e.u?'<span class="ubadge">URGENT</span>':'')+fmt(e.m)+'</div></div></div>';}).join('');
+      Array.prototype.forEach.call(el.querySelectorAll('.feed-msg.clip'),function(m){
+        if(m.scrollHeight<=m.clientHeight+4){m.classList.remove('clip');return;}
+        var b=document.createElement('button');b.className='feed-more';b.textContent='More';
+        b.onclick=function(){b.textContent=m.classList.toggle('clip')?'More':'Less';};
+        m.parentNode.appendChild(b);});
+    }
+    function load(){fetch('../../feed_en.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">Could not load feed.</div>';});}
+    load();setInterval(load,60000);
+  })();
+  </script>
+
+</div>
+<script>
+(function(){
+  var sel=document.getElementById('histsel'); if(!sel) return;
+  var inArc=location.pathname.indexOf('/archive/')>=0;
+  var root=inArc?'../../':'';
+  var parts=location.pathname.split('/');
+  var page=parts[parts.length-1]||'index.html';
+  fetch(root+'archive/dates.json?_='+Date.now()).then(function(r){return r.json();}).then(function(dates){
+    var cur=inArc?location.pathname.split('/archive/')[1].split('/')[0]:'latest';
+    var h='<option value="latest"'+(cur==='latest'?' selected':'')+'>Latest</option>';
+    dates.slice().sort().reverse().forEach(function(d){h+='<option value="'+d+'"'+(cur===d?' selected':'')+'>'+d+'</option>';});
+    sel.innerHTML=h;
+    sel.onchange=function(){
+      var v=sel.value;
+      location.href=(v==='latest')?(root+page):(root+'archive/'+v+'/'+page);
+    };
+  }).catch(function(){ if(sel.parentNode) sel.parentNode.style.display='none'; });
+})();
+</script>
