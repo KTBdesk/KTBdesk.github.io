@@ -1,0 +1,490 @@
+<title>KTB 데스크 · 2026-10-22</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#f5f3ec; --panel:#fffdf8; --panel2:#efece2; --ink:#1c2129; --ink2:#4a525e; --ink3:#828b98;
+    --line:#ddd8ca; --line2:#e9e5d8; --gold:#9a7320; --gold-soft:#c8a24a;
+    --long:#1f7a5c; --long-bg:#e2efe7; --short:#b23b3b; --short-bg:#f4e3e0; --flat:#9a7320; --flat-bg:#f0e8d4;
+    --up:#1f7a5c; --down:#b23b3b;
+    --rate:#7a5bb2; --rate-bg:#ece5f5; --cpi:#2f6fb0; --cpi-bg:#e2edf6; --auc:#9a7320; --auc-bg:#f0e8d4;
+    --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+    --sans:system-ui,-apple-system,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root{
+      --bg:#0e1218; --panel:#161c25; --panel2:#1c232e; --ink:#e8eaed; --ink2:#a7b0bd; --ink3:#6b7480;
+      --line:#2a323d; --line2:#232b35; --gold:#d7ad52; --gold-soft:#8a6d2b;
+      --long:#3fae83; --long-bg:#16302a; --short:#e0716e; --short-bg:#331f1f; --flat:#d7ad52; --flat-bg:#2c2718;
+      --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}}
+  :root[data-theme="light"]{
+    --bg:#f5f3ec; --panel:#fffdf8; --panel2:#efece2; --ink:#1c2129; --ink2:#4a525e; --ink3:#828b98;
+    --line:#ddd8ca; --line2:#e9e5d8; --gold:#9a7320; --gold-soft:#c8a24a;
+    --long:#1f7a5c; --long-bg:#e2efe7; --short:#b23b3b; --short-bg:#f4e3e0; --flat:#9a7320; --flat-bg:#f0e8d4;
+    --up:#1f7a5c; --down:#b23b3b; --rate:#7a5bb2; --rate-bg:#ece5f5; --cpi:#2f6fb0; --cpi-bg:#e2edf6; --auc:#9a7320; --auc-bg:#f0e8d4;}
+  :root[data-theme="dark"]{
+    --bg:#0e1218; --panel:#161c25; --panel2:#1c232e; --ink:#e8eaed; --ink2:#a7b0bd; --ink3:#6b7480;
+    --line:#2a323d; --line2:#232b35; --gold:#d7ad52; --gold-soft:#8a6d2b;
+    --long:#3fae83; --long-bg:#16302a; --short:#e0716e; --short-bg:#331f1f; --flat:#d7ad52; --flat-bg:#2c2718;
+    --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1400px;margin:0 auto;padding:26px 22px 46px}
+  section{margin-top:22px}
+  .sec-h{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);font-weight:700;display:flex;align-items:center;gap:10px;margin:0 0 12px}
+  .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .sec-h .n{font-family:var(--mono);color:var(--ink3);font-weight:600}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;border-bottom:2px solid var(--ink);padding-bottom:12px;flex-wrap:wrap}
+  .mast h1{margin:0;font-size:24px;letter-spacing:-.01em;font-weight:800}
+  .mast h1 b{color:var(--gold)}
+  .mast .sub{color:var(--ink2);font-size:12.5px;margin-top:4px}
+  .upd{display:inline-block;margin-top:9px;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--gold);background:var(--flat-bg);border:1px solid var(--gold-soft);border-radius:999px;padding:4px 12px}
+  .upd b{color:var(--ink);font-weight:800}
+  .contact{margin-top:7px;font-size:11.5px;color:var(--ink2)}
+  .contact b{color:var(--ink);font-weight:600}
+  .contact a{color:var(--gold);text-decoration:none}
+  .contact a:hover{text-decoration:underline}
+  .contact .sep{color:var(--line);margin:0 8px}
+  .brand{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+  .brand .emblem{height:26px;width:auto;flex:none;display:block}
+  .brand .bn{font-size:14.5px;font-weight:800;letter-spacing:-.01em;color:#00857a}
+  .brand .bn .en{color:var(--ink3);font-weight:600;font-size:11.5px;margin-left:6px;letter-spacing:.01em}
+  @media (prefers-color-scheme:dark){.brand .bn{color:#2fb3a6}}
+  :root[data-theme="dark"] .brand .bn{color:#2fb3a6}
+  :root[data-theme="light"] .brand .bn{color:#00857a}
+  .lang{display:flex;gap:5px;justify-content:flex-end;margin-bottom:7px}
+  .lang a{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink3);text-decoration:none;padding:1px 7px;border:1px solid var(--line);border-radius:4px}
+  .lang a.on{color:var(--gold);border-color:var(--gold-soft)}
+  .histwrap{display:flex;justify-content:flex-end;align-items:center;gap:5px;margin-bottom:7px;font-size:11px;color:var(--ink3)}
+  .histwrap select{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ink2);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:2px 5px;cursor:pointer}
+  .asof{text-align:right;font-size:11.5px;color:var(--ink2);line-height:1.7}
+  .asof .d{font-family:var(--mono);color:var(--ink);font-size:13px;font-weight:700}
+  .tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-soft);border-radius:3px;padding:1px 6px}
+
+  .keys{display:flex;gap:10px;margin:16px 0 0;flex-wrap:wrap}
+  .keychip{flex:1;min-width:150px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:9px 13px}
+  .keychip.hot{border-left-color:var(--down)}
+  .keychip .dd{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--gold);letter-spacing:.03em}
+  .keychip.hot .dd{color:var(--down)}
+  .keychip .ev{font-size:13px;font-weight:600;margin-top:2px}
+  .keychip .dt{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-top:1px}
+
+  .cal{columns:2;column-gap:16px}
+  @media(max-width:720px){.cal{columns:1}}
+  .cal .row{break-inside:avoid;display:flex;align-items:center;gap:9px;padding:5px 0;border-bottom:1px solid var(--line2);font-size:12.5px}
+  .cal .cd{font-family:var(--mono);font-weight:700;color:var(--ink);white-space:nowrap;font-size:12px}
+  .cal .cw{color:var(--ink3);font-size:11px}
+  .pill{font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;white-space:nowrap}
+  .pill.auc{color:var(--auc);background:var(--auc-bg)} .pill.rate{color:var(--rate);background:var(--rate-bg)} .pill.cpi{color:var(--cpi);background:var(--cpi-bg)} .pill.fut{color:var(--long);background:var(--long-bg)}
+  .cal .ev{color:var(--ink2)}
+  .cal .row.today{background:var(--panel2);border-radius:5px;padding-left:6px;padding-right:6px}
+
+  .mc{display:grid;grid-template-columns:1.15fr 1fr;gap:16px}
+  @media(max-width:820px){.mc{grid-template-columns:1fr}}
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .box p{margin:0 0 8px;font-size:13px;color:var(--ink2)} .box p:last-child{margin-bottom:0} .box p b{color:var(--ink)}
+  .ctable{width:100%;border-collapse:collapse;font-size:12.5px}
+  .ctable th,.ctable td{padding:5px 8px;text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;border-bottom:1px solid var(--line2)}
+  .ctable th{font-family:var(--sans);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+  .ctable td:first-child,.ctable th:first-child{text-align:left;font-weight:700;color:var(--ink)}
+  .ctable tr:last-child td{border-bottom:0}
+  .zbar{color:var(--short);font-weight:700} .hot{color:var(--down)} .cool{color:var(--up)}
+
+  .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 13px 11px;display:flex;flex-direction:column;gap:10px;min-width:0}
+  .chd{display:flex;justify-content:space-between;align-items:baseline}
+  .chd .name{font-weight:800;font-size:16px}
+  .chd .name span{color:var(--ink3);font-weight:500;font-size:11px;margin-left:2px}
+  .chd .px{font-family:var(--mono);font-size:18px;font-weight:800}
+  .pxwrap{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
+  .pxsub{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ink3);margin-top:1px}
+  .pxsub b{color:var(--gold)}
+  .chg{font-family:var(--mono);font-size:11.5px;font-weight:600}
+  .chg.u{color:var(--up)} .chg.d{color:var(--down)} .chg.f{color:var(--ink3)}
+
+  .bands{display:flex;flex-direction:column;gap:9px}
+  .bd .bl{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;flex-wrap:wrap;gap:0 6px}
+  .bd .bl .k{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+  .bd .bl .r{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink)}
+  .bd .bl .r .lo{color:var(--long)} .bd .bl .r .hi{color:var(--short)} .bd .bl .r .sep{color:var(--ink3);margin:0 3px}
+  .track{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,color-mix(in srgb,var(--long) 22%,transparent),var(--panel2),color-mix(in srgb,var(--short) 22%,transparent));border:1px solid var(--line2)}
+  .dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%);border:2px solid var(--panel);box-shadow:0 0 0 1px var(--gold-soft)}
+
+  .pos{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-top:9px;border-top:1px solid var(--line2)}
+  .badge{font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:5px;white-space:nowrap}
+  .badge.long{color:var(--long);background:var(--long-bg)} .badge.short{color:var(--short);background:var(--short-bg)} .badge.flat{color:var(--flat);background:var(--flat-bg)}
+  .pos .act{font-size:11.5px;color:var(--ink);font-weight:600}
+  .pos .meta{flex-basis:100%;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:left;line-height:1.55}
+
+  .low{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:820px){.low{grid-template-columns:1fr}}
+  .flow table{width:100%;border-collapse:collapse;font-size:12px}
+  .flow th,.flow td{padding:6px 9px;text-align:right;font-family:var(--mono);border-bottom:1px solid var(--line2);font-variant-numeric:tabular-nums}
+  .flow th{font-family:var(--sans);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+  .flow td:first-child,.flow th:first-child{text-align:left;color:var(--ink2)}
+  .flow tr:last-child td{border-bottom:0}
+  .flow .pl{color:var(--up)} .flow .mn{color:var(--down)}
+  .pv{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .pv li{display:flex;gap:9px;font-size:12.5px;color:var(--ink2)}
+  .pv .t{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink);background:var(--panel2);border:1px solid var(--line2);border-radius:4px;padding:1px 6px;height:fit-content;white-space:nowrap;min-width:32px;text-align:center}
+  .pv b{color:var(--ink)}
+  .live{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:#fff;background:var(--down);padding:1px 7px;border-radius:3px;vertical-align:middle}
+  @media(prefers-reduced-motion:no-preference){.live{animation:pulse 2.2s infinite}}
+  @keyframes pulse{50%{opacity:.45}}
+  .feed-list{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+  .feed-item{display:flex;gap:13px;padding:10px 15px;border-bottom:1px solid var(--line2)}
+  .feed-item:last-child{border-bottom:0}
+  .feed-item:first-child{background:color-mix(in srgb,var(--gold) 6%,transparent)}
+  .feed-item.urgent{background:color-mix(in srgb,var(--short) 12%,transparent)}
+  .ubadge{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--down);padding:1px 5px;border-radius:3px;margin-right:5px;vertical-align:middle}
+  .feed-time{font-family:var(--mono);font-size:11px;color:var(--ink3);white-space:nowrap;min-width:104px;font-weight:600;padding-top:1px}
+  .feed-msg{font-size:13px;color:var(--ink);white-space:pre-wrap;line-height:1.55}
+  .feed-empty{padding:16px;color:var(--ink3);font-size:12.5px;text-align:center}
+  .foot{margin-top:20px;font-size:11px;color:var(--ink3);line-height:1.7;border-top:1px solid var(--line);padding-top:12px}
+  .foot b{color:var(--ink2)}
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:24px;align-items:start}
+  .colmain{min-width:0}
+  .colside{position:sticky;top:14px;align-self:start;min-width:0}
+  .colside section{margin-top:0}
+  .colside .feed-list{max-height:calc(100vh - 46px);overflow-y:auto;overscroll-behavior:contain}
+  .colside .feed-item{flex-direction:column;gap:4px;padding:11px 14px}
+  .colside .feed-time{min-width:0;font-size:10.5px}
+  .colside .feed-msg{font-size:12.5px;line-height:1.5}
+  .feed-body{flex:1;min-width:0}
+  .feed-msg.clip{max-height:16.5em;overflow:hidden;position:relative}
+  .feed-msg.clip:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3.4em;background:linear-gradient(to bottom,transparent,var(--panel))}
+  .feed-item:first-child .feed-msg.clip:after{background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--gold) 6%,var(--panel)))}
+  .feed-more{margin-top:7px;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--gold);background:none;border:1px solid var(--line);border-radius:4px;padding:3px 9px;cursor:pointer}
+  .feed-more:hover{border-color:var(--gold-soft)}
+  @media(max-width:1180px){.cols{grid-template-columns:1fr}.colside{position:static}.colside section{margin-top:22px}.colside .feed-list{max-height:none}.colside .feed-item{flex-direction:row;gap:13px}.colside .feed-time{min-width:104px;font-size:11px}.colside .feed-msg{font-size:13px}}
+  @media print{.cols{display:block}.colside{position:static}.colside section{margin-top:22px}.colside .feed-list{max-height:none;overflow:visible}.feed-msg.clip{max-height:none}.feed-msg.clip:after{display:none}.feed-more{display:none}}
+</style>
+
+<div class="wrap">
+  <div class="mast">
+    <div>
+      <h1>KTB 데스크</h1>
+      <div class="sub">일정 · 커브 괴리 · 레벨 밴드 &amp; 포지션 · 수급 · 리뷰/프리뷰</div>
+      <div class="upd">매일 <b>08:30~09:00</b> KST 업데이트 · 전일 뉴욕 19:30 종가 반영</div>
+    </div>
+    <div class="asof">
+      <div class="lang"><a class="on" href="index.html">KTB</a><a href="us.html">UST</a><a class="on" href="index.html">KO</a><a href="en.html">EN</a></div>
+      <div class="histwrap">📅 <select id="histsel" aria-label="지난 리포트"><option>지난 리포트</option></select></div>
+      <span class="tag">Desk Daily</span><br>
+      리포트 <span class="d">2026-10-22 (목)</span><br>
+      10-21 종가 기준
+    </div>
+  </div>
+
+  <div class="cols">
+  <div class="colmain">
+  <div class="keys">
+    <div class="keychip hot"><div class="dd">금통위</div><div class="ev">🏛 <b>오늘 10:00 결정 · 기준 3.00% 동결 기정사실</b> — 쟁점은 인상 소수의견·성장 상방 문구·연내 추가 인상 여지. 매파적이지 않으면 국고는 현 수준 횡보, 추가 강세 룸은 작다 → 로컬 시선은 크레딧으로</div><div class="dt">10-22 (목)</div></div>
+    <div class="keychip hot"><div class="dd">10-21</div><div class="ev">📉 코스피 +3.29%에도 국고 <b>2Y −2.9(3.766) · 3Y −2.4(3.811) · 10Y −2.5(4.150) · 30Y −2.0</b>, 20Y +0.4 — 3선 +8 · 10선 +19틱 · <b>10Y가 10/19 낙찰 4.165를 하향 돌파</b>(이제 지지) · 3Y−기준금리 81.1</div><div class="dt">외국인 주도 이레째</div></div>
+    <div class="keychip"><div class="dd">수급</div><div class="ev">🔁 외국인 선물 3선 +3,635 · 10선 +372 · 현물 <b>+7,476(1년 이하 +7,380)</b> · 투신 −8,810 · 대차 <b>26-8 +910(19.63%)</b> · <b>20년 홀로 약세(10-20-30 버터 −5.3)</b> 증액 앞</div><div class="dt">단기 현물 외국인</div></div>
+    <div class="keychip"><div class="dd">10-21 미국</div><div class="ev">🇺🇸 2Y 4.808(+2.75) · 10Y 5.121(+0.9) · 30Y 5.411(−1.0) — 유가 100 → 97(러·우 종전 협상 기대) · 다우 +0.69% · <b>KR10−US10 −97(−3.4)</b> 60일 저점 −99 턱밑 · 시초 3선 <b>103.11</b> · 10선 <b>106.67</b>, 레인지 102.92~103.33 / 106.02~107.33</div><div class="dt">플랫 지속</div></div>
+  </div>
+
+  <section>
+    <h3 class="sec-h"><span class="n">01</span> 다가오는 일정</h3>
+    <div class="cal">
+      <div class="row today"><span class="cd">10/22</span><span class="cw">목</span><span class="pill rate">금리</span><span class="ev"><b>한국은행 금통위</b> <span class="cw">결정 10:00 전후 · 기자회견 11:10 · 기준 3.00% 동결 전망 · 소수의견·성장 문구·11월 신호가 관건 · 한은 보고서 '민간소비 회복 여건 점검'</span></span></div>
+      <div class="row"><span class="cd">10/23</span><span class="cw">금</span><span class="pill cpi">지표</span><span class="ev">미국 10월 PMI <span class="cw">22:45</span> · 미시간 확정치 <span class="cw">23:00</span></span></div>
+      <div class="row"><span class="cd">10/26</span><span class="cw">월</span><span class="pill auc">입찰</span><span class="ev"><b>국고 5년 26-9 2.2조</b> <span class="cw">· 대차 21.47%(+490)</span></span></div>
+      <div class="row"><span class="cd">10/27</span><span class="cw">화</span><span class="pill auc">입찰</span><span class="ev"><b>국고 20년 26-10 7,000억 증액</b> <span class="cw">· 대차 57.84% · 어제 20년 홀로 +0.4</span></span></div>
+      <div class="row"><span class="cd">10/28</span><span class="cw">수</span><span class="pill rate">금리</span><span class="ev"><b>한국 3분기 GDP 속보 08:00 · 미국 FOMC</b></span></div>
+      <div class="row"><span class="cd">11/2</span><span class="cw">월</span><span class="pill auc">입찰</span><span class="ev">국고 2년 <span class="cw">· 11/3 국고 30년 · 11/9 국고 3년 · 11/26 금통위(수정 전망)</span></span></div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">02</span> 레벨 밴드 &amp; 추천 포지션</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="chd"><div class="name">3년 <span>KTB Fut · 12월물</span></div><div class="pxwrap"><span class="px">103.14</span><span class="pxsub">예상시초 <b>103.11</b> <span style="color:var(--down)">(−3틱)</span></span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">102.92</span><span class="sep">~</span><span class="hi">103.33</span></span></div>
+            <div class="track"><div class="dot" style="left:53%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">전일 고저</span><span class="r"><span class="lo">103.03</span><span class="sep">~</span><span class="hi">103.17</span></span></div>
+            <div class="track"><div class="dot" style="left:79%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">결정 뒤 방향</span><span class="act">고평 2.1틱 · 3.881% · 전환선 +3까지 0.9</span><span class="meta">3Y 3.811 — 되밀림 저항 3.940(낙찰)<br>3Y−기준금리 81.1 · 2-3 4.5</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">10년 <span>KTB Fut · 12월물</span></div><div class="pxwrap"><span class="px">106.76</span><span class="pxsub">예상시초 <b>106.67</b> <span style="color:var(--down)">(−9틱)</span></span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">106.02</span><span class="sep">~</span><span class="hi">107.33</span></span></div>
+            <div class="track"><div class="dot" style="left:56%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">전일 고저</span><span class="r"><span class="lo">106.52</span><span class="sep">~</span><span class="hi">106.81</span></span></div>
+            <div class="track"><div class="dot" style="left:83%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">잔여 롱 결정 뒤 정리</span><span class="act">저평 1.6틱 · 4.167%</span><span class="meta">10Y 4.150 — 낙찰 4.165 하향, 지지 전환<br>외국인 10선 +372 사흘째 감소</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">국내 2-3 · 2-5 <span>국고 3년·5년 − 2년</span></div><div class="pxwrap"><span class="px">4.5 · 19.4</span><span class="pxsub" style="color:var(--up)">전일 +0.5 · +0.4</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">2-3 60일 z</span><span class="r">−1.30σ <span class="cw" style="color:var(--ink3);font-size:10px">· 60일 최저 3.0</span></span></div>
+            <div class="track"><div class="dot" style="left:10%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">2-5 60일 z</span><span class="r">−1.71σ <span class="cw" style="color:var(--ink3);font-size:10px">· 60일 최저 16.5</span></span></div>
+            <div class="track"><div class="dot" style="left:11%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">스티프너 진입</span><span class="act">동결 뒤 2년 > 3년(22/2·23/2)</span><span class="meta">매파 되밀림 있으면 그 뒤, 없으면 바로<br>2-3 목표 12 · 손절 3</span></div>
+      </div>
+
+    </div>
+    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ 데일리 예상레인지·예상시초는 담당자 제시값. <b>시초 3선 −3틱(103.11) · 10선 −9틱(106.67)</b>, 금통위 당일이라 레인지는 양쪽으로 넓다(10선 106.02~107.33). 입찰 낙찰금리가 barrier — 10Y 4.165(10/19) 하향 돌파로 지지 전환, 3Y 3.940(10/12)·2Y 3.875은 되밀림 저항, 50Y 4.195 지지. 미국은 <b>10-21 종가</b>.</p>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">03</span> 매크로 현안 &amp; 커브 괴리</h3>
+    <div class="mc">
+      <div class="box">
+        <p><b>주식 +3.3%에도 강세 — 이레째 외국인이 끌었고 10Y는 입찰 낙찰금리를 뚫었다.</b> 국고 <b>2년 −2.9(3.766)·3년 −2.4(3.811)·5년 −2.5(3.960)·10년 −2.5(4.150)·20년 +0.4(4.198)·30년 −2.0(4.247)·50년 −2.0</b>. 선물 <b>3선 +8틱(103.14, 고 103.17)·10선 +19틱(106.76, 고 106.81)</b>. 코스피 +3.29%(5,736)·코스닥 +1.38% — 주식 급등에도 금리가 내린 건 외국인 선물·IRS와 <b>단기 현물 +7,380</b>이 앞단을 끌었기 때문이고, 2년 −2.9가 가장 컸다. <b>10Y 4.150은 10/19 낙찰 4.165 아래</b> — 낙찰 레벨이 저항에서 지지로 바뀌었다. 반대로 <b>20년만 +0.4</b>로 10-20-30 버터 −5.3(10/27 증액 7,000억 앞 대차 57.84%), 20-30 4.9(−2.4). 3-10 33.9, 2-3 4.5(+0.5), 2-5 19.4(+0.4), 10-30 9.7(+0.5), 3Y−기준금리 81.1(−2.4).</p>
+        <p><b>외국인 — 선물은 줄고 단기 현물은 늘었다.</b> 선물 3선 +3,635·10선 +372(5일 +125,506·+59,996), 현물 <b>+7,476 중 1년 이하 +7,380</b>(23-10 +3,500·24-4 +1,500·24-12 +1,100·26-7 +900·25-1 +500) — 2~3영업일 단기물 매수가 장중 해당 종목을 끌어올릴 만큼 셌고 2년 지표 26-7까지 들어왔다. 초장기는 −1,223(26-8 −348·25-7 −420·25-2 −249·24-2 −192)으로 26-8 이틀째 매도. 보험·기금은 25-7 +900·26-8 +498·26-2 +380으로 초장기 매수 지속 — 일부 보험사는 9월 이후 꾸준히 담는다. 국내는 <b>투신 −8,810(1년 이하 −5,300)</b>·보험 −1,073·기금 −844·은행 +2,423 — 4개 기관 −8,304, 외국인이 사는 단기물을 투신이 팔았다. 3선 고평 2.1틱·10선 저평 1.6틱, 10선 미결제 −3,244(246,598).</p>
+        <p><b>대차 — 30년 지표에 다시 숏, 10년·3년 지표는 계속 상환.</b> <b>26-8 +910(16,084·19.63%)</b>로 교환 발행 뒤 이틀 +1,280, 26-9 +490(21.47%, 10/26 입찰 앞), 26-2 +250. 반대로 26-5 −650(8.51%)·26-6 −500(7.91%)·25-10 −430·26-3 −217로 입찰 종목·바스켓 숏은 계속 풀리고, <b>24-11 −2,000(4,813·2.94%)</b>은 바이백 뒤 대량 상환. 26-10 −60(57.84%)은 증액 전 그대로. 바이백 3.5조는 25-4 0·24-12 −65로 대상 종목 되돌림이 크지 않았다 — 24-12 vs 25-4 6.6(−0.8).</p>
+        <p><b>미국은 앞단이 밀리고 장기물이 내렸다.</b> 10/21 <b>2년 4.808(+2.75)·5년 4.952(+2.25)·10년 5.121(+0.9)·20년 5.4695(−0.1)·30년 5.411(−1.0)</b>, 2-10 31.3(−1.85)·10-30 29.0(−1.9)·10-20 34.85 — 플랫이 사흘째. 스페이스X 어닝에 AI·반도체주 반등(나스닥 +1.05%·다우 +0.69%), WTI는 호르무즈 유조선 공격·후티 사우디 공격 우려에 100까지 갔다가 푸틴이 미국 중재 평화협상 재개에 원칙 동의했다는 소식에 97.15(−0.7%)로 마감 — 아시아 마감 대비 30년 −2. <b>KR10−US10 −97(−3.4)</b>, 60일 저점 −99 턱밑. 어제 쓴 "하락 기반 위 델타 보유, 타겟 2년 4.51·10년 4.75"는 유지하되 앞단 +2.75는 10월 인상 가격 복원이다.</p>
+        <p><b>금통위 당일 — 동결은 가격에 다 있고, 반응은 세 갈래.</b> ① 만장일치 동결 + 성장 상방 문구만: 국고 횡보, 추가 강세 룸 작음 → 10선 롱 잔여분 정리, 2-3·2-5 스티프너 진입(2-3 4.5·2-5 19.4, 60일 최저 3.0·16.5 위), 크레딧으로 시선. ② 인상 소수의견 또는 11월 인상 명시: 3년이 먼저 밀려 3.85~3.90(낙찰 3.940이 저항), 외국인 선물 되돌림, 2-3 플랫 뒤 스팁 — 스티프너는 되밀림 뒤 진입. ③ 비둘기 해석(성장 문구 약함): 10Y 4.10~4.12, 3Y 3.75 — 외국인 추격이지만 로컬은 못 따라가 되돌림 빠름. 공통 — <b>10선 롱 잔여 절반은 결정 뒤 정리</b>, 30년은 20년 증액 앞 20-30 4.9(−2.4)라 26-8 대신 26-10 되밀림(10/27) 뒤. 크레딧은 매파적이지 않으면 로컬 델타 확대 수요가 스프레드 큰 1년·2년 공사채·은행채로 옮겨가는 분기점 — 어제 이번 주 최다 매수 호가, 1년 특은채 민평~−1원.</p>
+      </div>
+      <div class="box">
+        <table class="ctable">
+          <thead><tr><th>커브</th><th>10-21(bp)</th><th>전일 대비</th><th>z(60d)</th></tr></thead>
+          <tbody>
+            <tr><td>3-10</td><td>33.9</td><td class="cool">−0.1</td><td class="zbar">−2.06σ</td></tr>
+            <tr><td>3-5</td><td>14.9</td><td class="cool">−0.1</td><td class="zbar">−1.96σ</td></tr>
+            <tr><td>2-5</td><td>19.4</td><td class="hot">+0.4</td><td class="zbar">−1.71σ</td></tr>
+            <tr><td>5-10</td><td>19.0</td><td>0.0</td><td class="zbar">−1.68σ</td></tr>
+            <tr><td>3-30</td><td>43.6</td><td class="hot">+0.4</td><td class="zbar">−1.67σ</td></tr>
+            <tr><td>30-50</td><td>−9.5</td><td>0.0</td><td class="zbar">−1.61σ</td></tr>
+            <tr><td>선물 3-10</td><td>28.6</td><td class="hot">+0.6</td><td class="zbar">−1.52σ</td></tr>
+            <tr><td>5-30</td><td>28.7</td><td class="hot">+0.5</td><td class="zbar">−1.47σ</td></tr>
+            <tr><td>2-3</td><td>4.5</td><td class="hot">+0.5</td><td class="zbar">−1.30σ</td></tr>
+            <tr><td>10-30</td><td>9.7</td><td class="hot">+0.5</td><td class="zbar">−1.28σ</td></tr>
+            <tr><td>5-10-30 버터</td><td>−9.3</td><td class="hot">+0.5</td><td class="zbar">−0.91σ</td></tr>
+            <tr><td>20-30</td><td>4.9</td><td class="cool">−2.4</td><td class="zbar">−0.42σ</td></tr>
+            <tr><td>3-10-30 버터</td><td>−24.2</td><td class="hot">+0.6</td><td class="zbar">−0.10σ</td></tr>
+            <tr><td>2-3-5 버터</td><td>10.4</td><td class="cool">−0.6</td><td class="zbar">−0.04σ</td></tr>
+            <tr><td>3-5-10 버터</td><td>4.1</td><td class="hot">+0.1</td><td class="zbar">+0.64σ</td></tr>
+            <tr><td>10-20-30 버터</td><td>0.1</td><td class="cool">−5.3</td><td class="zbar">+0.73σ</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ 커브는 <b>10-21 국고 지표물 현물 금리</b> 기준(민평3사) · z는 <b>60영업일 롤링·모표준편차</b><br>※ <b>10-20-30 버터 0.1(−5.3) · 20-30 4.9(−2.4)</b> — 20년 홀로 +0.4, 10/27 증액 앞<br>※ <b>2-3 4.5(+0.5) · 2-5 19.4(+0.4)</b> — 2년 −2.9 최강, 스티프너 진입 자리<br>※ <b>3년−기준금리 81.1bp(−2.4)</b> 60일 z −1.80 · KR10−US10 −97</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">04</span> 선물 이론가 괴리 &amp; 바스켓 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-21 · 2026년 12월물 · 잔존 54일</span></h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>종목</th><th>종가</th><th>현물가격</th><th>시장 베이시스</th><th>이론가</th><th>고저평</th></tr></thead>
+          <tbody>
+            <tr><td>3년 <span style="color:var(--ink3);font-size:10px">KTB3F2612 · 내재 3.881%</span></td><td>103.14</td><td>103.229</td><td class="pl">−8.9틱</td><td>103.119</td><td class="mn">고평 2.1틱</td></tr>
+            <tr><td>10년 <span style="color:var(--ink3);font-size:10px">KTB10F2612 · 내재 4.167%</span></td><td>106.76</td><td>106.933</td><td class="pl">−17.3틱</td><td>106.776</td><td class="pl">저평 1.6틱</td></tr>
+          </tbody>
+        </table>
+        <table style="margin-top:10px">
+          <thead><tr><th>바스켓</th><th>Spot</th><th>Forward</th><th>F−S</th><th>대차 비중</th><th>외국인 비중</th></tr></thead>
+          <tbody>
+            <tr><td>3선 · 25-10</td><td>3.762</td><td>3.807</td><td>+4.5</td><td>15.47%</td><td>15.01%</td></tr>
+            <tr><td>3선 · 26-5 <span style="color:var(--ink3);font-size:10px">3Y 지표</span></td><td>3.811</td><td>3.851</td><td>+4.0</td><td>8.51%</td><td>8.50%</td></tr>
+            <tr><td>3선 · 26-3 <span style="color:var(--ink3);font-size:10px">5Y 구지표</span></td><td>3.977</td><td>4.007</td><td>+3.0</td><td>10.09%</td><td>41.69%</td></tr>
+            <tr><td>10선 · 25-11</td><td>4.142</td><td>4.161</td><td>+1.9</td><td>5.80%</td><td>32.64%</td></tr>
+            <tr><td>10선 · 26-6 <span style="color:var(--ink3);font-size:10px">10Y 지표</span></td><td>4.150</td><td>4.169</td><td>+1.9</td><td>7.91%</td><td>33.77%</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>3선 고평 2.1틱 — 전환선(+3)까지 0.9틱.</b> 어제 +1.3 → +2.1, 외국인 3선 매수(+3,635)에 현물 3Y −2.4(≈7틱)보다 선물 +8틱이 조금 더 갔다. 10선은 저평 1.6틱으로 다시 마이너스 — 외국인 10선이 +372로 멈추자 선물이 현물(10Y −2.5 ≈ 21틱)을 못 따라갔다(+19틱). PVBP 3선 2.8594·10선 8.4354, 잔존 54일. <b>+3틱 고평 전환(2020년 이후 11번, 전부 20일 내 돌파)이 금통위 당일 걸려 있다</b> — 전환 뒤 20일간 3Y가 더 내린 경우 7/11<br>· 바스켓 대차 26-5 8.51%(−650)·25-10 15.47%(−430)·26-3 10.09%(−217), 10선 26-6 7.91%(−500)·25-11 5.80%(+160)<br>· 60분봉으로 3선 103.14는 볼린저 상단(103.19) 아래 5틱, 10선 106.76은 15분 상단(106.89) 아래 — 금통위 전 밴드 상단권 유지</p>
+      </div>
+      <div class="box flow">
+        <table>
+          <thead><tr><th>종목쌍 (우측−좌측)</th><th>스프레드</th><th>1D</th><th>3M 평균</th><th>z(3M)</th></tr></thead>
+          <tbody>
+            <tr><td>25-3 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>7.6</td><td class="mn">+1.0</td><td>10.9</td><td class="zbar">−1.98σ</td></tr>
+            <tr><td>25-10 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">3선 바스켓</span></td><td>21.5</td><td class="mn">+0.4</td><td>28.9</td><td class="zbar">−1.84σ</td></tr>
+            <tr><td>25-4 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>25.1</td><td class="pl">−0.2</td><td>35.6</td><td class="zbar">−1.83σ</td></tr>
+            <tr><td>26-5 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>16.6</td><td class="mn">+0.3</td><td>22.2</td><td class="zbar">−1.82σ</td></tr>
+            <tr><td>25-8 vs <b>26-3</b></td><td>2.9</td><td class="mn">+0.5</td><td>4.5</td><td class="zbar">−1.71σ</td></tr>
+            <tr><td>25-4 vs <b>25-10</b> <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>3.6</td><td class="pl">−0.6</td><td>6.7</td><td class="zbar">−1.57σ</td></tr>
+            <tr><td>25-4 vs <b>26-5</b> <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>8.5</td><td class="pl">−0.5</td><td>13.4</td><td>−1.46σ</td></tr>
+            <tr><td>24-12 vs 25-4 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>6.6</td><td class="pl">−0.8</td><td>11.2</td><td>−1.15σ</td></tr>
+            <tr><td>26-7 vs <b>25-10</b> <span style="color:var(--ink3);font-size:10px">2Y 지표 · 낙찰 3.875</span></td><td>−0.4</td><td class="mn">+0.4</td><td>1.2</td><td>−0.82σ</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>26-3 고평이 처음으로 풀리기 시작했다 — 25-3 대비 7.6(+1.0), z −1.98로 −2 밖.</b> 26-5 vs 26-3 16.6(+0.3)·25-10 vs 26-3 21.5(+0.4)·25-8 vs 26-3 2.9(+0.5) 모두 되돌림. 26-3 대차 −217로 숏이 빠지는 중인데도 풀린 건 외국인 5년 경과물 매도(26-3)가 이틀째 이어진 덕. <b>26-5 매수 / 26-3 매도는 목표 20, 유지</b><br>· 바이백 뒤 24-12 vs 25-4 6.6(−0.8)·25-4 vs 25-10 3.6(−0.6) — 월요일 적재분 되돌림은 완만, 재진입 없음<br>· 26-7 vs 25-10 −0.4(+0.4) — 외국인 26-7 +900에도 2년 지표는 제자리, 26-7 대차 −200</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">05</span> 수급 · 선물 포지션</h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>외국인 선물 순매수 (계약)</th><th>3선</th><th>10선</th></tr></thead>
+          <tbody>
+            <tr><td>당일 (10-21)</td><td class="pl">+3,635</td><td class="pl">+372</td></tr>
+            <tr><td>5일</td><td class="pl">+125,506</td><td class="pl">+59,996</td></tr>
+            <tr><td>10일</td><td class="pl">+29,445</td><td class="pl">+20,587</td></tr>
+            <tr><td>20일</td><td class="pl">+90,532</td><td class="pl">+33,193</td></tr>
+            <tr><td>6개월</td><td class="pl">+104,199</td><td class="pl">+28,856</td></tr>
+          </tbody>
+        </table>
+        <table style="margin-top:10px">
+          <thead><tr><th>투자자별 (10-21)</th><th>3선</th><th>10선</th></tr></thead>
+          <tbody>
+            <tr><td>외국인</td><td class="pl">+3,635</td><td class="pl">+372</td></tr>
+            <tr><td>증권</td><td class="pl">+3,345</td><td class="mn">−1,815</td></tr>
+            <tr><td>은행</td><td class="mn">−6,160</td><td class="pl">+1,820</td></tr>
+            <tr><td>투신</td><td class="mn">−778</td><td class="mn">−353</td></tr>
+            <tr><td>보험</td><td class="pl">+241</td><td class="mn">−4</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11.5px;color:var(--ink3)"><b>이레째 매수지만 10선은 +372로 멈췄다.</b> 3선 +3,635는 증권 +3,345와 같이 샀고 은행 −6,160이 팔았다 — 증권이 사흘 만에 매수 전환. 10선은 은행 +1,820 매수 vs 증권 −1,815 매도로 외국인 없이 국내끼리 손바뀜, 미결제 −3,244(246,598)로 롱 청산이 더 컸다. 5일 누적 3선 +125,506·10선 +59,996, 6개월 3선 +104,199. 10/12 이후 8일 연속 순매수, 10선은 사흘째 감소(+10,243 → +3,088 → +372).</p>
+      </div>
+      <div class="box">
+        <ul class="pv">
+          <li><span class="t">리뷰</span><span>10-21 국고 <b>2년 −2.9 · 3년 −2.4 · 5년 −2.5 · 10년 −2.5 · 20년 +0.4 · 30년 −2.0bp</b>, 선물 <b>3선 +8틱(103.14) · 10선 +19틱(106.76)</b>. 10Y 4.150이 10/19 낙찰 4.165 하향. 20-30 4.9(−2.4)·10-20-30 버터 −5.3, 2-3 4.5(+0.5), 3-10 33.9. 코스피 +3.29%·원달러 1,325·WTI 97.15(−0.7%).</span></li>
+          <li><span class="t">대차</span><span><b>26-8 +910(16,084 · 19.63%) — 교환 뒤 이틀 +1,280, 30년 지표 숏 재적재.</b> 26-9 +490(21.47%)·26-2 +250·25-11 +160. 상환은 26-5 −650(8.51%)·26-6 −500(7.91%)·25-10 −430·26-3 −217·26-7 −200, <b>24-11 −2,000</b>(바이백 뒤). 26-10 −60(57.84%) 증액 전 유지.</span></li>
+          <li><span class="t">선물</span><span><b>3선 고평 2.1틱 — 전환선 +3까지 0.9틱, 10선 저평 1.6틱.</b> 외국인 3선 +3,635 · 10선 +372(사흘째 감소), 10선 미결제 −3,244. 금통위 뒤 3선 +3 돌파 여부가 '외국인 선물 → 차익 → 현물' 경로의 시험.</span></li>
+          <li><span class="t">현물</span><span><b>외국인 +7,476은 1년 이하 +7,380 — 23-10 +3,500 · 24-4 +1,500 · 24-12 +1,100 · 26-7 +900.</b> 초장기 −1,223(26-8 −348 이틀째). 보험·기금 25-7 +900 · 26-8 +498 · 26-2 +380. 국내 4개 기관 −8,304(투신 −8,810 · 보험 −1,073 · 기금 −844 / 은행 +2,423).</span></li>
+          <li><span class="t">전략</span><span><b>금통위 — 10선 롱 잔여 절반은 결정 뒤 정리. 2-3·2-5 스티프너는 매파 되밀림이 있으면 그 뒤, 없으면 바로 진입.</b> 3Y 되밀림 저항 3.940(낙찰), 10Y 지지 4.165(낙찰). 30년은 26-8 대신 10/27 증액 뒤 26-10. 26-5 매수 / 26-3 매도 16.6 유지(목표 20).</span></li>
+          <li><span class="t">크레딧</span><span><b>이번 주 최다 매수 호가 — 로컬이 델타를 늦게 채우려 크레딧을 조금씩 산다.</b> 증권 RP 단기 매수로 1년 특은채 민평~−1원·시은채 −1~−1.5원·공사채 1년 −1원, 2~3년 은행채는 국고 −2bp 이상, 공사채 2년은 공백 지속, 3년 국고 −2~3bp. 카드채 2~3년 민평 언더 2~2.5bp로 선물보다 강, 캐피탈 1.5년 이상 통당 −2bp. <b>금통위가 매파적이지 않으면 스프레드 큰 1~2년 공사채·은행채로 시선이 옮겨가는 분기점</b> — 선별 진입 준비, 비중 확대는 결과 확인 뒤.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">06</span> 장외 현물 순매수 — 외국인 vs 국내 기관 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-21 · 억원 · 국고</span></h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>만기 구간</th><th>외국인 당일</th><th>외국인 주간 (10/15~10/21)</th></tr></thead>
+          <tbody>
+            <tr><td>1년 이하</td><td class="pl">+7,380</td><td class="pl">+22,151</td></tr>
+            <tr><td>2년 이하</td><td class="pl">+2,045</td><td class="pl">+8,342</td></tr>
+            <tr><td>3년 이하</td><td class="mn">−65</td><td class="pl">+1,667</td></tr>
+            <tr><td>5년 이하</td><td class="mn">−413</td><td class="pl">+1,007</td></tr>
+            <tr><td>10년 이하</td><td class="mn">−249</td><td class="pl">+5,917</td></tr>
+            <tr><td>10년 초과</td><td class="mn">−1,223</td><td class="mn">−8,888</td></tr>
+            <tr><td><b>국고 계</b></td><td class="pl"><b>+7,476</b></td><td class="pl"><b>+30,195</b></td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>1년 이하 +7,380 — 사흘 연속 단기 집중, 주간 +22,151.</b> 23-10 +3,500·24-4 +1,500·24-12 +1,100·25-1 +500에 2년 지표 26-7 +900까지. 장중 해당 종목이 눈에 띄게 강해질 정도의 강도였고 2년 −2.9가 전 구간 최강인 이유다. 3년 이상은 −65·−413·−249로 팔았고 <b>초장기 −1,223은 26-8 −348(이틀째)·25-7 −420·25-2 −249·24-2 −192</b> — 주간 10년 초과 −8,888. 선물·IRS로 듀레이션, 현물은 1년 이하라는 구조에 이번 주는 2년 지표가 더해졌다.</p>
+      </div>
+      <div class="box flow">
+        <table>
+          <thead><tr><th>기관 (10-21)</th><th>국고 계</th><th style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px">10년 초과</th></tr></thead>
+          <tbody>
+            <tr><td>보험</td><td class="mn">−1,073</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+993</td></tr>
+            <tr><td>투신</td><td class="mn">−8,810</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−8</td></tr>
+            <tr><td>은행</td><td class="pl">+2,423</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+348</td></tr>
+            <tr><td>기금</td><td class="mn">−844</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+75</td></tr>
+            <tr><td>외국인</td><td class="pl">+7,476</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−1,223</td></tr>
+            <tr><td><b>합계</b></td><td class="mn"><b>−828</b></td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl"><b>+185</b></td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>투신 −8,810 — 외국인이 사는 단기물을 투신이 팔았다.</b> 1년 이하 −5,300·3년 이하 −1,356·10년 이하 −950, 기타(은행채 등) +9,387로 교체. 보험 −1,073은 <b>10년 초과 +993(25-7 +900·26-8 +498·26-2 +380)</b>에 10년 이하 −1,000·3년 −530·5년 −516 — 사흘째 초장기 매수, 일부 보험사는 9월 이후 꾸준하다. 기금 −844(10년 −560), 은행 +2,423(1년 이하 +2,950, 통안 +2,100). 국내 4개 기관 −8,304로 이틀째 매도. 주간 보험 10년 초과 +10,357, 투신 −18,318, 은행 +9,443, 기금 −1,392.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">07</span> 대차잔고 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-21 기준 · 억원</span></h3>
+    <div class="low">
+      <div class="box flow">
+        <table>
+          <thead><tr><th>종목</th><th>잔량</th><th>상장 대비</th><th>전일비</th><th>주간</th><th>월간</th></tr></thead>
+          <tbody>
+            <tr><td>25-10 <span style="color:var(--ink3);font-size:10px">3선 바스켓</span></td><td>29,870</td><td>15.47%</td><td class="pl">−430</td><td class="pl">−1,930</td><td class="pl">−6,180</td></tr>
+            <tr><td>26-2 <span style="color:var(--ink3);font-size:10px">30Y 구지표</span></td><td>27,710</td><td>9.74%</td><td class="mn">+250</td><td class="mn">+670</td><td class="mn">+13,270</td></tr>
+            <tr><td>26-3 <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>21,744</td><td>10.09%</td><td class="pl">−217</td><td class="pl">−2,031</td><td class="pl">−8,481</td></tr>
+            <tr><td>26-8 <span style="color:var(--ink3);font-size:10px">30Y 지표</span></td><td>16,084</td><td>19.63%</td><td class="mn">+910</td><td class="mn">+1,234</td><td class="mn">+4,550</td></tr>
+            <tr><td>26-5 <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>15,249</td><td>8.51%</td><td class="pl">−650</td><td class="pl">−5,990</td><td class="pl">−15,430</td></tr>
+            <tr><td>26-6 <span style="color:var(--ink3);font-size:10px">10Y 지표 · 낙찰 4.165</span></td><td>13,820</td><td>7.91%</td><td class="pl">−500</td><td class="pl">−5,040</td><td class="pl">−5,520</td></tr>
+            <tr><td>24-13</td><td>12,809</td><td>8.10%</td><td>0</td><td class="pl">−840</td><td class="pl">−886</td></tr>
+            <tr><td>25-3</td><td>12,645</td><td>6.16%</td><td class="pl">−82</td><td class="mn">+2,294</td><td class="pl">−617</td></tr>
+            <tr><td>25-4 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>12,203</td><td>4.36%</td><td>0</td><td class="pl">−791</td><td class="pl">−14,844</td></tr>
+            <tr><td>25-8</td><td>10,576</td><td>6.58%</td><td class="mn">+10</td><td class="pl">−1,056</td><td class="pl">−2,227</td></tr>
+            <tr><td>26-9 <span style="color:var(--ink3);font-size:10px">5Y 지표 · 10/26 입찰</span></td><td>10,540</td><td>21.47%</td><td class="mn">+490</td><td class="mn">+1,410</td><td class="mn">+5,190</td></tr>
+            <tr><td>25-11 <span style="color:var(--ink3);font-size:10px">10선 바스켓</span></td><td>10,242</td><td>5.80%</td><td class="mn">+160</td><td class="pl">−1,607</td><td class="pl">−5,421</td></tr>
+            <tr><td>24-7 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>7,011</td><td>6.75%</td><td class="mn">+107</td><td class="pl">−278</td><td class="mn">+397</td></tr>
+            <tr><td>25-5 <span style="color:var(--ink3);font-size:10px">10Y 비지표</span></td><td>5,690</td><td>4.22%</td><td class="mn">+9</td><td class="pl">−81</td><td class="pl">−1,651</td></tr>
+            <tr><td>25-9 <span style="color:var(--ink3);font-size:10px">20Y 구지표</span></td><td>5,110</td><td>7.89%</td><td class="pl">−100</td><td class="pl">−810</td><td class="pl">−2,630</td></tr>
+            <tr><td>26-10 <span style="color:var(--ink3);font-size:10px">20Y 지표 · 10/27 증액</span></td><td>4,870</td><td>57.84%</td><td class="pl">−60</td><td class="mn">+1,170</td><td class="mn">+3,320</td></tr>
+            <tr><td>24-11</td><td>4,813</td><td>2.94%</td><td class="pl">−2,000</td><td class="pl">−2,000</td><td class="mn">+2,326</td></tr>
+            <tr><td>26-1</td><td>2,603</td><td>1.34%</td><td>0</td><td class="pl">−177</td><td class="pl">−1,410</td></tr>
+            <tr><td>24-12 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>2,486</td><td>1.68%</td><td class="pl">−65</td><td class="mn">+867</td><td class="pl">−27</td></tr>
+            <tr><td>26-7 <span style="color:var(--ink3);font-size:10px">2Y 지표 · 낙찰 3.875</span></td><td>790</td><td>1.02%</td><td class="pl">−200</td><td class="mn">+60</td><td class="pl">−4,460</td></tr>
+            <tr><td>26-11 <span style="color:var(--ink3);font-size:10px">50Y 지표 · 낙찰 4.195</span></td><td>700</td><td>5.00%</td><td>0</td><td class="mn">+200</td><td class="mn">+700</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>26-8 +910 — 교환 발행 뒤 이틀 +1,280(16,084 · 19.63%), 30년 지표 숏이 다시 쌓인다.</b> 외국인이 26-8을 이틀째 팔고(−348) 보험이 받는(+498) 구도와 같은 방향. 26-9 +490(10,540 · 21.47%)은 10/26 입찰 앞, 26-2 +250(27,710). 상환은 입찰 종목·바스켓 — 26-5 −650(15,249 · 8.51%)·26-6 −500(13,820 · 7.91%)·25-10 −430·26-3 −217·26-7 −200, 그리고 <b>24-11 −2,000(6,813 → 4,813)</b>은 바이백 뒤 대량 반환. 바이백 대상 25-4 0·24-12 −65·24-7 +107 — 월요일 적재분 되돌림은 아직 작다. <b>26-10 −60(4,870 · 57.84%)은 10/27 증액까지 그대로이고 어제 20년이 홀로 +0.4</b>로 그 숏이 가격에 나오기 시작했다.</p>
+      </div>
+    </div>
+  </section>  </div><!--/colmain-->
+  <aside class="colside">
+  <section>
+    <h3 class="sec-h"><span class="n">08</span> 시황 피드 <span class="live">LIVE</span></h3>
+    <div id="feed" class="feed-list"><div class="feed-empty">불러오는 중…</div></div>
+  </section>
+  </aside>
+  </div><!--/cols-->
+  <script>
+  (function(){
+    var el=document.getElementById('feed');
+    function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+    function fmt(s){return esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');}
+    function render(d){
+      var es=(d&&d.entries)||[];
+      if(!es.length){el.innerHTML='<div class="feed-empty">아직 업데이트가 없습니다.</div>';return;}
+      el.innerHTML=es.map(function(e){return '<div class="feed-item'+(e.u?' urgent':'')+'"><div class="feed-time">'+esc(e.t)+'</div><div class="feed-body"><div class="feed-msg clip">'+(e.u?'<span class="ubadge">긴급</span>':'')+fmt(e.m)+'</div></div></div>';}).join('');
+      Array.prototype.forEach.call(el.querySelectorAll('.feed-msg.clip'),function(m){
+        if(m.scrollHeight<=m.clientHeight+4){m.classList.remove('clip');return;}
+        var b=document.createElement('button');b.className='feed-more';b.textContent='더보기';
+        b.onclick=function(){b.textContent=m.classList.toggle('clip')?'더보기':'접기';};
+        m.parentNode.appendChild(b);});
+    }
+    function load(){fetch('../../feed.json?_='+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){el.innerHTML='<div class="feed-empty">피드를 불러오지 못했습니다.</div>';});}
+    load();setInterval(load,60000);
+  })();
+  </script>
+
+</div>
+<script>
+(function(){
+  var sel=document.getElementById('histsel'); if(!sel) return;
+  var inArc=location.pathname.indexOf('/archive/')>=0;
+  var root=inArc?'../../':'';
+  var parts=location.pathname.split('/');
+  var page=parts[parts.length-1]||'index.html';
+  fetch(root+'archive/dates.json?_='+Date.now()).then(function(r){return r.json();}).then(function(dates){
+    var cur=inArc?location.pathname.split('/archive/')[1].split('/')[0]:'latest';
+    var h='<option value="latest"'+(cur==='latest'?' selected':'')+'>최신</option>';
+    dates.slice().sort().reverse().forEach(function(d){h+='<option value="'+d+'"'+(cur===d?' selected':'')+'>'+d+'</option>';});
+    sel.innerHTML=h;
+    sel.onchange=function(){
+      var v=sel.value;
+      location.href=(v==='latest')?(root+page):(root+'archive/'+v+'/'+page);
+    };
+  }).catch(function(){ if(sel.parentNode) sel.parentNode.style.display='none'; });
+})();
+</script>
