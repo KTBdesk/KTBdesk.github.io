@@ -1,4 +1,4 @@
-<title>US 금리 데일리 · 2026-10-22</title>
+<title>US 금리 데일리 · 2026-10-23</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -108,6 +108,14 @@
   .pos .meta{flex-basis:100%;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:left;line-height:1.55}
   .foot{margin-top:20px;font-size:11px;color:var(--ink3);line-height:1.7;border-top:1px solid var(--line);padding-top:12px}
   .foot b{color:var(--ink2)}
+  /* fold */
+  section.fold>.sec-h{cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+  section.fold>.sec-h::after{order:1}
+  section.fold>.sec-h .fold-t{order:2;font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink2);text-transform:none;letter-spacing:0;border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--card,transparent);white-space:nowrap}
+  section.fold.closed>.sec-h{margin-bottom:0}
+  section.fold.closed>.sec-h .fold-t{color:var(--gold);border-color:var(--gold)}
+  section.fold.closed>*:not(.sec-h){display:none}
+  @media print{section.fold.closed>*:not(.sec-h){display:block}section.fold>.sec-h .fold-t{display:none}}
 </style>
 
 <div class="wrap">
@@ -121,24 +129,23 @@
       <div class="lang"><a href="index.html">KTB</a><a class="on" href="us.html">UST</a><a class="on" href="us.html">KO</a><a href="us_en.html">EN</a></div>
       <div class="histwrap">📅 <select id="histsel" aria-label="지난 리포트"><option>지난 리포트</option></select></div>
       <span class="tag">Desk Daily</span><br>
-      리포트 <span class="d">2026-10-22 (목)</span><br>
-      10-21 미국 종가 기준
+      리포트 <span class="d">2026-10-23 (금)</span><br>
+      10-22 미국 종가 기준
     </div>
   </div>
 
   <div class="keys">
-    <div class="keychip hot"><div class="dd">10-21</div><div class="ev">📈 <b>2년 4.808(+2.75) · 5년 4.952(+2.25) · 10년 5.121(+0.9) · 30년 5.411(−1.0)</b> — 앞단 밀리고 장기물 내린 플랫 사흘째, 2-10 31.3(−1.85) · 10-30 29.0(−1.9)</div><div class="dt">종가</div></div>
-    <div class="keychip hot"><div class="dd">유가</div><div class="ev">🛢 WTI 장중 100(호르무즈 유조선 공격·후티 사우디 공격 우려) → <b>97.15(−0.7%)</b> 마감 — 푸틴, 미국 중재 평화협상 재개에 원칙 동의 · 미 원유재고 감소</div><div class="dt">되돌림</div></div>
-    <div class="keychip"><div class="dd">위험자산</div><div class="ev">📊 스페이스X 어닝 서프라이즈 — 나스닥 +1.05% · 다우 +0.69% · 금 4,143(−0.4%) · 비트코인 +1.9% · <b>코스피 +3.29%</b></div><div class="dt">10-21</div></div>
-    <div class="keychip"><div class="dd">한미</div><div class="ev">🇰🇷 한국 10년 −2.5 vs 미국 +0.9 — <b>KR10−US10 −97bp(−3.4)</b> · 60일 저점 −99 턱밑 · 레인지 2Y 4.756~4.85 · 10Y 5.023~5.17</div><div class="dt">z −1.93</div></div>
+    <div class="keychip hot"><div class="dd">10-22</div><div class="ev">📉 <b>2년 4.642(−16.6) · 5년 4.7715(−18.05) · 10년 4.9545(−16.65) · 30년 5.282(−12.9)</b> — 하루 −13~−18bp, 10-30 32.75(+3.75) 불스팁</div><div class="dt">종가</div></div>
+    <div class="keychip hot"><div class="dd">AI</div><div class="ev">💥 메타 — 실적 상회에도 <b>대규모 AI 투자·조달 부담, 잉여현금흐름 음전환, CDS 급등</b>에 급락 · 나스닥 −2.60% · 다우 +0.02% · <b>코스피 −3.52% · 코스닥 −3.62%</b></div><div class="dt">안전자산</div></div>
+    <div class="keychip"><div class="dd">유가</div><div class="ev">🛢 WTI 99.47(+2.4%) — 후티 사우디 공격, 100 재접근 · 물가엔 약세 재료지만 위험회피가 압도 · 금 4,150(+0.2%) · 비트코인 −3.3%</div><div class="dt">10-22</div></div>
+    <div class="keychip"><div class="dd">한미</div><div class="ev">🇰🇷 한국 10년 −0.3 vs 미국 −16.65 — <b>KR10−US10 −97 → −81(+16)</b> · 레인지 2Y 4.58~4.71 · 10Y 4.87~5.04</div><div class="dt">z −1.16</div></div>
   </div>
 
   <section>
     <h3 class="sec-h"><span class="n">01</span> 다가오는 일정</h3>
     <div class="cal">
-      <div class="row today"><span class="cd">10/22</span><span class="cw">목</span><span class="pill cpi">지표</span><span class="ev">베이지북 <span class="cw">03:00</span> · 미국 기존주택판매 <span class="cw">23:00</span></span></div>
-      <div class="row"><span class="cd">10/23</span><span class="cw">금</span><span class="pill cpi">지표</span><span class="ev"><b>미국 10월 S&amp;P PMI</b> <span class="cw">22:45</span> · 미시간 확정치 <span class="cw">23:00</span></span></div>
-      <div class="row"><span class="cd">10/28</span><span class="cw">수</span><span class="pill rate">금리</span><span class="ev"><b>미국 FOMC</b> <span class="cw">· 3분기 GDP 속보 10/29</span></span></div>
+      <div class="row today"><span class="cd">10/23</span><span class="cw">금</span><span class="pill cpi">지표</span><span class="ev"><b>미국 10월 S&amp;P PMI</b> <span class="cw">22:45</span> · 미시간 확정치 <span class="cw">23:00</span></span></div>
+      <div class="row"><span class="cd">10/28</span><span class="cw">수</span><span class="pill rate">금리</span><span class="ev"><b>미국 FOMC</b> <span class="cw">· 3분기 GDP 속보 10/29 · PCE 10/30</span></span></div>
     </div>
   </section>
 
@@ -147,79 +154,80 @@
     <div class="cards">
 
       <div class="card">
-        <div class="chd"><div class="name">2년 <span>UST</span></div><div class="pxwrap"><span class="px">4.808</span><span class="pxsub" style="color:var(--down)">10/21 +2.75bp</span></div></div>
+        <div class="chd"><div class="name">2년 <span>UST</span></div><div class="pxwrap"><span class="px">4.642</span><span class="pxsub" style="color:var(--up)">10/22 −16.6bp · 장전 4.66</span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">4.756</span><span class="sep">~</span><span class="hi">4.85</span></span></div>
-            <div class="track"><div class="dot" style="left:55%"></div></div>
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">4.58</span><span class="sep">~</span><span class="hi">4.71</span></span></div>
+            <div class="track"><div class="dot" style="left:47%"></div></div>
           </div>
           <div class="bd">
             <div class="bl"><span class="k">60일 실현 레인지</span><span class="r"><span class="lo">4.134</span><span class="sep">~</span><span class="hi">4.932</span></span></div>
-            <div class="track"><div class="dot" style="left:84%"></div></div>
+            <div class="track"><div class="dot" style="left:64%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">델타는 2년보다 5·10년</span><span class="act">20일선 4.78 위 복귀 · 타겟 4.51</span><span class="meta">AI주 반등에 인상 가격 복원<br>2-5 14.4(−0.5)</span></div>
+        <div class="pos"><span class="badge flat">델타 보유 — 타겟 4.51</span><span class="act">20일선 4.78 하향 · 10월 인상 가격 소멸</span><span class="meta">AI 급락에 −16.6<br>2-5 12.95(−1.45)</span></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="name">10년 <span>UST</span></div><div class="pxwrap"><span class="px">5.121</span><span class="pxsub" style="color:var(--down)">10/21 +0.9bp</span></div></div>
+        <div class="chd"><div class="name">10년 <span>UST</span></div><div class="pxwrap"><span class="px">4.9545</span><span class="pxsub" style="color:var(--up)">10/22 −16.65bp · 장전 4.96</span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">5.023</span><span class="sep">~</span><span class="hi">5.17</span></span></div>
-            <div class="track"><div class="dot" style="left:66%"></div></div>
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">4.87</span><span class="sep">~</span><span class="hi">5.04</span></span></div>
+            <div class="track"><div class="dot" style="left:49%"></div></div>
           </div>
           <div class="bd">
             <div class="bl"><span class="k">60일 실현 레인지</span><span class="r"><span class="lo">4.550</span><span class="sep">~</span><span class="hi">5.288</span></span></div>
-            <div class="track"><div class="dot" style="left:77%"></div></div>
+            <div class="track"><div class="dot" style="left:55%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">델타 보유 — 타겟 4.75</span><span class="act">20일선 5.15 아래 · 5.086 → 5.05 → 4.99</span><span class="meta">저항 5.165 · 5.17 · 5.19<br>KR10−US10 −97</span></div>
+        <div class="pos"><span class="badge flat">델타 보유 — 타겟 4.75</span><span class="act">4.93(9월 박스 상단) → 4.887(60일 평균)</span><span class="meta">추가는 5.00~5.04 되밀림에서 · 손절 5.10<br>KR10−US10 −81(+16)</span></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="name">30년 <span>UST</span></div><div class="pxwrap"><span class="px">5.411</span><span class="pxsub" style="color:var(--up)">10/21 −1.0bp</span></div></div>
+        <div class="chd"><div class="name">30년 <span>UST</span></div><div class="pxwrap"><span class="px">5.282</span><span class="pxsub" style="color:var(--up)">10/22 −12.9bp</span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">10–30 스프레드</span><span class="r">29.0bp <span style="color:var(--ink3);font-size:10px">· 60일 z −1.67 · 1년 z −2.80</span></span></div>
-            <div class="track"><div class="dot" style="left:2%"></div></div>
+            <div class="bl"><span class="k">10–30 스프레드</span><span class="r">32.75bp <span style="color:var(--ink3);font-size:10px">· 60일 z −1.22 · 1년 z −2.36</span></span></div>
+            <div class="track"><div class="dot" style="left:8%"></div></div>
           </div>
           <div class="bd">
-            <div class="bl"><span class="k">20–30 스프레드</span><span class="r">−5.85bp <span style="color:var(--ink3);font-size:10px">· 60일 최저 −5.90</span></span></div>
-            <div class="track"><div class="dot" style="left:1%"></div></div>
+            <div class="bl"><span class="k">20–30 스프레드</span><span class="r">−4.05bp <span style="color:var(--ink3);font-size:10px">· +1.8 · 60일 z −0.84</span></span></div>
+            <div class="track"><div class="dot" style="left:25%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">보유 유지</span><span class="act">5.50 박스 하단 아래 닷새째</span><span class="meta">유가 되돌림을 장기물이 샀다<br>CTD 교체 꼬리는 6% 근처 얘기</span></div>
+        <div class="pos"><span class="badge flat">보유 유지</span><span class="act">5.50 박스 하단 아래 엿새째</span><span class="meta">앞단이 더 내린 불스팁<br>CTD 교체 꼬리는 멀어졌다(30년 5.28)</span></div>
       </div>
 
     </div>
-    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ 데일리 예상레인지는 담당자 제시값(2Y <b>4.756~4.85</b> · 10Y <b>5.023~5.17</b>). dot은 <b>10-21 종가</b>, 장전 2Y 4.81·10Y 5.12. 기술적 하락 기반 위 델타 보유 뷰 유지 — 최종 타겟 2년 4.51 · 10년 4.75.</p>
+    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ 데일리 예상레인지는 담당자 제시값(2Y <b>4.58~4.71</b> · 10Y <b>4.87~5.04</b>). dot은 <b>10-22 종가</b>, 장전 2Y 4.66·10Y 4.96. 델타 보유 뷰의 최종 타겟 2년 4.51 · 10년 4.75까지 13·20bp.</p>
   </section>
 
   <section>
     <h3 class="sec-h"><span class="n">03</span> 매크로 현안 &amp; 커브 괴리</h3>
     <div class="mc">
       <div class="box">
-        <p><b>앞단이 밀리고 장기물이 내린 플랫, 사흘째.</b> 10/21 종가 <b>2년 4.808(+2.75)·5년 4.952(+2.25)·10년 5.121(+0.9)·20년 5.4695(−0.1)·30년 5.411(−1.0)</b>. 2-10 31.3(−1.85)·10-30 29.0(−1.9)·10-20 34.85(−1.0)·20-30 −5.85 — 주간 2-10 −10.5. 스페이스X 어닝에 AI·반도체주가 반등(나스닥 +1.05%)해 앞단은 10월 인상 가격을 되찾았고, 유가는 장중 100(호르무즈 유조선 공격·후티 사우디 공격 우려·재고 감소)까지 갔다가 푸틴이 미국 중재 평화협상 재개에 원칙 동의했다는 소식에 97.15로 마감 — 장기물이 그 되돌림을 샀다. 아시아 마감 대비 30년 −2.</p>
-        <p><b>10Y 5.121 — 5.18 박스 하단 아래, 20일선 5.15 아래 유지.</b> 다음 지지 5.086·5.05·5.023(하단)·4.99, 저항 5.165·5.17(상단)·5.19. 2Y 4.808은 20일선(4.78) 위로 다시 올라 인상 가격 복원 — 2-10 31.3은 1년 z −1.56. <b>기술적으로 하락 기반을 일정 기간 만든 상태라는 판단은 그대로 — 손익 여유가 있으면 델타 보유, 최종 타겟 2년 4.51·10년 4.75</b>. 앞단은 10/28 FOMC까지 인상 가격이 남아 2년보다 5·10년에서 델타를 잡는 쪽이 낫다.</p>
-        <p><b>한미는 −97.</b> 한국 −2.5, 미국 +0.9로 KR10−US10 −94 → <b>−97bp(−3.4)</b>, 60일 저점 −99 턱밑. 외국인이 한국 앞단 현물·선물을 사는 동안 한국이 미국보다 더 내린다 — 금통위가 매파적이지 않으면 −99를 깬다. 2-5 플래트너 실현 완료, 30년 5.411은 5.50 박스 하단 아래 닷새째 보유.</p>
+        <p><b>AI 급락이 하루 −16bp를 만들었다.</b> 10/22 종가 <b>2년 4.642(−16.6)·5년 4.7715(−18.05)·10년 4.9545(−16.65)·20년 5.3225(−14.7)·30년 5.282(−12.9)</b>. 메타는 실적을 상회했지만 AI 투자 규모와 조달 부담, 잉여현금흐름 음전환과 CDS 급등이 부각되며 급락했고 AI·반도체 전반으로 번져 나스닥 −2.60%. 후티의 사우디 공격으로 WTI가 99.47(+2.4%)까지 올랐지만 위험회피가 물가 재료를 눌렀다. 5년이 −18로 가장 많이 내려 2-5 12.95(−1.45)·5-10 18.3(+1.4), 10-30 32.75(+3.75) — <b>앞단·중기 주도 불스팁</b>.</p>
+        <p><b>10Y 4.9545 — 어제 쓴 중간 경로(5.075 → 4.99 → 4.95)를 하루에 다 지났다.</b> 다음은 9월 박스 상단 4.93과 오늘 하단 4.87, 60일 평균 4.887. 2Y 4.642는 20일선(4.78) 아래로 떨어져 10월 인상 가격이 빠졌다(FOMC 10/28). <b>델타 보유 뷰 유지 — 최종 타겟 2년 4.51·10년 4.75까지 13·20bp</b>. 다만 하루 −16은 되돌림을 부르는 폭이라 추가는 5.00~5.04(오늘 상단) 되밀림에서, 손절은 5.10. 되돌림 재료는 유가 100 재돌파와 오늘 밤 PMI.</p>
+        <p><b>한미는 −81 — 하루 +16.</b> 한국 −0.3, 미국 −16.65로 KR10−US10이 −97 → <b>−81bp</b>, 60일 저점 −99에서 60일 평균 −55 방향으로 돌아섰다. 그제 모색한 한국 10년 매도 / 미국 10년 매수(진입 −94)가 목표 −82를 하루 만에 지났다 — 절반 실현, 잔여 목표 −72·손절 −90. 오늘 한국 10선이 +89틱 갭으로 열면 한국 10Y 4.05 안팎 = −90으로 되벌어지는 시초가 잔여 재진입 자리. 30년 5.282는 5.50 박스 하단 아래 보유, 2-5 플래트너 실현 완료 상태.</p>
       </div>
       <div class="box">
         <table class="ctable">
-          <thead><tr><th>커브</th><th>10-21(bp)</th><th>전일 대비</th><th>z(60d)</th></tr></thead>
+          <thead><tr><th>커브</th><th>10-22(bp)</th><th>전일 대비</th><th>z(60d)</th></tr></thead>
           <tbody>
-            <tr><td>10-30</td><td>29.0</td><td class="cool">−1.9</td><td class="zbar">−1.67σ</td></tr>
-            <tr><td>20-30</td><td>−5.8</td><td class="cool">−0.9</td><td class="zbar">−1.63σ</td></tr>
-            <tr><td>10-20</td><td>34.9</td><td class="cool">−1.0</td><td class="zbar">−1.62σ</td></tr>
-            <tr><td>5-10</td><td>16.9</td><td class="cool">−1.4</td><td class="zbar">−1.21σ</td></tr>
-            <tr><td>2-10</td><td>31.3</td><td class="cool">−1.9</td><td class="zbar">−1.09σ</td></tr>
-            <tr><td>2-5-10 버터</td><td>2.5</td><td class="cool">−0.8</td><td class="zbar">−0.90σ</td></tr>
-            <tr><td>2-5</td><td>14.4</td><td class="cool">−0.5</td><td class="zbar">−0.45σ</td></tr>
+            <tr><td>10-20</td><td>36.8</td><td class="hot">+1.9</td><td class="zbar">−1.30σ</td></tr>
+            <tr><td>10-30</td><td>32.8</td><td class="hot">+3.8</td><td class="zbar">−1.22σ</td></tr>
+            <tr><td>2-10</td><td>31.2</td><td class="cool">−0.1</td><td class="zbar">−1.09σ</td></tr>
+            <tr><td>5-10</td><td>18.3</td><td class="hot">+1.4</td><td class="zbar">−0.94σ</td></tr>
+            <tr><td>2-5</td><td>12.9</td><td class="cool">−1.4</td><td class="zbar">−0.84σ</td></tr>
+            <tr><td>20-30</td><td>−4.0</td><td class="hot">+1.8</td><td class="zbar">−0.84σ</td></tr>
+            <tr><td>2-5-10 버터</td><td>5.3</td><td class="hot">+2.9</td><td class="zbar">−0.38σ</td></tr>
           </tbody>
         </table>
-        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ <b>10-21 미국 국채 현물 금리</b> 기준 · 변화는 10/20 → 10/21 · z는 <b>60영업일 롤링</b><br>※ <b>10-30 29.0(−1.9)</b> 60일 z −1.67 · 1년 z −2.80 — 60일 최저(28.5) 근처<br>※ <b>2-10 31.3(−1.85)</b> 주간 −10.5 · 2-5-10 버터 2.5(−0.85)<br>※ 절대 레벨 <b>10년 5.121 · 30년 5.411</b> — 1년 z +2.2 / +1.8</p>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ <b>10-22 미국 국채 현물 금리</b> 기준 · 변화는 10/21 → 10/22 · z는 <b>60영업일 롤링</b><br>※ <b>10-30 32.75(+3.75) · 10-20 36.8(+1.95)</b> — 앞단·중기 주도 불스팁, 5년 −18<br>※ <b>2-5 12.95(−1.45)</b> 60일 z −0.84 · 2-5-10 버터 5.35(+2.85)<br>※ 절대 레벨 <b>10년 4.9545 · 30년 5.282</b> — 60일 z +0.30 / −0.31, 1년 z +1.64 / +1.27</p>
       </div>
     </div>
   </section>
+
 </div>
 <script>
 (function(){
@@ -238,5 +246,24 @@
       location.href=(v==='latest')?(root+page):(root+'archive/'+v+'/'+page);
     };
   }).catch(function(){ if(sel.parentNode) sel.parentNode.style.display='none'; });
+})();
+</script>
+<script>
+(function(){
+  var ko=true;
+  var L=ko?['펼치기 ▾','접기 ▴']:['Show ▾','Hide ▴'];
+  Array.prototype.forEach.call(document.querySelectorAll('section'),function(sec){
+    if(sec.closest&&sec.closest('aside'))return;
+    var h=sec.querySelector(':scope>.sec-h'),n=h&&h.querySelector('.n');
+    if(!n||parseInt(n.textContent,10)<3)return;
+    sec.classList.add('fold','closed');
+    var t=document.createElement('span');t.className='fold-t';h.appendChild(t);
+    h.setAttribute('role','button');h.tabIndex=0;
+    function upd(){t.textContent=sec.classList.contains('closed')?L[0]:L[1];h.setAttribute('aria-expanded',!sec.classList.contains('closed'));}
+    function tog(){sec.classList.toggle('closed');upd();}
+    h.addEventListener('click',tog);
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tog();}});
+    upd();
+  });
 })();
 </script>

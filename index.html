@@ -1,4 +1,4 @@
-<title>KTB 데스크 · 2026-10-22</title>
+<title>KTB 데스크 · 2026-10-23</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -161,6 +161,14 @@
   .feed-more:hover{border-color:var(--gold-soft)}
   @media(max-width:1180px){.cols{grid-template-columns:1fr}.colside{position:static}.colside section{margin-top:22px}.colside .feed-list{max-height:none}.colside .feed-item{flex-direction:row;gap:13px}.colside .feed-time{min-width:104px;font-size:11px}.colside .feed-msg{font-size:13px}}
   @media print{.cols{display:block}.colside{position:static}.colside section{margin-top:22px}.colside .feed-list{max-height:none;overflow:visible}.feed-msg.clip{max-height:none}.feed-msg.clip:after{display:none}.feed-more{display:none}}
+  /* fold */
+  section.fold>.sec-h{cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+  section.fold>.sec-h::after{order:1}
+  section.fold>.sec-h .fold-t{order:2;font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink2);text-transform:none;letter-spacing:0;border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--card,transparent);white-space:nowrap}
+  section.fold.closed>.sec-h{margin-bottom:0}
+  section.fold.closed>.sec-h .fold-t{color:var(--gold);border-color:var(--gold)}
+  section.fold.closed>*:not(.sec-h){display:none}
+  @media print{section.fold.closed>*:not(.sec-h){display:block}section.fold>.sec-h .fold-t{display:none}}
 </style>
 
 <div class="wrap">
@@ -174,27 +182,26 @@
       <div class="lang"><a class="on" href="index.html">KTB</a><a href="us.html">UST</a><a class="on" href="index.html">KO</a><a href="en.html">EN</a></div>
       <div class="histwrap">📅 <select id="histsel" aria-label="지난 리포트"><option>지난 리포트</option></select></div>
       <span class="tag">Desk Daily</span><br>
-      리포트 <span class="d">2026-10-22 (목)</span><br>
-      10-21 종가 기준
+      리포트 <span class="d">2026-10-23 (금)</span><br>
+      10-22 종가 기준
     </div>
   </div>
 
   <div class="cols">
   <div class="colmain">
   <div class="keys">
-    <div class="keychip hot"><div class="dd">금통위</div><div class="ev">🏛 <b>오늘 10:00 결정 · 기준 3.00% 동결 기정사실</b> — 쟁점은 인상 소수의견·성장 상방 문구·연내 추가 인상 여지. 매파적이지 않으면 국고는 현 수준 횡보, 추가 강세 룸은 작다 → 로컬 시선은 크레딧으로</div><div class="dt">10-22 (목)</div></div>
-    <div class="keychip hot"><div class="dd">10-21</div><div class="ev">📉 코스피 +3.29%에도 국고 <b>2Y −2.9(3.766) · 3Y −2.4(3.811) · 10Y −2.5(4.150) · 30Y −2.0</b>, 20Y +0.4 — 3선 +8 · 10선 +19틱 · <b>10Y가 10/19 낙찰 4.165를 하향 돌파</b>(이제 지지) · 3Y−기준금리 81.1</div><div class="dt">외국인 주도 이레째</div></div>
-    <div class="keychip"><div class="dd">수급</div><div class="ev">🔁 외국인 선물 3선 +3,635 · 10선 +372 · 현물 <b>+7,476(1년 이하 +7,380)</b> · 투신 −8,810 · 대차 <b>26-8 +910(19.63%)</b> · <b>20년 홀로 약세(10-20-30 버터 −5.3)</b> 증액 앞</div><div class="dt">단기 현물 외국인</div></div>
-    <div class="keychip"><div class="dd">10-21 미국</div><div class="ev">🇺🇸 2Y 4.808(+2.75) · 10Y 5.121(+0.9) · 30Y 5.411(−1.0) — 유가 100 → 97(러·우 종전 협상 기대) · 다우 +0.69% · <b>KR10−US10 −97(−3.4)</b> 60일 저점 −99 턱밑 · 시초 3선 <b>103.11</b> · 10선 <b>106.67</b>, 레인지 102.92~103.33 / 106.02~107.33</div><div class="dt">플랫 지속</div></div>
+    <div class="keychip hot"><div class="dd">10-22 미국</div><div class="ev">🇺🇸 <b>2Y 4.642(−16.6) · 10Y 4.9545(−16.65) · 30Y 5.282(−12.9)</b> — 메타 실적 뒤 AI 투자·조달 부담에 나스닥 −2.60%, 안전자산 매수 · WTI 99.47(+2.4%)도 못 막았다 · <b>KR10−US10 −81(+16)</b></div><div class="dt">하루 −16bp</div></div>
+    <div class="keychip hot"><div class="dd">10-22</div><div class="ev">🏛 <b>동결 3.00%</b> — 성장·물가 상향 여지 열어둔 인상 기조, '선제적 대응' 문구 삭제, 최종 3.50 기대는 그대로 · 장 후반 앞단 급락: <b>3Y +2.6(3.837) · 2Y +0.9 vs 10Y −0.3(4.147) · 30Y −1.5</b> → 2-3 6.2(+1.7) · 3-10 31.0(−2.9)</div><div class="dt">전강후약 확인</div></div>
+    <div class="keychip"><div class="dd">수급</div><div class="ev">🔁 외국인 선물 <b>3선 +14,241 · 10선 +3,274</b>(9일째, 5일 +139,747) · 현물 +6,730(2년 지표 26-7 +3,000 · 23-10 +3,300) · 보험·기금 <b>26-8 +2,630</b> · 대차 26-6 −880 · 26-9 +650 · 26-10 +250(60.81%)</div><div class="dt">앞단 외국인 · 30년 보험</div></div>
+    <div class="keychip"><div class="dd">오늘</div><div class="ev">🎯 시초 3선 <b>103.32</b>(+24) · 10선 <b>107.68</b>(+89), 레인지 102.17~103.49 / 106.98~108.06 · 외평채 1년 1.0조 입찰 10:40 · <b>한미 10-10 −94 → −81 목표 도달, 2-3 4.2 → 6.2</b></div><div class="dt">금</div></div>
   </div>
 
   <section>
     <h3 class="sec-h"><span class="n">01</span> 다가오는 일정</h3>
     <div class="cal">
-      <div class="row today"><span class="cd">10/22</span><span class="cw">목</span><span class="pill rate">금리</span><span class="ev"><b>한국은행 금통위</b> <span class="cw">결정 10:00 전후 · 기자회견 11:10 · 기준 3.00% 동결 전망 · 소수의견·성장 문구·11월 신호가 관건 · 한은 보고서 '민간소비 회복 여건 점검'</span></span></div>
-      <div class="row"><span class="cd">10/23</span><span class="cw">금</span><span class="pill cpi">지표</span><span class="ev">미국 10월 PMI <span class="cw">22:45</span> · 미시간 확정치 <span class="cw">23:00</span></span></div>
-      <div class="row"><span class="cd">10/26</span><span class="cw">월</span><span class="pill auc">입찰</span><span class="ev"><b>국고 5년 26-9 2.2조</b> <span class="cw">· 대차 21.47%(+490)</span></span></div>
-      <div class="row"><span class="cd">10/27</span><span class="cw">화</span><span class="pill auc">입찰</span><span class="ev"><b>국고 20년 26-10 7,000억 증액</b> <span class="cw">· 대차 57.84% · 어제 20년 홀로 +0.4</span></span></div>
+      <div class="row today"><span class="cd">10/23</span><span class="cw">금</span><span class="pill auc">입찰</span><span class="ev"><b>외평채 1년 26-10 1.0조</b> <span class="cw">10:40~11:00</span> · 미국 10월 S&amp;P PMI <span class="cw">22:45</span> · 미시간 확정치 <span class="cw">23:00</span></span></div>
+      <div class="row"><span class="cd">10/26</span><span class="cw">월</span><span class="pill auc">입찰</span><span class="ev"><b>국고 5년 26-9 2.2조</b> <span class="cw">· 대차 22.79%(+650)</span></span></div>
+      <div class="row"><span class="cd">10/27</span><span class="cw">화</span><span class="pill auc">입찰</span><span class="ev"><b>국고 20년 26-10 7,000억 증액</b> <span class="cw">· 대차 60.81%(+250) · 20-30 2.5(−2.4)</span></span></div>
       <div class="row"><span class="cd">10/28</span><span class="cw">수</span><span class="pill rate">금리</span><span class="ev"><b>한국 3분기 GDP 속보 08:00 · 미국 FOMC</b></span></div>
       <div class="row"><span class="cd">11/2</span><span class="cw">월</span><span class="pill auc">입찰</span><span class="ev">국고 2년 <span class="cw">· 11/3 국고 30년 · 11/9 국고 3년 · 11/26 금통위(수정 전망)</span></span></div>
     </div>
@@ -205,131 +212,130 @@
     <div class="cards">
 
       <div class="card">
-        <div class="chd"><div class="name">3년 <span>KTB Fut · 12월물</span></div><div class="pxwrap"><span class="px">103.14</span><span class="pxsub">예상시초 <b>103.11</b> <span style="color:var(--down)">(−3틱)</span></span></div></div>
+        <div class="chd"><div class="name">3년 <span>KTB Fut · 12월물</span></div><div class="pxwrap"><span class="px">103.08</span><span class="pxsub">예상시초 <b>103.32</b> <span style="color:var(--up)">(+24틱)</span></span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">102.92</span><span class="sep">~</span><span class="hi">103.33</span></span></div>
-            <div class="track"><div class="dot" style="left:53%"></div></div>
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">102.17</span><span class="sep">~</span><span class="hi">103.49</span></span></div>
+            <div class="track"><div class="dot" style="left:68%"></div></div>
           </div>
           <div class="bd">
-            <div class="bl"><span class="k">RV 시그널 하단~상단</span><span class="r"><span class="lo">103.07</span><span class="sep">~</span><span class="hi">103.19</span></span></div>
-            <div class="track"><div class="dot" style="left:58%"></div></div>
+            <div class="bl"><span class="k">RV 시그널 하단~상단</span><span class="r"><span class="lo">103.13</span><span class="sep">~</span><span class="hi">103.25</span></span></div>
+            <div class="track"><div class="dot" style="left:0%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">결정 뒤 방향</span><span class="act">고평 2.1틱 · 3.881% · 전환선 +3까지 0.9</span><span class="meta">3Y 3.811 — 되밀림 저항 3.940(낙찰)<br>3Y−기준금리 81.1 · 2-3 4.5</span></div>
+        <div class="pos"><span class="badge flat">시초 되밀림에서 외국인 확인</span><span class="act">고평 1.9틱 · 3.902%</span><span class="meta">외국인 +14,241 9일째<br>3Y 3.837 — 저항 3.940(낙찰) · 2-3 6.2</span></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="name">10년 <span>KTB Fut · 12월물</span></div><div class="pxwrap"><span class="px">106.76</span><span class="pxsub">예상시초 <b>106.67</b> <span style="color:var(--down)">(−9틱)</span></span></div></div>
+        <div class="chd"><div class="name">10년 <span>KTB Fut · 12월물</span></div><div class="pxwrap"><span class="px">106.79</span><span class="pxsub">예상시초 <b>107.68</b> <span style="color:var(--up)">(+89틱)</span></span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">106.02</span><span class="sep">~</span><span class="hi">107.33</span></span></div>
-            <div class="track"><div class="dot" style="left:56%"></div></div>
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">106.98</span><span class="sep">~</span><span class="hi">108.06</span></span></div>
+            <div class="track"><div class="dot" style="left:0%"></div></div>
           </div>
           <div class="bd">
-            <div class="bl"><span class="k">RV 시그널 하단~상단</span><span class="r"><span class="lo">106.57</span><span class="sep">~</span><span class="hi">106.89</span></span></div>
-            <div class="track"><div class="dot" style="left:59%"></div></div>
+            <div class="bl"><span class="k">RV 시그널 하단~상단</span><span class="r"><span class="lo">106.82</span><span class="sep">~</span><span class="hi">107.39</span></span></div>
+            <div class="track"><div class="dot" style="left:0%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">잔여 롱 결정 뒤 정리</span><span class="act">저평 1.6틱 · 4.167%</span><span class="meta">10Y 4.150 — 낙찰 4.165 하향, 지지 전환<br>외국인 10선 +372 사흘째 감소</span></div>
+        <div class="pos"><span class="badge flat">갭 위 추격 없음</span><span class="act">저평 1.0틱 · 4.163%</span><span class="meta">미 10Y −16.65 → 시초 +89틱<br>10Y 4.147 — 지지 4.165(낙찰)</span></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="name">국내 2-3 · 2-5 <span>국고 3년·5년 − 2년</span></div><div class="pxwrap"><span class="px">4.5 · 19.4</span><span class="pxsub" style="color:var(--up)">전일 +0.5 · +0.4</span></div></div>
+        <div class="chd"><div class="name">한미 10-10 · 2-3 <span>KR10−US10 · 국고 3년−2년</span></div><div class="pxwrap"><span class="px">−81 · 6.2</span><span class="pxsub" style="color:var(--up)">+16.35 · +1.7</span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">2-3 60일 z</span><span class="r">−1.30σ <span class="cw" style="color:var(--ink3);font-size:10px">· 60일 최저 3.0</span></span></div>
-            <div class="track"><div class="dot" style="left:10%"></div></div>
+            <div class="bl"><span class="k">한미 10-10</span><span class="r">−94 진입 → −81 <span class="cw" style="color:var(--ink3);font-size:10px">· 목표 −82 도달 · 잔여 −72 / 손절 −90</span></span></div>
+            <div class="track"><div class="dot" style="left:55%"></div></div>
           </div>
           <div class="bd">
-            <div class="bl"><span class="k">2-5 60일 z</span><span class="r">−1.71σ <span class="cw" style="color:var(--ink3);font-size:10px">· 60일 최저 16.5</span></span></div>
-            <div class="track"><div class="dot" style="left:11%"></div></div>
+            <div class="bl"><span class="k">2-3</span><span class="r">4.2 진입 → 6.2 <span class="cw" style="color:var(--ink3);font-size:10px">· 목표 12 / 손절 3</span></span></div>
+            <div class="track"><div class="dot" style="left:36%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">스티프너 진입</span><span class="act">동결 뒤 2년 > 3년(22/2·23/2)</span><span class="meta">매파 되밀림 있으면 그 뒤, 없으면 바로<br>2-3 목표 12 · 손절 3</span></div>
+        <div class="pos"><span class="badge flat">절반 실현 · 유지</span><span class="act">둘 다 이익</span><span class="meta">한미는 시초 되벌어짐(−90)에서 잔여 재진입<br>2-3는 2년 외국인 매수가 받친다</span></div>
       </div>
 
     </div>
-    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ 데일리 예상레인지·예상시초는 담당자 제시값. <b>시초 3선 −3틱(103.11) · 10선 −9틱(106.67)</b>, 금통위 당일이라 레인지는 양쪽으로 넓다(10선 106.02~107.33). 입찰 낙찰금리가 barrier — 10Y 4.165(10/19) 하향 돌파로 지지 전환, 3Y 3.940(10/12)·2Y 3.875은 되밀림 저항, 50Y 4.195 지지. 미국은 <b>10-21 종가</b>.</p>
+    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ 데일리 예상레인지·예상시초는 담당자 제시값. <b>시초 3선 +24틱(103.32) · 10선 +89틱(107.68)</b> — 미국 −16bp를 10선이 시초에 대부분 반영, 레인지 상단 108.06은 시초 위 38틱. 낙찰금리 barrier — 10Y 4.165(10/19) 아래 유지, 3Y 3.940·2Y 3.875는 되밀림 저항, 50Y 4.195 지지. 미국은 <b>10-22 종가</b>, 장전 2Y 4.66·10Y 4.96.</p>
   </section>
 
   <section>
     <h3 class="sec-h"><span class="n">03</span> 매크로 현안 &amp; 커브 괴리</h3>
     <div class="mc">
       <div class="box">
-        <p><b>주식 +3.3%에도 강세 — 이레째 외국인이 끌었고 10Y는 입찰 낙찰금리를 뚫었다.</b> 국고 <b>2년 −2.9(3.766)·3년 −2.4(3.811)·5년 −2.5(3.960)·10년 −2.5(4.150)·20년 +0.4(4.198)·30년 −2.0(4.247)·50년 −2.0</b>. 선물 <b>3선 +8틱(103.14, 고 103.17)·10선 +19틱(106.76, 고 106.81)</b>. 코스피 +3.29%(5,736)·코스닥 +1.38% — 주식 급등에도 금리가 내린 건 외국인 선물·IRS와 <b>단기 현물 +7,380</b>이 앞단을 끌었기 때문이고, 2년 −2.9가 가장 컸다. <b>10Y 4.150은 10/19 낙찰 4.165 아래</b> — 낙찰 레벨이 저항에서 지지로 바뀌었다. 반대로 <b>20년만 +0.4</b>로 10-20-30 버터 −5.3(10/27 증액 7,000억 앞 대차 57.84%), 20-30 4.9(−2.4). 3-10 33.9, 2-3 4.5(+0.5), 2-5 19.4(+0.4), 10-30 9.7(+0.5), 3Y−기준금리 81.1(−2.4).</p>
-        <p><b>외국인 — 선물은 줄고 단기 현물은 늘었다.</b> 선물 3선 +3,635·10선 +372(5일 +125,506·+59,996), 현물 <b>+7,476 중 1년 이하 +7,380</b>(23-10 +3,500·24-4 +1,500·24-12 +1,100·26-7 +900·25-1 +500) — 2~3영업일 단기물 매수가 장중 해당 종목을 끌어올릴 만큼 셌고 2년 지표 26-7까지 들어왔다. 초장기는 −1,223(26-8 −348·25-7 −420·25-2 −249·24-2 −192)으로 26-8 이틀째 매도. 보험·기금은 25-7 +900·26-8 +498·26-2 +380으로 초장기 매수 지속 — 일부 보험사는 9월 이후 꾸준히 담는다. 국내는 <b>투신 −8,810(1년 이하 −5,300)</b>·보험 −1,073·기금 −844·은행 +2,423 — 4개 기관 −8,304, 외국인이 사는 단기물을 투신이 팔았다. 3선 고평 2.1틱·10선 저평 1.6틱, 10선 미결제 −3,244(246,598).</p>
-        <p><b>대차 — 30년 지표에 다시 숏, 10년·3년 지표는 계속 상환.</b> <b>26-8 +910(16,084·19.63%)</b>로 교환 발행 뒤 이틀 +1,280, 26-9 +490(21.47%, 10/26 입찰 앞), 26-2 +250. 반대로 26-5 −650(8.51%)·26-6 −500(7.91%)·25-10 −430·26-3 −217로 입찰 종목·바스켓 숏은 계속 풀리고, <b>24-11 −2,000(4,813·2.94%)</b>은 바이백 뒤 대량 상환. 26-10 −60(57.84%)은 증액 전 그대로. 바이백 3.5조는 25-4 0·24-12 −65로 대상 종목 되돌림이 크지 않았다 — 24-12 vs 25-4 6.6(−0.8).</p>
-        <p><b>미국은 앞단이 밀리고 장기물이 내렸다.</b> 10/21 <b>2년 4.808(+2.75)·5년 4.952(+2.25)·10년 5.121(+0.9)·20년 5.4695(−0.1)·30년 5.411(−1.0)</b>, 2-10 31.3(−1.85)·10-30 29.0(−1.9)·10-20 34.85 — 플랫이 사흘째. 스페이스X 어닝에 AI·반도체주 반등(나스닥 +1.05%·다우 +0.69%), WTI는 호르무즈 유조선 공격·후티 사우디 공격 우려에 100까지 갔다가 푸틴이 미국 중재 평화협상 재개에 원칙 동의했다는 소식에 97.15(−0.7%)로 마감 — 아시아 마감 대비 30년 −2. <b>KR10−US10 −97(−3.4)</b>, 60일 저점 −99 턱밑. 어제 쓴 "하락 기반 위 델타 보유, 타겟 2년 4.51·10년 4.75"는 유지하되 앞단 +2.75는 10월 인상 가격 복원이다.</p>
-        <p><b>금통위 당일 — 전강후약.</b> 결정 전 외국인 선물·단기 현물이 끄는 강세가 한 번 더 나온 뒤 기자회견(성장 상방 문구·11월 신호)에서 되밀리는 그림. <b>유지해 온 10선 롱은 오전 결정 전후로 정리</b>하고, 정리 뒤 ① <b>한미 10년 스프레드(한국 10년 매도 / 미국 10년 매수)</b> — KR10−US10 −97로 60일 저점 −99 턱밑, 금통위 뒤 한국 10년 되밀림 + 미국 델타 보유 뷰(타겟 4.75)라 좁혀지는 쪽 — 와 ② <b>한국 2-3 스티프너</b>(2-3 4.5, 60일 최저 3.0) 진입을 모색한다.</p>
-        <p><b>반응은 세 갈래.</b> ① 만장일치 동결 + 성장 상방 문구만: 국고 횡보, 추가 강세 룸 작음 → 10선 롱 잔여분 정리, 2-3·2-5 스티프너 진입(2-3 4.5·2-5 19.4, 60일 최저 3.0·16.5 위), 크레딧으로 시선. ② 인상 소수의견 또는 11월 인상 명시: 3년이 먼저 밀려 3.85~3.90(낙찰 3.940이 저항), 외국인 선물 되돌림, 2-3 플랫 뒤 스팁 — 스티프너는 되밀림 뒤 진입. ③ 비둘기 해석(성장 문구 약함): 10Y 4.10~4.12, 3Y 3.75 — 외국인 추격이지만 로컬은 못 따라가 되돌림 빠름. 공통 — <b>10선 롱 잔여 절반은 결정 뒤 정리</b>, 30년은 20년 증액 앞 20-30 4.9(−2.4)라 26-8 대신 26-10 되밀림(10/27) 뒤. 크레딧은 매파적이지 않으면 로컬 델타 확대 수요가 스프레드 큰 1년·2년 공사채·은행채로 옮겨가는 분기점 — 어제 이번 주 최다 매수 호가, 1년 특은채 민평~−1원.</p>
+        <p><b>동결 뒤 장 후반에 앞단이 급락했다 — 전강후약 그대로.</b> 국고 <b>2년 +0.9(3.775)·3년 +2.6(3.837)·5년 +2.0(3.980)·10년 −0.3(4.147)·20년 +0.9(4.207)·30년 −1.5(4.232)·50년 −1.5</b>. 14:40 3년 3.816이 마감 3.837로 한 시간에 +2.1, 선물은 <b>3선 −6틱(103.08, 고 103.28)·10선 +3틱(106.79, 고 107.05)</b>. 결정 직후 +14·+29틱 갔던 강세를 기자회견에 반납하고 마감 전 3선이 더 밀렸다. 10년 이상은 안 밀려 <b>3-10 31.0(−2.9) · 3-30 39.5(−4.1) · 5-10 16.7(−2.3) · 5-30 25.2(−3.5) 전부 60일 최저</b>, 2-3 6.2(+1.7)·2-5 20.5(+1.1)로 앞단 안에서는 2년이 3년보다 강했다. 3Y−기준금리 83.7(+2.6). 코스피 −3.52%(5,534).</p>
+        <p><b>금통위 — 인상 기조는 유지, 최종금리는 올리지 않았다.</b> 성장·물가 전망의 상향 가능성을 열어둔 채 추가 인상 기조를 유지했지만 결정문에서 '선제적 대응' 문구가 빠졌고, 중립금리·최종금리는 지표를 보며 대응한다는 수준에 머물렀다. 시장 다수는 11월과 내년 1분기 한 차례씩 인상해 최종 3.50%를 본다 — 금통위 전과 같은 경로라 추가 매파 신호는 없었고, 그래서 앞단 되밀림은 3년 +2.6에 그쳤다. 3년 3.837은 낙찰 3.940까지 10bp 여유, 2년 3.775는 낙찰 3.875까지 10bp.</p>
+        <p><b>미국이 밤에 −16bp — 메타 실적 뒤 AI 급락.</b> 10/22 <b>2년 4.642(−16.6)·5년 4.7715(−18.05)·10년 4.9545(−16.65)·20년 5.3225(−14.7)·30년 5.282(−12.9)</b>. 메타는 실적 서프라이즈에도 대규모 AI 투자와 조달 부담, 잉여현금흐름 음전환·CDS 급등이 부각되며 급락했고 나스닥 −2.60%, 다우 보합. 후티의 사우디 공격으로 WTI 99.47(+2.4%)까지 올랐지만 위험회피가 이겼다. 10Y 4.9545는 어제 쓴 중간 경로(5.075 → 4.99)를 하루에 지나 <b>최종 타겟 4.75까지 20bp</b>, 2Y 4.642는 타겟 4.51까지 13bp. 10-30 32.75(+3.75)로 앞단이 더 내린 불스팁. <b>KR10−US10 −97 → −81(+16)</b> — 그제 모색한 한미 10년 스프레드(한국 매도 / 미국 매수, 진입 −94)가 하루 만에 목표 −82를 지났다.</p>
+        <p><b>수급 — 앞단은 외국인, 30년은 보험.</b> 외국인 선물 3선 +14,241·10선 +3,274(9일째, 5일 +139,747·+63,270), 현물 +6,730 중 <b>2년 지표 26-7 +3,000·23-10 +3,300(주간 9,600)·26-6 +1,326·26-5 +587</b> — 단기물에 더해 지표물을 샀다. 초장기는 −2,116(25-9 −936·25-7 −600·26-2 −466·26-8 −171)로 사흘째 매도. 반대로 <b>보험·기금은 26-8 +2,630·25-2 +680·25-7 +500</b> — 특정 보험사 외에 새 매수가 붙어 30년 −1.5를 만들었다. 대차는 26-6 −880(7.16%)·26-5 −330·26-3 −580·25-4 −752·26-8 −450 상환, 26-9 +650(22.79%)·26-10 +250(60.81%)·26-7 +364(1,154)는 입찰·증액 앞과 2년 숏 적재. 3선 고평 1.9틱·10선 저평 1.0틱.</p>
+        <p><b>전략 — 오늘은 미국이 준 갭을 받는 날, 포지션은 둘 다 이익 중.</b> ① <b>한미 10년 스프레드(한국 매도 / 미국 매수)</b>: −94 → −81, 목표 −82 도달 — 절반 실현, 잔여 목표 −72(60일 평균 −55 방향)·손절 −90. 오늘 한국 10선 +89틱 시초면 한국 10Y 4.05 안팎 = 미국 4.95 대비 −90으로 되벌어질 수 있어 시초 되밀림이 잔여분 재진입 자리. ② <b>2-3 스티프너</b>: 4.2 → 6.2(+2.0), 목표 12·손절 3 유지 — 어제 장 후반 3년 급락이 그 방향. 2-5 19.2 → 20.5. ③ 3-10 31.0·5-10 16.7은 60일 최저 — 외국인이 앞단 현물을 사고 보험이 30년을 받는 동안 플랫은 더 갈 수 있어 3-10 스티프너 재진입은 보류. ④ 30년은 26-8 자리를 안 준다(4.232) — 10/27 증액 뒤 26-10. ⑤ 26-5 매수 / 26-3 매도 15.5(−1.1) 유지, 목표 20. ⑥ 크레딧은 9개월~1.5년 커브가 플랫해져 1~1.5년이 통당 −3~4bp 매도우위 — 단기 발행 매물이 소화돼 1년이 눌려야 1.5년 이상이 풀린다. 카드채 2~3년(지표 +1~2bp)만 유지, 비중 확대는 1년 강세 확인 뒤.</p>
       </div>
       <div class="box">
         <table class="ctable">
-          <thead><tr><th>커브</th><th>10-21(bp)</th><th>전일 대비</th><th>z(60d)</th></tr></thead>
+          <thead><tr><th>커브</th><th>10-22(bp)</th><th>전일 대비</th><th>z(60d)</th></tr></thead>
           <tbody>
-            <tr><td>3-10</td><td>33.9</td><td class="cool">−0.1</td><td class="zbar">−2.06σ</td></tr>
-            <tr><td>3-5</td><td>14.9</td><td class="cool">−0.1</td><td class="zbar">−1.96σ</td></tr>
-            <tr><td>2-5</td><td>19.4</td><td class="hot">+0.4</td><td class="zbar">−1.71σ</td></tr>
-            <tr><td>5-10</td><td>19.0</td><td>0.0</td><td class="zbar">−1.68σ</td></tr>
-            <tr><td>3-30</td><td>43.6</td><td class="hot">+0.4</td><td class="zbar">−1.67σ</td></tr>
-            <tr><td>30-50</td><td>−9.5</td><td>0.0</td><td class="zbar">−1.61σ</td></tr>
-            <tr><td>선물 3-10</td><td>28.6</td><td class="hot">+0.6</td><td class="zbar">−1.52σ</td></tr>
-            <tr><td>5-30</td><td>28.7</td><td class="hot">+0.5</td><td class="zbar">−1.47σ</td></tr>
-            <tr><td>2-3</td><td>4.5</td><td class="hot">+0.5</td><td class="zbar">−1.30σ</td></tr>
-            <tr><td>10-30</td><td>9.7</td><td class="hot">+0.5</td><td class="zbar">−1.28σ</td></tr>
-            <tr><td>5-10-30 버터</td><td>−9.3</td><td class="hot">+0.5</td><td class="zbar">−0.91σ</td></tr>
-            <tr><td>20-30</td><td>4.9</td><td class="cool">−2.4</td><td class="zbar">−0.42σ</td></tr>
-            <tr><td>3-10-30 버터</td><td>−24.2</td><td class="hot">+0.6</td><td class="zbar">−0.10σ</td></tr>
-            <tr><td>2-3-5 버터</td><td>10.4</td><td class="cool">−0.6</td><td class="zbar">−0.04σ</td></tr>
-            <tr><td>3-5-10 버터</td><td>4.1</td><td class="hot">+0.1</td><td class="zbar">+0.64σ</td></tr>
-            <tr><td>10-20-30 버터</td><td>0.1</td><td class="cool">−5.3</td><td class="zbar">+0.73σ</td></tr>
+            <tr><td>3-10</td><td>31.0</td><td class="cool">−2.9</td><td class="zbar">−2.40σ</td></tr>
+            <tr><td>5-10</td><td>16.7</td><td class="cool">−2.3</td><td class="zbar">−2.31σ</td></tr>
+            <tr><td>3-5</td><td>14.3</td><td class="cool">−0.6</td><td class="zbar">−2.02σ</td></tr>
+            <tr><td>3-30</td><td>39.5</td><td class="cool">−4.1</td><td class="zbar">−1.86σ</td></tr>
+            <tr><td>선물 3-10</td><td>26.1</td><td class="cool">−2.5</td><td class="zbar">−1.78σ</td></tr>
+            <tr><td>5-30</td><td>25.2</td><td class="cool">−3.5</td><td class="zbar">−1.70σ</td></tr>
+            <tr><td>30-50</td><td>−9.5</td><td>0.0</td><td class="zbar">−1.62σ</td></tr>
+            <tr><td>2-5</td><td>20.5</td><td class="hot">+1.1</td><td class="zbar">−1.51σ</td></tr>
+            <tr><td>10-30</td><td>8.5</td><td class="cool">−1.2</td><td class="zbar">−1.36σ</td></tr>
+            <tr><td>20-30</td><td>2.5</td><td class="cool">−2.4</td><td class="zbar">−1.15σ</td></tr>
+            <tr><td>2-3</td><td>6.2</td><td class="hot">+1.7</td><td class="zbar">−0.93σ</td></tr>
+            <tr><td>5-10-30 버터</td><td>−8.2</td><td class="hot">+1.1</td><td class="zbar">−0.76σ</td></tr>
+            <tr><td>2-3-5 버터</td><td>8.1</td><td class="cool">−2.3</td><td class="zbar">−0.65σ</td></tr>
+            <tr><td>3-10-30 버터</td><td>−22.5</td><td class="hot">+1.7</td><td class="zbar">+0.15σ</td></tr>
+            <tr><td>3-5-10 버터</td><td>2.4</td><td class="cool">−1.7</td><td class="zbar">+0.06σ</td></tr>
+            <tr><td>10-20-30 버터</td><td>−3.5</td><td class="cool">−3.6</td><td class="zbar">+0.43σ</td></tr>
           </tbody>
         </table>
-        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ 커브는 <b>10-21 국고 지표물 현물 금리</b> 기준(민평3사) · z는 <b>60영업일 롤링·모표준편차</b><br>※ <b>10-20-30 버터 0.1(−5.3) · 20-30 4.9(−2.4)</b> — 20년 홀로 +0.4, 10/27 증액 앞<br>※ <b>2-3 4.5(+0.5) · 2-5 19.4(+0.4)</b> — 2년 −2.9 최강, 스티프너 진입 자리<br>※ <b>3년−기준금리 81.1bp(−2.4)</b> 60일 z −1.80 · KR10−US10 −97</p>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ 커브는 <b>10-22 국고 지표물 현물 금리</b> 기준(민평3사) · z는 <b>60영업일 롤링·모표준편차</b><br>※ <b>3-10 31.0 · 5-10 16.7 · 3-30 39.5 · 5-30 25.2 · 선물 3-10 26.1 — 60일 최저 5개</b> 앞단 급락 플랫<br>※ <b>2-3 6.2(+1.7) · 2-5 20.5(+1.1)</b> — 2년이 3년보다 강했다 · 20-30 2.5(−2.4) 증액 앞<br>※ <b>3년−기준금리 83.7bp(+2.6)</b> · KR10−US10 −81(+16)</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">04</span> 선물 이론가 괴리 &amp; 바스켓 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-21 · 2026년 12월물 · 잔존 54일</span></h3>
+    <h3 class="sec-h"><span class="n">04</span> 선물 이론가 괴리 &amp; 바스켓 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-22 · 2026년 12월물 · 잔존 53일</span></h3>
     <div class="low">
       <div class="box flow">
         <table>
           <thead><tr><th>종목</th><th>종가</th><th>현물가격</th><th>시장 베이시스</th><th>이론가</th><th>고저평</th></tr></thead>
           <tbody>
-            <tr><td>3년 <span style="color:var(--ink3);font-size:10px">KTB3F2612 · 내재 3.881%</span></td><td>103.14</td><td>103.229</td><td class="pl">−8.9틱</td><td>103.119</td><td class="mn">고평 2.1틱</td></tr>
-            <tr><td>10년 <span style="color:var(--ink3);font-size:10px">KTB10F2612 · 내재 4.167%</span></td><td>106.76</td><td>106.933</td><td class="pl">−17.3틱</td><td>106.776</td><td class="pl">저평 1.6틱</td></tr>
+            <tr><td>3년 <span style="color:var(--ink3);font-size:10px">KTB3F2612 · 내재 3.902%</span></td><td>103.08</td><td>103.173</td><td class="pl">−9.3틱</td><td>103.061</td><td class="mn">고평 1.9틱</td></tr>
+            <tr><td>10년 <span style="color:var(--ink3);font-size:10px">KTB10F2612 · 내재 4.163%</span></td><td>106.79</td><td>106.954</td><td class="pl">−16.4틱</td><td>106.800</td><td class="pl">저평 1.0틱</td></tr>
           </tbody>
         </table>
         <table style="margin-top:10px">
           <thead><tr><th>바스켓</th><th>Spot</th><th>Forward</th><th>F−S</th><th>대차 비중</th><th>외국인 비중</th></tr></thead>
           <tbody>
-            <tr><td>3선 · 25-10</td><td>3.762</td><td>3.807</td><td>+4.5</td><td>15.47%</td><td>15.01%</td></tr>
-            <tr><td>3선 · 26-5 <span style="color:var(--ink3);font-size:10px">3Y 지표</span></td><td>3.811</td><td>3.851</td><td>+4.0</td><td>8.51%</td><td>8.50%</td></tr>
-            <tr><td>3선 · 26-3 <span style="color:var(--ink3);font-size:10px">5Y 구지표</span></td><td>3.977</td><td>4.007</td><td>+3.0</td><td>10.09%</td><td>41.69%</td></tr>
-            <tr><td>10선 · 25-11</td><td>4.142</td><td>4.161</td><td>+1.9</td><td>5.80%</td><td>32.64%</td></tr>
-            <tr><td>10선 · 26-6 <span style="color:var(--ink3);font-size:10px">10Y 지표</span></td><td>4.150</td><td>4.169</td><td>+1.9</td><td>7.91%</td><td>33.77%</td></tr>
+            <tr><td>3선 · 25-10</td><td>3.780</td><td>3.826</td><td>+4.6</td><td>15.42%</td><td>15.01%</td></tr>
+            <tr><td>3선 · 26-5 <span style="color:var(--ink3);font-size:10px">3Y 지표</span></td><td>3.837</td><td>3.878</td><td>+4.1</td><td>8.33%</td><td>8.83%</td></tr>
+            <tr><td>3선 · 26-3 <span style="color:var(--ink3);font-size:10px">5Y 구지표</span></td><td>3.992</td><td>4.023</td><td>+3.1</td><td>9.82%</td><td>41.78%</td></tr>
+            <tr><td>10선 · 25-11</td><td>4.140</td><td>4.158</td><td>+1.8</td><td>5.88%</td><td>32.64%</td></tr>
+            <tr><td>10선 · 26-6 <span style="color:var(--ink3);font-size:10px">10Y 지표</span></td><td>4.147</td><td>4.165</td><td>+1.8</td><td>7.16%</td><td>33.41%</td></tr>
           </tbody>
         </table>
-        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>3선 고평 2.1틱 — 전환선(+3)까지 0.9틱.</b> 어제 +1.3 → +2.1, 외국인 3선 매수(+3,635)에 현물 3Y −2.4(≈7틱)보다 선물 +8틱이 조금 더 갔다. 10선은 저평 1.6틱으로 다시 마이너스 — 외국인 10선이 +372로 멈추자 선물이 현물(10Y −2.5 ≈ 21틱)을 못 따라갔다(+19틱). PVBP 3선 2.8594·10선 8.4354, 잔존 54일. <b>+3틱 고평 전환(2020년 이후 11번, 전부 20일 내 돌파)이 금통위 당일 걸려 있다</b> — 전환 뒤 20일간 3Y가 더 내린 경우 7/11<br>· 바스켓 대차 26-5 8.51%(−650)·25-10 15.47%(−430)·26-3 10.09%(−217), 10선 26-6 7.91%(−500)·25-11 5.80%(+160)<br>· 60분봉으로 3선 103.14는 볼린저 상단(103.19) 아래 5틱, 10선 106.76은 15분 상단(106.89) 아래 — 금통위 전 밴드 상단권 유지</p>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>3선 고평 1.9틱 — 전환선 +3을 못 넘고 하루 쉬었다.</b> 장중 +2틱대에서 마감 전 3년 현물이 +2.1 밀릴 때 선물은 −6틱으로 현물(≈7.4틱)보다 덜 밀려 고평이 +1.9로 유지됐다 — 외국인 3선 +14,241이 받친 모양. 10선은 저평 1.0틱(이론가 106.800), 현물 10Y −0.3에 선물 +3틱. PVBP 3선 2.8574·10선 8.4383, 잔존 53일. 오늘 시초 +24·+89틱이면 이론가도 같이 움직여 고저평은 시초가 아니라 09:30 뒤에 본다<br>· 바스켓 대차 26-5 8.33%(−330)·25-10 15.42%(−100)·26-3 9.82%(−580), 10선 26-6 7.16%(−880)·25-11 5.88%(+140) — 입찰 종목 숏은 둘 다 입찰 전의 3분의 1<br>· 60분봉으로 3선 103.08은 20일선(103.15) 아래로 내려왔고, 10선 106.79는 상단(107.06) 아래 — 오늘 시초 107.68은 밴드 밖</p>
       </div>
       <div class="box flow">
         <table>
           <thead><tr><th>종목쌍 (우측−좌측)</th><th>스프레드</th><th>1D</th><th>3M 평균</th><th>z(3M)</th></tr></thead>
           <tbody>
-            <tr><td>25-3 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>7.6</td><td class="mn">+1.0</td><td>10.9</td><td class="zbar">−1.98σ</td></tr>
-            <tr><td>25-10 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">3선 바스켓</span></td><td>21.5</td><td class="mn">+0.4</td><td>28.9</td><td class="zbar">−1.84σ</td></tr>
-            <tr><td>25-4 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>25.1</td><td class="pl">−0.2</td><td>35.6</td><td class="zbar">−1.83σ</td></tr>
-            <tr><td>26-5 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>16.6</td><td class="mn">+0.3</td><td>22.2</td><td class="zbar">−1.82σ</td></tr>
-            <tr><td>25-8 vs <b>26-3</b></td><td>2.9</td><td class="mn">+0.5</td><td>4.5</td><td class="zbar">−1.71σ</td></tr>
-            <tr><td>25-4 vs <b>25-10</b> <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>3.6</td><td class="pl">−0.6</td><td>6.7</td><td class="zbar">−1.57σ</td></tr>
-            <tr><td>25-4 vs <b>26-5</b> <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>8.5</td><td class="pl">−0.5</td><td>13.4</td><td>−1.46σ</td></tr>
-            <tr><td>24-12 vs 25-4 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>6.6</td><td class="pl">−0.8</td><td>11.2</td><td>−1.15σ</td></tr>
-            <tr><td>26-7 vs <b>25-10</b> <span style="color:var(--ink3);font-size:10px">2Y 지표 · 낙찰 3.875</span></td><td>−0.4</td><td class="mn">+0.4</td><td>1.2</td><td>−0.82σ</td></tr>
+            <tr><td>25-3 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>7.2</td><td class="pl">−0.4</td><td>10.8</td><td class="zbar">−2.11σ</td></tr>
+            <tr><td>26-5 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>15.5</td><td class="pl">−1.1</td><td>22.0</td><td class="zbar">−2.07σ</td></tr>
+            <tr><td>25-8 vs <b>26-3</b></td><td>2.7</td><td class="pl">−0.2</td><td>4.4</td><td class="zbar">−1.85σ</td></tr>
+            <tr><td>25-4 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>24.5</td><td class="pl">−0.6</td><td>35.3</td><td class="zbar">−1.85σ</td></tr>
+            <tr><td>25-10 vs <b>26-3</b> <span style="color:var(--ink3);font-size:10px">3선 바스켓</span></td><td>21.2</td><td class="pl">−0.3</td><td>28.7</td><td class="zbar">−1.82σ</td></tr>
+            <tr><td>25-4 vs <b>25-10</b> <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>3.3</td><td class="pl">−0.3</td><td>6.6</td><td class="zbar">−1.67σ</td></tr>
+            <tr><td>25-4 vs <b>26-5</b> <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>9.0</td><td class="mn">+0.5</td><td>13.3</td><td>−1.27σ</td></tr>
+            <tr><td>24-12 vs 25-4 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>8.4</td><td class="mn">+1.8</td><td>11.1</td><td>−0.68σ</td></tr>
+            <tr><td>26-7 vs <b>25-10</b> <span style="color:var(--ink3);font-size:10px">2Y 지표 · 낙찰 3.875</span></td><td>0.5</td><td class="mn">+0.9</td><td>1.2</td><td>−0.35σ</td></tr>
           </tbody>
         </table>
-        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>26-3 고평이 처음으로 풀리기 시작했다 — 25-3 대비 7.6(+1.0), z −1.98로 −2 밖.</b> 26-5 vs 26-3 16.6(+0.3)·25-10 vs 26-3 21.5(+0.4)·25-8 vs 26-3 2.9(+0.5) 모두 되돌림. 26-3 대차 −217로 숏이 빠지는 중인데도 풀린 건 외국인 5년 경과물 매도(26-3)가 이틀째 이어진 덕. <b>26-5 매수 / 26-3 매도는 목표 20, 유지</b><br>· 바이백 뒤 24-12 vs 25-4 6.6(−0.8)·25-4 vs 25-10 3.6(−0.6) — 월요일 적재분 되돌림은 완만, 재진입 없음<br>· 26-7 vs 25-10 −0.4(+0.4) — 외국인 26-7 +900에도 2년 지표는 제자리, 26-7 대차 −200</p>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>26-5 vs 26-3 15.5(−1.1) — 3년 지표가 밀리며 되돌아갔다(z −2.07).</b> 마감 전 3년 급락이 26-5에 집중돼 26-3 대비 다시 좁혀졌고 25-3 대비 7.2(−0.4)도 −2.11. 26-3 대차 −580 상환·외국인 5년 경과물 매도에도 고평이 안 풀리는 건 41.78% 외국인 보유 때문 — <b>26-5 매수 / 26-3 매도 유지, 목표 20</b>, 오늘 외국인 26-5 +587이 이어지면 되살아난다<br>· <b>26-7 vs 25-10 0.5(+0.9)</b> — 외국인 26-7 +3,000에도 2년 지표는 바스켓 대비 싸졌다, 26-7 대차 +364 숏 적재가 눌렀다. 2-3 6.2<br>· 24-12 vs 25-4 8.4(+1.8) — 바이백 뒤 25-4 대차 −752 상환에 되벌어짐, 재진입 없음</p>
       </div>
     </div>
   </section>
@@ -341,107 +347,108 @@
         <table>
           <thead><tr><th>외국인 선물 순매수 (계약)</th><th>3선</th><th>10선</th></tr></thead>
           <tbody>
-            <tr><td>당일 (10-21)</td><td class="pl">+3,635</td><td class="pl">+372</td></tr>
-            <tr><td>5일</td><td class="pl">+125,506</td><td class="pl">+59,996</td></tr>
-            <tr><td>10일</td><td class="pl">+29,445</td><td class="pl">+20,587</td></tr>
-            <tr><td>20일</td><td class="pl">+90,532</td><td class="pl">+33,193</td></tr>
-            <tr><td>6개월</td><td class="pl">+104,199</td><td class="pl">+28,856</td></tr>
+            <tr><td>당일 (10-22)</td><td class="pl">+14,241</td><td class="pl">+3,274</td></tr>
+            <tr><td>5일</td><td class="pl">+139,747</td><td class="pl">+63,270</td></tr>
+            <tr><td>10일</td><td class="pl">+42,779</td><td class="pl">+23,260</td></tr>
+            <tr><td>20일</td><td class="pl">+99,518</td><td class="pl">+35,915</td></tr>
+            <tr><td>6개월</td><td class="pl">+105,248</td><td class="pl">+32,455</td></tr>
           </tbody>
         </table>
         <table style="margin-top:10px">
-          <thead><tr><th>투자자별 (10-21)</th><th>3선</th><th>10선</th></tr></thead>
+          <thead><tr><th>투자자별 (10-22)</th><th>3선</th><th>10선</th></tr></thead>
           <tbody>
-            <tr><td>외국인</td><td class="pl">+3,635</td><td class="pl">+372</td></tr>
-            <tr><td>증권</td><td class="pl">+3,345</td><td class="mn">−1,815</td></tr>
-            <tr><td>은행</td><td class="mn">−6,160</td><td class="pl">+1,820</td></tr>
-            <tr><td>투신</td><td class="mn">−778</td><td class="mn">−353</td></tr>
-            <tr><td>보험</td><td class="pl">+241</td><td class="mn">−4</td></tr>
+            <tr><td>외국인</td><td class="pl">+14,241</td><td class="pl">+3,274</td></tr>
+            <tr><td>증권</td><td class="mn">−3,961</td><td class="mn">−2,861</td></tr>
+            <tr><td>은행</td><td class="mn">−8,082</td><td class="mn">−752</td></tr>
+            <tr><td>투신</td><td class="mn">−2,578</td><td class="pl">+25</td></tr>
+            <tr><td>보험</td><td class="mn">−19</td><td class="pl">+250</td></tr>
           </tbody>
         </table>
-        <p style="margin:9px 0 0;font-size:11.5px;color:var(--ink3)"><b>이레째 매수지만 10선은 +372로 멈췄다.</b> 3선 +3,635는 증권 +3,345와 같이 샀고 은행 −6,160이 팔았다 — 증권이 사흘 만에 매수 전환. 10선은 은행 +1,820 매수 vs 증권 −1,815 매도로 외국인 없이 국내끼리 손바뀜, 미결제 −3,244(246,598)로 롱 청산이 더 컸다. 5일 누적 3선 +125,506·10선 +59,996, 6개월 3선 +104,199. 10/12 이후 8일 연속 순매수, 10선은 사흘째 감소(+10,243 → +3,088 → +372).</p>
+        <p style="margin:9px 0 0;font-size:11.5px;color:var(--ink3)"><b>금통위 날 외국인 3선 +14,241 — 5일 누적 +139,747은 6개월 최대.</b> 결정 직후 강세를 은행 −8,082·증권 −3,961·투신 −2,578이 팔았고 외국인이 전부 받았다. 10선 +3,274는 증권 −2,861을 받은 것, 미결제 −476(245,928). 10/12 이후 9일 연속 순매수, 3선 누적 +133,422. 마감 전 3선이 −6틱으로 밀린 건 외국인이 손을 놓은 게 아니라 국내 매도가 더 컸던 것 — 오늘 시초 +24틱에서 외국인이 이어 사는지가 앞단 되밀림의 끝을 정한다.</p>
       </div>
       <div class="box">
         <ul class="pv">
-          <li><span class="t">리뷰</span><span>10-21 국고 <b>2년 −2.9 · 3년 −2.4 · 5년 −2.5 · 10년 −2.5 · 20년 +0.4 · 30년 −2.0bp</b>, 선물 <b>3선 +8틱(103.14) · 10선 +19틱(106.76)</b>. 10Y 4.150이 10/19 낙찰 4.165 하향. 20-30 4.9(−2.4)·10-20-30 버터 −5.3, 2-3 4.5(+0.5), 3-10 33.9. 코스피 +3.29%·원달러 1,325·WTI 97.15(−0.7%).</span></li>
-          <li><span class="t">대차</span><span><b>26-8 +910(16,084 · 19.63%) — 교환 뒤 이틀 +1,280, 30년 지표 숏 재적재.</b> 26-9 +490(21.47%)·26-2 +250·25-11 +160. 상환은 26-5 −650(8.51%)·26-6 −500(7.91%)·25-10 −430·26-3 −217·26-7 −200, <b>24-11 −2,000</b>(바이백 뒤). 26-10 −60(57.84%) 증액 전 유지.</span></li>
-          <li><span class="t">선물</span><span><b>3선 고평 2.1틱 — 전환선 +3까지 0.9틱, 10선 저평 1.6틱.</b> 외국인 3선 +3,635 · 10선 +372(사흘째 감소), 10선 미결제 −3,244. 금통위 뒤 3선 +3 돌파 여부가 '외국인 선물 → 차익 → 현물' 경로의 시험.</span></li>
-          <li><span class="t">현물</span><span><b>외국인 +7,476은 1년 이하 +7,380 — 23-10 +3,500 · 24-4 +1,500 · 24-12 +1,100 · 26-7 +900.</b> 초장기 −1,223(26-8 −348 이틀째). 보험·기금 25-7 +900 · 26-8 +498 · 26-2 +380. 국내 4개 기관 −8,304(투신 −8,810 · 보험 −1,073 · 기금 −844 / 은행 +2,423).</span></li>
-          <li><span class="t">전략</span><span><b>금통위 전강후약 — 10선 롱은 오전 결정 전후 정리, 그 뒤 한미 10년 스프레드(한국 매도 / 미국 매수, −97 → 좁혀짐)와 2-3 스티프너 진입 모색.</b> 2-5도 같이 — 매파 되밀림이 있으면 그 뒤, 없으면 바로. 3Y 되밀림 저항 3.940(낙찰), 10Y 지지 4.165(낙찰). 30년은 26-8 대신 10/27 증액 뒤 26-10. 26-5 매수 / 26-3 매도 16.6 유지(목표 20).</span></li>
-          <li><span class="t">크레딧</span><span><b>이번 주 최다 매수 호가 — 로컬이 델타를 늦게 채우려 크레딧을 조금씩 산다.</b> 증권 RP 단기 매수로 1년 특은채 민평~−1원·시은채 −1~−1.5원·공사채 1년 −1원, 2~3년 은행채는 국고 −2bp 이상, 공사채 2년은 공백 지속, 3년 국고 −2~3bp. 카드채 2~3년 민평 언더 2~2.5bp로 선물보다 강, 캐피탈 1.5년 이상 통당 −2bp. <b>금통위가 매파적이지 않으면 스프레드 큰 1~2년 공사채·은행채로 시선이 옮겨가는 분기점</b> — 선별 진입 준비, 비중 확대는 결과 확인 뒤.</span></li>
+          <li><span class="t">리뷰</span><span>10-22 국고 <b>2년 +0.9 · 3년 +2.6 · 5년 +2.0 · 10년 −0.3 · 20년 +0.9 · 30년 −1.5bp</b>, 선물 <b>3선 −6틱(103.08) · 10선 +3틱(106.79)</b>. 3-10 31.0·5-10 16.7·3-30 39.5·5-30 25.2 60일 최저, 2-3 6.2(+1.7). 코스피 −3.52%·원달러 1,324·WTI 99.47(+2.4%).</span></li>
+          <li><span class="t">대차</span><span><b>26-6 −880(12,940 · 7.16%) · 26-5 −330(8.33%) · 26-3 −580 · 25-4 −752 · 26-8 −450 — 상환 날.</b> 쌓인 건 <b>26-9 +650(11,190 · 22.79%, 10/26 입찰 앞) · 26-10 +250(5,120 · 60.81%, 10/27 증액 앞) · 26-7 +364(1,154, 2년 지표 첫 적재)</b>. 24-6 +430(630)은 신규.</span></li>
+          <li><span class="t">선물</span><span><b>3선 고평 1.9틱 · 10선 저평 1.0틱.</b> 외국인 3선 +14,241 · 10선 +3,274, 10선 미결제 −476. 오늘 시초 +24·+89틱은 미국 −16bp 반영이라 고저평은 장 초반 이론가 재계산 뒤 판단. 3선 +3 전환선은 외국인 연속 매수 중에 넘는다.</span></li>
+          <li><span class="t">현물</span><span><b>외국인 +6,730 — 2년 지표 26-7 +3,000 · 23-10 +3,300 · 26-6 +1,326 · 26-5 +587.</b> 10년 초과 −2,116(25-9 −936 · 25-7 −600 · 26-2 −466 · 26-8 −171). 보험·기금 26-8 +2,630 · 25-2 +680 · 25-7 +500. 국내 4개 기관 +1,450(보험 +891 · 기금 +992 · 은행 +953 · 투신 −1,386).</span></li>
+          <li><span class="t">전략</span><span><b>한미 10년 스프레드 −94 → −81 목표 도달, 절반 실현 · 잔여 목표 −72 손절 −90. 2-3 스티프너 4.2 → 6.2, 목표 12 유지.</b> 3-10 31.0 60일 최저 — 앞단 외국인·30년 보험 구도라 스티프너 재진입 보류. 30년은 10/27 증액 뒤 26-10. 26-5 매수 / 26-3 매도 15.5 유지.</span></li>
+          <li><span class="t">크레딧</span><span><b>9개월~1.5년 커브가 플랫 — 1~1.5년이 통당 −3~4bp 매도우위.</b> 9월까지 롤다운이 가장 좋던 1.5년이 한 달 새 가장 나쁜 구간이 됐다. 은행채는 2년(선물 −1bp)·3년(지표 수준)부터 거래, 공사채는 3년부터, 카드채 2~3년 지표 +1~2bp에 캐피탈도 지표 수준 매수 등장. 1년 스프레드는 RP 매수에도 추가 확대 — 9월부터 단기로 쏠린 발행 매물이 소화돼야 1.5년 이상이 풀린다. 최종금리 3.50 기대가 안 올라간 만큼 크레딧 심리 개선 여지는 있지만 당일 강세는 기대 이하. 비중 확대는 1년 강세 확인 뒤.</span></li>
         </ul>
       </div>
     </div>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">06</span> 장외 현물 순매수 — 외국인 vs 국내 기관 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-21 · 억원 · 국고</span></h3>
+    <h3 class="sec-h"><span class="n">06</span> 장외 현물 순매수 — 외국인 vs 국내 기관 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-22 · 억원 · 국고</span></h3>
     <div class="low">
       <div class="box flow">
         <table>
-          <thead><tr><th>만기 구간</th><th>외국인 당일</th><th>외국인 주간 (10/15~10/21)</th></tr></thead>
+          <thead><tr><th>만기 구간</th><th>외국인 당일</th><th>외국인 주간 (10/16~10/22)</th></tr></thead>
           <tbody>
-            <tr><td>1년 이하</td><td class="pl">+7,380</td><td class="pl">+22,151</td></tr>
-            <tr><td>2년 이하</td><td class="pl">+2,045</td><td class="pl">+8,342</td></tr>
-            <tr><td>3년 이하</td><td class="mn">−65</td><td class="pl">+1,667</td></tr>
-            <tr><td>5년 이하</td><td class="mn">−413</td><td class="pl">+1,007</td></tr>
-            <tr><td>10년 이하</td><td class="mn">−249</td><td class="pl">+5,917</td></tr>
-            <tr><td>10년 초과</td><td class="mn">−1,223</td><td class="mn">−8,888</td></tr>
-            <tr><td><b>국고 계</b></td><td class="pl"><b>+7,476</b></td><td class="pl"><b>+30,195</b></td></tr>
+            <tr><td>1년 이하</td><td class="pl">+3,940</td><td class="pl">+21,045</td></tr>
+            <tr><td>2년 이하</td><td class="pl">+3,003</td><td class="pl">+9,980</td></tr>
+            <tr><td>3년 이하</td><td class="pl">+612</td><td class="pl">+2,282</td></tr>
+            <tr><td>5년 이하</td><td class="pl">+210</td><td class="pl">+132</td></tr>
+            <tr><td>10년 이하</td><td class="pl">+1,081</td><td class="pl">+6,536</td></tr>
+            <tr><td>10년 초과</td><td class="mn">−2,116</td><td class="mn">−7,080</td></tr>
+            <tr><td><b>국고 계</b></td><td class="pl"><b>+6,730</b></td><td class="pl"><b>+32,894</b></td></tr>
           </tbody>
         </table>
-        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>1년 이하 +7,380 — 사흘 연속 단기 집중, 주간 +22,151.</b> 23-10 +3,500·24-4 +1,500·24-12 +1,100·25-1 +500에 2년 지표 26-7 +900까지. 장중 해당 종목이 눈에 띄게 강해질 정도의 강도였고 2년 −2.9가 전 구간 최강인 이유다. 3년 이상은 −65·−413·−249로 팔았고 <b>초장기 −1,223은 26-8 −348(이틀째)·25-7 −420·25-2 −249·24-2 −192</b> — 주간 10년 초과 −8,888. 선물·IRS로 듀레이션, 현물은 1년 이하라는 구조에 이번 주는 2년 지표가 더해졌다.</p>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>2년 이하 +3,003 — 2년 지표 26-7을 +3,000 샀다.</b> 1년 이하 +3,940(23-10 +3,300, 이번 주 누적 9,600)에 지표물 26-6 +1,326·26-5 +587까지, 단기물에서 지표물로 넓어졌다. 10년 초과 −2,116은 25-9 −936·25-7 −600·26-2 −466·26-8 −171로 사흘째 매도, 주간 −7,080. 주간 +32,894 중 1년 이하 +21,045·2년 이하 +9,980 — <b>앞단 현물 3조에 선물 5일 +139,747까지, 이번 주 앞단은 외국인이 만든 시장</b>이고 그래서 금통위 뒤 되밀림도 외국인 매수가 이어지는 한 3년 +2.6에서 그쳤다.</p>
       </div>
       <div class="box flow">
         <table>
-          <thead><tr><th>기관 (10-21)</th><th>국고 계</th><th style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px">10년 초과</th></tr></thead>
+          <thead><tr><th>기관 (10-22)</th><th>국고 계</th><th style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px">10년 초과</th></tr></thead>
           <tbody>
-            <tr><td>보험</td><td class="mn">−1,073</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+993</td></tr>
-            <tr><td>투신</td><td class="mn">−8,810</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−8</td></tr>
-            <tr><td>은행</td><td class="pl">+2,423</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+348</td></tr>
-            <tr><td>기금</td><td class="mn">−844</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+75</td></tr>
-            <tr><td>외국인</td><td class="pl">+7,476</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−1,223</td></tr>
-            <tr><td><b>합계</b></td><td class="mn"><b>−828</b></td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl"><b>+185</b></td></tr>
+            <tr><td>보험</td><td class="pl">+891</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+1,561</td></tr>
+            <tr><td>투신</td><td class="mn">−1,386</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+154</td></tr>
+            <tr><td>은행</td><td class="pl">+953</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="pl">+278</td></tr>
+            <tr><td>기금</td><td class="pl">+992</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−80</td></tr>
+            <tr><td>외국인</td><td class="pl">+6,730</td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn">−2,116</td></tr>
+            <tr><td><b>합계</b></td><td class="pl"><b>+8,180</b></td><td style="text-align:left;color:var(--ink2);border-left:1px solid var(--line2);padding-left:14px" class="mn"><b>−203</b></td></tr>
           </tbody>
         </table>
-        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>투신 −8,810 — 외국인이 사는 단기물을 투신이 팔았다.</b> 1년 이하 −5,300·3년 이하 −1,356·10년 이하 −950, 기타(은행채 등) +9,387로 교체. 보험 −1,073은 <b>10년 초과 +993(25-7 +900·26-8 +498·26-2 +380)</b>에 10년 이하 −1,000·3년 −530·5년 −516 — 사흘째 초장기 매수, 일부 보험사는 9월 이후 꾸준하다. 기금 −844(10년 −560), 은행 +2,423(1년 이하 +2,950, 통안 +2,100). 국내 4개 기관 −8,304로 이틀째 매도. 주간 보험 10년 초과 +10,357, 투신 −18,318, 은행 +9,443, 기금 −1,392.</p>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>보험 10년 초과 +1,561 — 26-8 +2,630 · 25-2 +680 · 25-7 +500, 나흘째 초장기 매수에 새 손이 붙었다.</b> 그동안 한 보험사가 끌던 매수에 다른 기관이 가세해 외국인 초장기 매도(−2,116)를 받아냈고 30년이 −1.5로 전 구간 최강. 공사채도 10년 초과 +700. 기금 +992(5년 이하 +1,187), 은행 +953(2년 이하 +1,301·10년 이하 +800), 투신 −1,386(2년 이하 −840). 국내 4개 기관 +1,450으로 사흘 만에 매수 전환. 주간 보험 10년 초과 +11,492, 투신 −16,301, 은행 +8,135.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">07</span> 대차잔고 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-21 기준 · 억원</span></h3>
+    <h3 class="sec-h"><span class="n">07</span> 대차잔고 <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">10-22 기준 · 억원</span></h3>
     <div class="low">
       <div class="box flow">
         <table>
           <thead><tr><th>종목</th><th>잔량</th><th>상장 대비</th><th>전일비</th><th>주간</th><th>월간</th></tr></thead>
           <tbody>
-            <tr><td>25-10 <span style="color:var(--ink3);font-size:10px">3선 바스켓</span></td><td>29,870</td><td>15.47%</td><td class="pl">−430</td><td class="pl">−1,930</td><td class="pl">−6,180</td></tr>
-            <tr><td>26-2 <span style="color:var(--ink3);font-size:10px">30Y 구지표</span></td><td>27,710</td><td>9.74%</td><td class="mn">+250</td><td class="mn">+670</td><td class="mn">+13,270</td></tr>
-            <tr><td>26-3 <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>21,744</td><td>10.09%</td><td class="pl">−217</td><td class="pl">−2,031</td><td class="pl">−8,481</td></tr>
-            <tr><td>26-8 <span style="color:var(--ink3);font-size:10px">30Y 지표</span></td><td>16,084</td><td>19.63%</td><td class="mn">+910</td><td class="mn">+1,234</td><td class="mn">+4,550</td></tr>
-            <tr><td>26-5 <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>15,249</td><td>8.51%</td><td class="pl">−650</td><td class="pl">−5,990</td><td class="pl">−15,430</td></tr>
-            <tr><td>26-6 <span style="color:var(--ink3);font-size:10px">10Y 지표 · 낙찰 4.165</span></td><td>13,820</td><td>7.91%</td><td class="pl">−500</td><td class="pl">−5,040</td><td class="pl">−5,520</td></tr>
-            <tr><td>24-13</td><td>12,809</td><td>8.10%</td><td>0</td><td class="pl">−840</td><td class="pl">−886</td></tr>
-            <tr><td>25-3</td><td>12,645</td><td>6.16%</td><td class="pl">−82</td><td class="mn">+2,294</td><td class="pl">−617</td></tr>
-            <tr><td>25-4 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>12,203</td><td>4.36%</td><td>0</td><td class="pl">−791</td><td class="pl">−14,844</td></tr>
-            <tr><td>25-8</td><td>10,576</td><td>6.58%</td><td class="mn">+10</td><td class="pl">−1,056</td><td class="pl">−2,227</td></tr>
-            <tr><td>26-9 <span style="color:var(--ink3);font-size:10px">5Y 지표 · 10/26 입찰</span></td><td>10,540</td><td>21.47%</td><td class="mn">+490</td><td class="mn">+1,410</td><td class="mn">+5,190</td></tr>
-            <tr><td>25-11 <span style="color:var(--ink3);font-size:10px">10선 바스켓</span></td><td>10,242</td><td>5.80%</td><td class="mn">+160</td><td class="pl">−1,607</td><td class="pl">−5,421</td></tr>
-            <tr><td>24-7 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>7,011</td><td>6.75%</td><td class="mn">+107</td><td class="pl">−278</td><td class="mn">+397</td></tr>
-            <tr><td>25-5 <span style="color:var(--ink3);font-size:10px">10Y 비지표</span></td><td>5,690</td><td>4.22%</td><td class="mn">+9</td><td class="pl">−81</td><td class="pl">−1,651</td></tr>
-            <tr><td>25-9 <span style="color:var(--ink3);font-size:10px">20Y 구지표</span></td><td>5,110</td><td>7.89%</td><td class="pl">−100</td><td class="pl">−810</td><td class="pl">−2,630</td></tr>
-            <tr><td>26-10 <span style="color:var(--ink3);font-size:10px">20Y 지표 · 10/27 증액</span></td><td>4,870</td><td>57.84%</td><td class="pl">−60</td><td class="mn">+1,170</td><td class="mn">+3,320</td></tr>
-            <tr><td>24-11</td><td>4,813</td><td>2.94%</td><td class="pl">−2,000</td><td class="pl">−2,000</td><td class="mn">+2,326</td></tr>
-            <tr><td>26-1</td><td>2,603</td><td>1.34%</td><td>0</td><td class="pl">−177</td><td class="pl">−1,410</td></tr>
-            <tr><td>24-12 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>2,486</td><td>1.68%</td><td class="pl">−65</td><td class="mn">+867</td><td class="pl">−27</td></tr>
-            <tr><td>26-7 <span style="color:var(--ink3);font-size:10px">2Y 지표 · 낙찰 3.875</span></td><td>790</td><td>1.02%</td><td class="pl">−200</td><td class="mn">+60</td><td class="pl">−4,460</td></tr>
+            <tr><td>25-10 <span style="color:var(--ink3);font-size:10px">3선 바스켓</span></td><td>29,770</td><td>15.42%</td><td class="pl">−100</td><td class="pl">−1,530</td><td class="pl">−4,770</td></tr>
+            <tr><td>26-2 <span style="color:var(--ink3);font-size:10px">30Y 구지표</span></td><td>27,790</td><td>9.77%</td><td class="mn">+80</td><td class="mn">+460</td><td class="pl">−4,790</td></tr>
+            <tr><td>26-3 <span style="color:var(--ink3);font-size:10px">5Y 구지표 · 3선 바스켓</span></td><td>21,164</td><td>9.82%</td><td class="pl">−580</td><td class="pl">−1,771</td><td class="pl">−6,091</td></tr>
+            <tr><td>26-8 <span style="color:var(--ink3);font-size:10px">30Y 지표</span></td><td>15,634</td><td>19.08%</td><td class="pl">−450</td><td class="mn">+1,774</td><td class="mn">+3,000</td></tr>
+            <tr><td>26-5 <span style="color:var(--ink3);font-size:10px">3Y 지표 · 낙찰 3.940</span></td><td>14,919</td><td>8.33%</td><td class="pl">−330</td><td class="pl">−6,010</td><td class="pl">−14,590</td></tr>
+            <tr><td>26-6 <span style="color:var(--ink3);font-size:10px">10Y 지표 · 낙찰 4.165</span></td><td>12,940</td><td>7.16%</td><td class="pl">−880</td><td class="pl">−6,440</td><td class="pl">−6,390</td></tr>
+            <tr><td>24-13</td><td>12,809</td><td>8.10%</td><td>0</td><td class="pl">−940</td><td class="pl">−886</td></tr>
+            <tr><td>25-3</td><td>12,545</td><td>6.11%</td><td class="pl">−100</td><td class="mn">+2,094</td><td class="pl">−734</td></tr>
+            <tr><td>25-4 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>11,452</td><td>4.09%</td><td class="pl">−752</td><td class="pl">−1,416</td><td class="pl">−14,395</td></tr>
+            <tr><td>26-9 <span style="color:var(--ink3);font-size:10px">5Y 지표 · 10/26 입찰</span></td><td>11,190</td><td>22.79%</td><td class="mn">+650</td><td class="mn">+1,460</td><td class="mn">+6,940</td></tr>
+            <tr><td>25-11 <span style="color:var(--ink3);font-size:10px">10선 바스켓</span></td><td>10,382</td><td>5.88%</td><td class="mn">+140</td><td class="pl">−1,379</td><td class="pl">−5,091</td></tr>
+            <tr><td>25-8</td><td>10,359</td><td>6.45%</td><td class="pl">−217</td><td class="pl">−575</td><td class="pl">−2,413</td></tr>
+            <tr><td>24-7 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>7,011</td><td>6.75%</td><td>0</td><td class="pl">−158</td><td class="mn">+185</td></tr>
+            <tr><td>25-5 <span style="color:var(--ink3);font-size:10px">10Y 비지표</span></td><td>5,590</td><td>4.14%</td><td class="pl">−100</td><td class="pl">−51</td><td class="pl">−1,801</td></tr>
+            <tr><td>25-9 <span style="color:var(--ink3);font-size:10px">20Y 구지표</span></td><td>5,180</td><td>8.00%</td><td class="mn">+70</td><td class="pl">−580</td><td class="pl">−2,560</td></tr>
+            <tr><td>26-10 <span style="color:var(--ink3);font-size:10px">20Y 지표 · 10/27 증액</span></td><td>5,120</td><td>60.81%</td><td class="mn">+250</td><td class="mn">+1,520</td><td class="mn">+3,470</td></tr>
+            <tr><td>24-11</td><td>4,813</td><td>2.94%</td><td>0</td><td class="pl">−2,000</td><td class="mn">+2,326</td></tr>
+            <tr><td>26-1</td><td>2,603</td><td>1.34%</td><td>0</td><td class="pl">−77</td><td class="pl">−1,250</td></tr>
+            <tr><td>24-12 <span style="color:var(--ink3);font-size:10px">10/21 바이백 대상</span></td><td>2,416</td><td>1.63%</td><td class="pl">−69</td><td class="mn">+798</td><td class="pl">−112</td></tr>
+            <tr><td>26-7 <span style="color:var(--ink3);font-size:10px">2Y 지표 · 낙찰 3.875</span></td><td>1,154</td><td>1.49%</td><td class="mn">+364</td><td class="mn">+374</td><td class="pl">−4,096</td></tr>
             <tr><td>26-11 <span style="color:var(--ink3);font-size:10px">50Y 지표 · 낙찰 4.195</span></td><td>700</td><td>5.00%</td><td>0</td><td class="mn">+200</td><td class="mn">+700</td></tr>
           </tbody>
         </table>
-        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>26-8 +910 — 교환 발행 뒤 이틀 +1,280(16,084 · 19.63%), 30년 지표 숏이 다시 쌓인다.</b> 외국인이 26-8을 이틀째 팔고(−348) 보험이 받는(+498) 구도와 같은 방향. 26-9 +490(10,540 · 21.47%)은 10/26 입찰 앞, 26-2 +250(27,710). 상환은 입찰 종목·바스켓 — 26-5 −650(15,249 · 8.51%)·26-6 −500(13,820 · 7.91%)·25-10 −430·26-3 −217·26-7 −200, 그리고 <b>24-11 −2,000(6,813 → 4,813)</b>은 바이백 뒤 대량 반환. 바이백 대상 25-4 0·24-12 −65·24-7 +107 — 월요일 적재분 되돌림은 아직 작다. <b>26-10 −60(4,870 · 57.84%)은 10/27 증액까지 그대로이고 어제 20년이 홀로 +0.4</b>로 그 숏이 가격에 나오기 시작했다.</p>
+        <p style="margin:9px 0 0;font-size:11px;color:var(--ink3)"><b>금통위 날은 상환 날 — 26-6 −880(12,940 · 7.16%) · 25-4 −752 · 26-3 −580 · 26-8 −450 · 26-5 −330.</b> 10년 지표 숏은 입찰(10/19) 뒤 −6,440으로 거의 다 풀렸고 3년 지표도 8.33%. 26-8 −450은 그제 +910 적재분 일부 환매 — 보험이 2,630억 받아가자 숏이 물러섰다. 쌓인 건 <b>26-9 +650(11,190 · 22.79%)으로 10/26 입찰 앞 적재가 본격화</b>, 26-10 +250(5,120 · 60.81%)은 증액 앞 최고치, <b>26-7 +364(1,154 · 1.49%)</b>는 외국인이 3,000억 산 2년 지표에 붙는 반대 숏. 24-6 +430은 신규 종목. 25-11 +140·25-9 +70·26-2 +80.</p>
       </div>
     </div>
-  </section>  </div><!--/colmain-->
+  </section>
+  </div><!--/colmain-->
   <aside class="colside">
   <section>
     <h3 class="sec-h"><span class="n">08</span> 시황 피드 <span class="live">LIVE</span></h3>
@@ -487,5 +494,24 @@
       location.href=(v==='latest')?(root+page):(root+'archive/'+v+'/'+page);
     };
   }).catch(function(){ if(sel.parentNode) sel.parentNode.style.display='none'; });
+})();
+</script>
+<script>
+(function(){
+  var ko=true;
+  var L=ko?['펼치기 ▾','접기 ▴']:['Show ▾','Hide ▴'];
+  Array.prototype.forEach.call(document.querySelectorAll('section'),function(sec){
+    if(sec.closest&&sec.closest('aside'))return;
+    var h=sec.querySelector(':scope>.sec-h'),n=h&&h.querySelector('.n');
+    if(!n||parseInt(n.textContent,10)<3)return;
+    sec.classList.add('fold','closed');
+    var t=document.createElement('span');t.className='fold-t';h.appendChild(t);
+    h.setAttribute('role','button');h.tabIndex=0;
+    function upd(){t.textContent=sec.classList.contains('closed')?L[0]:L[1];h.setAttribute('aria-expanded',!sec.classList.contains('closed'));}
+    function tog(){sec.classList.toggle('closed');upd();}
+    h.addEventListener('click',tog);
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tog();}});
+    upd();
+  });
 })();
 </script>

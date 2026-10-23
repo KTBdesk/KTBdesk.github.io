@@ -1,4 +1,4 @@
-<title>US Rates Daily · 2026-10-22</title>
+<title>US Rates Daily · 2026-10-23</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -108,6 +108,14 @@
   .pos .meta{flex-basis:100%;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:left;line-height:1.55}
   .foot{margin-top:20px;font-size:11px;color:var(--ink3);line-height:1.7;border-top:1px solid var(--line);padding-top:12px}
   .foot b{color:var(--ink2)}
+  /* fold */
+  section.fold>.sec-h{cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+  section.fold>.sec-h::after{order:1}
+  section.fold>.sec-h .fold-t{order:2;font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink2);text-transform:none;letter-spacing:0;border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--card,transparent);white-space:nowrap}
+  section.fold.closed>.sec-h{margin-bottom:0}
+  section.fold.closed>.sec-h .fold-t{color:var(--gold);border-color:var(--gold)}
+  section.fold.closed>*:not(.sec-h){display:none}
+  @media print{section.fold.closed>*:not(.sec-h){display:block}section.fold>.sec-h .fold-t{display:none}}
 </style>
 
 <div class="wrap">
@@ -121,24 +129,23 @@
       <div class="lang"><a href="en.html">KTB</a><a class="on" href="us_en.html">UST</a><a href="us.html">KO</a><a class="on" href="us_en.html">EN</a></div>
       <div class="histwrap">📅 <select id="histsel" aria-label="Past reports"><option>Past reports</option></select></div>
       <span class="tag">Desk Daily</span><br>
-      Report <span class="d">2026-10-22 (Thu)</span><br>
-      Based on 10-21 US close
+      Report <span class="d">2026-10-23 (Fri)</span><br>
+      Based on 10-22 US close
     </div>
   </div>
 
   <div class="keys">
-    <div class="keychip hot"><div class="dd">10-21</div><div class="ev">📈 <b>2Y 4.808 (+2.75) · 5Y 4.952 (+2.25) · 10Y 5.121 (+0.9) · 30Y 5.411 (−1.0)</b> — front end up, long end down, a third day of flattening, 2-10 31.3 (−1.85) · 10-30 29.0 (−1.9)</div><div class="dt">close</div></div>
-    <div class="keychip hot"><div class="dd">Oil</div><div class="ev">🛢 WTI to 100 intraday (Hormuz tanker attack, Houthi threats to Saudi facilities) → <b>97.15 (−0.7%)</b> at the close — Putin agreed in principle to US-mediated peace talks · US crude stocks fell</div><div class="dt">reversal</div></div>
-    <div class="keychip"><div class="dd">Risk</div><div class="ev">📊 SpaceX earnings surprise — Nasdaq +1.05% · Dow +0.69% · gold 4,143 (−0.4%) · bitcoin +1.9% · <b>KOSPI +3.29%</b></div><div class="dt">10-21</div></div>
-    <div class="keychip"><div class="dd">KR−US</div><div class="ev">🇰🇷 Korea 10Y −2.5 vs US +0.9 — <b>KR10−US10 −97bp (−3.4)</b> · just above the 60-day low of −99 · ranges 2Y 4.756~4.85 · 10Y 5.023~5.17</div><div class="dt">z −1.93</div></div>
+    <div class="keychip hot"><div class="dd">10-22</div><div class="ev">📉 <b>2Y 4.642 (−16.6) · 5Y 4.7715 (−18.05) · 10Y 4.9545 (−16.65) · 30Y 5.282 (−12.9)</b> — −13 to −18bp in a day, 10-30 32.75 (+3.75), a bull steepening</div><div class="dt">close</div></div>
+    <div class="keychip hot"><div class="dd">AI</div><div class="ev">💥 Meta — a beat, yet the stock fell hard on <b>AI capex and its funding, negative free cash flow, a jump in its CDS</b> · Nasdaq −2.60% · Dow +0.02% · <b>KOSPI −3.52% · KOSDAQ −3.62%</b></div><div class="dt">safe haven</div></div>
+    <div class="keychip"><div class="dd">Oil</div><div class="ev">🛢 WTI 99.47 (+2.4%) — Houthi strikes on Saudi Arabia, back toward 100 · a bearish input for bonds that risk aversion overwhelmed · gold 4,150 (+0.2%) · bitcoin −3.3%</div><div class="dt">10-22</div></div>
+    <div class="keychip"><div class="dd">KR−US</div><div class="ev">🇰🇷 Korea 10Y −0.3 vs US −16.65 — <b>KR10−US10 −97 → −81 (+16)</b> · ranges 2Y 4.58~4.71 · 10Y 4.87~5.04</div><div class="dt">z −1.16</div></div>
   </div>
 
   <section>
     <h3 class="sec-h"><span class="n">01</span> Upcoming Calendar</h3>
     <div class="cal">
-      <div class="row today"><span class="cd">10/22</span><span class="cw">Thu</span><span class="pill cpi">Data</span><span class="ev">Beige Book <span class="cw">03:00</span> · US existing home sales <span class="cw">23:00</span></span></div>
-      <div class="row"><span class="cd">10/23</span><span class="cw">Fri</span><span class="pill cpi">Data</span><span class="ev"><b>US October S&amp;P PMI</b> <span class="cw">22:45</span> · Michigan final <span class="cw">23:00</span></span></div>
-      <div class="row"><span class="cd">10/28</span><span class="cw">Wed</span><span class="pill rate">Rate</span><span class="ev"><b>FOMC</b> <span class="cw">· Q3 GDP advance 10/29</span></span></div>
+      <div class="row today"><span class="cd">10/23</span><span class="cw">Fri</span><span class="pill cpi">Data</span><span class="ev"><b>US October S&amp;P PMI</b> <span class="cw">22:45</span> · Michigan final <span class="cw">23:00</span></span></div>
+      <div class="row"><span class="cd">10/28</span><span class="cw">Wed</span><span class="pill rate">Rate</span><span class="ev"><b>FOMC</b> <span class="cw">· Q3 GDP advance 10/29 · PCE 10/30</span></span></div>
     </div>
   </section>
 
@@ -147,79 +154,80 @@
     <div class="cards">
 
       <div class="card">
-        <div class="chd"><div class="name">2Y <span>UST</span></div><div class="pxwrap"><span class="px">4.808</span><span class="pxsub" style="color:var(--down)">10/21 +2.75bp · pre-open 4.81</span></div></div>
+        <div class="chd"><div class="name">2Y <span>UST</span></div><div class="pxwrap"><span class="px">4.642</span><span class="pxsub" style="color:var(--up)">10/22 −16.6bp · pre-open 4.66</span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">4.756</span><span class="sep">~</span><span class="hi">4.85</span></span></div>
-            <div class="track"><div class="dot" style="left:55%"></div></div>
+            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">4.58</span><span class="sep">~</span><span class="hi">4.71</span></span></div>
+            <div class="track"><div class="dot" style="left:47%"></div></div>
           </div>
           <div class="bd">
             <div class="bl"><span class="k">60-day realised range</span><span class="r"><span class="lo">4.134</span><span class="sep">~</span><span class="hi">4.932</span></span></div>
-            <div class="track"><div class="dot" style="left:84%"></div></div>
+            <div class="track"><div class="dot" style="left:64%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">Delta in 5Y/10Y rather than 2Y</span><span class="act">Back above the 20-day (4.78) · target 4.51</span><span class="meta">Hike pricing restored on the AI bounce<br>2-5 14.4 (−0.5)</span></div>
+        <div class="pos"><span class="badge flat">Hold delta — target 4.51</span><span class="act">Through the 20-day (4.78) · October hike pricing gone</span><span class="meta">−16.6 on the AI selloff<br>2-5 12.95 (−1.45)</span></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="name">10Y <span>UST</span></div><div class="pxwrap"><span class="px">5.121</span><span class="pxsub" style="color:var(--down)">10/21 +0.9bp · pre-open 5.12</span></div></div>
+        <div class="chd"><div class="name">10Y <span>UST</span></div><div class="pxwrap"><span class="px">4.9545</span><span class="pxsub" style="color:var(--up)">10/22 −16.65bp · pre-open 4.96</span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">5.023</span><span class="sep">~</span><span class="hi">5.17</span></span></div>
-            <div class="track"><div class="dot" style="left:66%"></div></div>
+            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">4.87</span><span class="sep">~</span><span class="hi">5.04</span></span></div>
+            <div class="track"><div class="dot" style="left:49%"></div></div>
           </div>
           <div class="bd">
             <div class="bl"><span class="k">60-day realised range</span><span class="r"><span class="lo">4.550</span><span class="sep">~</span><span class="hi">5.288</span></span></div>
-            <div class="track"><div class="dot" style="left:77%"></div></div>
+            <div class="track"><div class="dot" style="left:55%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">Hold delta — target 4.75</span><span class="act">Under the 20-day (5.15) · 5.086 → 5.05 → 4.99</span><span class="meta">Resistance 5.165 · 5.19<br>KR10−US10 −97</span></div>
+        <div class="pos"><span class="badge flat">Hold delta — target 4.75</span><span class="act">4.93 (September box top) → 4.887 (60-day mean)</span><span class="meta">Add on a pullback to 5.00~5.04 · stop 5.10<br>KR10−US10 −81 (+16)</span></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="name">30Y <span>UST</span></div><div class="pxwrap"><span class="px">5.411</span><span class="pxsub" style="color:var(--up)">10/21 −1.0bp</span></div></div>
+        <div class="chd"><div class="name">30Y <span>UST</span></div><div class="pxwrap"><span class="px">5.282</span><span class="pxsub" style="color:var(--up)">10/22 −12.9bp</span></div></div>
         <div class="bands">
           <div class="bd">
-            <div class="bl"><span class="k">10–30 spread</span><span class="r">29.0bp <span style="color:var(--ink3);font-size:10px">· z60 −1.67 · one-year z −2.80</span></span></div>
-            <div class="track"><div class="dot" style="left:2%"></div></div>
+            <div class="bl"><span class="k">10–30 spread</span><span class="r">32.75bp <span style="color:var(--ink3);font-size:10px">· z60 −1.22 · one-year z −2.36</span></span></div>
+            <div class="track"><div class="dot" style="left:8%"></div></div>
           </div>
           <div class="bd">
-            <div class="bl"><span class="k">20–30 spread</span><span class="r">−5.85bp <span style="color:var(--ink3);font-size:10px">· 60-day low −5.90</span></span></div>
-            <div class="track"><div class="dot" style="left:1%"></div></div>
+            <div class="bl"><span class="k">20–30 spread</span><span class="r">−4.05bp <span style="color:var(--ink3);font-size:10px">· +1.8 · z60 −0.84</span></span></div>
+            <div class="track"><div class="dot" style="left:25%"></div></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">Hold</span><span class="act">Fifth session below the 5.50 box bottom</span><span class="meta">The long end bought the oil reversal<br>The CTD-switch tail is a near-6% story</span></div>
+        <div class="pos"><span class="badge flat">Hold</span><span class="act">Sixth session below the 5.50 box bottom</span><span class="meta">A front-led bull steepening<br>The CTD-switch tail has receded (30Y 5.28)</span></div>
       </div>
 
     </div>
-    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ Daily expected ranges are the desk's (2Y <b>4.756–4.85</b> · 10Y <b>5.023–5.17</b>). The dot marks the <b>10-21 close</b>; pre-open 2Y 4.81, 10Y 5.12. The base-for-lower-yields view holds — hold delta, final targets 2Y 4.51, 10Y 4.75.</p>
+    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ Daily expected ranges are the desk's (2Y <b>4.58–4.71</b> · 10Y <b>4.87–5.04</b>). The dot marks the <b>10-22 close</b>; pre-open 2Y 4.66, 10Y 4.96. The hold-delta view's final targets, 2Y 4.51 and 10Y 4.75, are 13 and 20bp away.</p>
   </section>
 
   <section>
     <h3 class="sec-h"><span class="n">03</span> Macro &amp; Curve Dislocations</h3>
     <div class="mc">
       <div class="box">
-        <p><b>Front end up, long end down — a third day of flattening.</b> 10/21 close <b>2Y 4.808 (+2.75) · 5Y 4.952 (+2.25) · 10Y 5.121 (+0.9) · 20Y 5.4695 (−0.1) · 30Y 5.411 (−1.0)</b>. 2-10 31.3 (−1.85), 10-30 29.0 (−1.9), 10-20 34.85 (−1.0), 20-30 −5.85 — 2-10 is −10.5 on the week. AI and semiconductor stocks bounced on SpaceX earnings (Nasdaq +1.05%), so the front end took back its October hike pricing; oil ran to 100 (Hormuz tanker attack, Houthi threats to Saudi facilities, a crude draw) and closed 97.15 after Putin agreed in principle to US-mediated peace talks — the long end bought that reversal. 30Y −2 versus the Asian close.</p>
-        <p><b>10Y 5.121 — below the 5.18 box bottom and the 20-day (5.15).</b> Next support 5.086 (range bottom), 5.05, 4.99; resistance 5.165 (range top), 5.19. The 2Y at 4.808 is back above its 20-day (4.78), hike pricing restored — 2-10 at 31.3 is a one-year z of −1.56. <b>The judgment that a base for lower yields has been built stands — hold delta where P&amp;L allows, final targets 2Y 4.51 and 10Y 4.75.</b> With hike pricing in the front end until the 10/28 FOMC, the delta is better held in the 5Y and 10Y than the 2Y.</p>
-        <p><b>KR−US is −97.</b> Korea −2.5 against the US +0.9 took KR10−US10 from −94 to <b>−97bp (−3.4)</b>, just above the 60-day low of −99. While offshore buy Korean short cash and futures, Korea outperforms — a non-hawkish BOK breaks −99. The 2-5 flattener stays taken; the 30Y at 5.411 is held below the 5.50 box bottom for a fifth session.</p>
+        <p><b>An AI selloff produced −16bp in a day.</b> 10/22 close <b>2Y 4.642 (−16.6) · 5Y 4.7715 (−18.05) · 10Y 4.9545 (−16.65) · 20Y 5.3225 (−14.7) · 30Y 5.282 (−12.9)</b>. Meta beat, but the scale of its AI capex and funding, a turn to negative free cash flow and a jump in its CDS were singled out, the stock fell hard and the move spread across AI and semiconductors; Nasdaq −2.60%. WTI rose to 99.47 (+2.4%) on Houthi strikes on Saudi Arabia, and risk aversion still overwhelmed the inflation input. The 5Y led at −18: 2-5 12.95 (−1.45), 5-10 18.3 (+1.4), 10-30 32.75 (+3.75) — <b>a front- and belly-led bull steepening</b>.</p>
+        <p><b>10Y 4.9545 — yesterday's intermediate path (5.075 → 4.99 → 4.95) was covered in one session.</b> Next are the September box top at 4.93, today's range bottom 4.87 and the 60-day mean 4.887. The 2Y at 4.642 is below its 20-day (4.78), October hike pricing gone (FOMC 10/28). <b>The hold-delta view stands — 13bp to the 2Y target of 4.51, 20bp to the 10Y target of 4.75.</b> A 16bp day invites a retracement, so adds come on a pullback to 5.00~5.04 (today's range top), stop 5.10. The retracement triggers are oil back through 100 and tonight's PMI.</p>
+        <p><b>KR–US is −81 — +16 in a day.</b> Korea −0.3 against the US −16.65 took KR10−US10 from −97 to <b>−81bp</b>, turning from the 60-day low of −99 toward the 60-day mean of −55. The sell-Korea / buy-US 10Y spread flagged two days ago (entered −94) passed its −82 target in a day — take half, remaining target −72, stop −90. A +89-tick Korean open puts the KTB 10Y near 4.05, a re-widening to −90 that is the re-entry for the remainder. The 30Y at 5.282 is held below the 5.50 box bottom; the 2-5 flattener stays taken.</p>
       </div>
       <div class="box">
         <table class="ctable">
-          <thead><tr><th>Curve</th><th>10-21 (bp)</th><th>1D</th><th>z(60d)</th></tr></thead>
+          <thead><tr><th>Curve</th><th>10-22 (bp)</th><th>1D</th><th>z(60d)</th></tr></thead>
           <tbody>
-            <tr><td>10-30</td><td>29.0</td><td class="cool">−1.9</td><td class="zbar">−1.67σ</td></tr>
-            <tr><td>20-30</td><td>−5.8</td><td class="cool">−0.9</td><td class="zbar">−1.63σ</td></tr>
-            <tr><td>10-20</td><td>34.9</td><td class="cool">−1.0</td><td class="zbar">−1.62σ</td></tr>
-            <tr><td>5-10</td><td>16.9</td><td class="cool">−1.4</td><td class="zbar">−1.21σ</td></tr>
-            <tr><td>2-10</td><td>31.3</td><td class="cool">−1.9</td><td class="zbar">−1.09σ</td></tr>
-            <tr><td>2-5-10 fly</td><td>2.5</td><td class="cool">−0.8</td><td class="zbar">−0.90σ</td></tr>
-            <tr><td>2-5</td><td>14.4</td><td class="cool">−0.5</td><td class="zbar">−0.45σ</td></tr>
+            <tr><td>10-20</td><td>36.8</td><td class="hot">+1.9</td><td class="zbar">−1.30σ</td></tr>
+            <tr><td>10-30</td><td>32.8</td><td class="hot">+3.8</td><td class="zbar">−1.22σ</td></tr>
+            <tr><td>2-10</td><td>31.2</td><td class="cool">−0.1</td><td class="zbar">−1.09σ</td></tr>
+            <tr><td>5-10</td><td>18.3</td><td class="hot">+1.4</td><td class="zbar">−0.94σ</td></tr>
+            <tr><td>2-5</td><td>12.9</td><td class="cool">−1.4</td><td class="zbar">−0.84σ</td></tr>
+            <tr><td>20-30</td><td>−4.0</td><td class="hot">+1.8</td><td class="zbar">−0.84σ</td></tr>
+            <tr><td>2-5-10 fly</td><td>5.3</td><td class="hot">+2.9</td><td class="zbar">−0.38σ</td></tr>
           </tbody>
         </table>
-        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ Based on the <b>10-21 US Treasury close</b> · changes are 10/20 → 10/21 · z on a <b>60-business-day rolling window</b><br>※ <b>10-30 29.0 (−1.9)</b> z60 −1.67 · one-year z −2.80 — near the 60-day low (28.5)<br>※ <b>2-10 31.3 (−1.85)</b> −10.5 on the week · 2-5-10 fly 2.5 (−0.85)<br>※ Outright <b>10Y 5.121 · 30Y 5.411</b> — one-year z +2.2 / +1.8</p>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ Based on the <b>10-22 US Treasury close</b> · changes are 10/21 → 10/22 · z on a <b>60-business-day rolling window</b><br>※ <b>10-30 32.75 (+3.75) · 10-20 36.8 (+1.95)</b> — a front- and belly-led bull steepening, the 5Y −18<br>※ <b>2-5 12.95 (−1.45)</b> z60 −0.84 · 2-5-10 fly 5.35 (+2.85)<br>※ Outright <b>10Y 4.9545 · 30Y 5.282</b> — z60 +0.30 / −0.31, one-year z +1.64 / +1.27</p>
       </div>
     </div>
   </section>
+
 </div>
 <script>
 (function(){
@@ -238,5 +246,24 @@
       location.href=(v==='latest')?(root+page):(root+'archive/'+v+'/'+page);
     };
   }).catch(function(){ if(sel.parentNode) sel.parentNode.style.display='none'; });
+})();
+</script>
+<script>
+(function(){
+  var ko=false;
+  var L=ko?['펼치기 ▾','접기 ▴']:['Show ▾','Hide ▴'];
+  Array.prototype.forEach.call(document.querySelectorAll('section'),function(sec){
+    if(sec.closest&&sec.closest('aside'))return;
+    var h=sec.querySelector(':scope>.sec-h'),n=h&&h.querySelector('.n');
+    if(!n||parseInt(n.textContent,10)<3)return;
+    sec.classList.add('fold','closed');
+    var t=document.createElement('span');t.className='fold-t';h.appendChild(t);
+    h.setAttribute('role','button');h.tabIndex=0;
+    function upd(){t.textContent=sec.classList.contains('closed')?L[0]:L[1];h.setAttribute('aria-expanded',!sec.classList.contains('closed'));}
+    function tog(){sec.classList.toggle('closed');upd();}
+    h.addEventListener('click',tog);
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tog();}});
+    upd();
+  });
 })();
 </script>
