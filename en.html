@@ -164,6 +164,17 @@
   section.fold.closed>.sec-h .fold-t{color:var(--gold);border-color:var(--gold)}
   section.fold.closed>*:not(.sec-h){display:none}
   @media print{section.fold.closed>*:not(.sec-h){display:block}section.fold>.sec-h .fold-t{display:none}}
+  /* trd */
+  .tcard .bands{gap:12px}
+  .trd{display:flex;flex-direction:column;gap:5px}
+  .trd .trh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .trd .tn{font-weight:800;font-size:13px;color:var(--ink)} .trd .tn span{color:var(--ink3);font-weight:500;font-size:10.5px;margin-left:3px}
+  .trd .tp{font-family:var(--mono);font-size:12.5px;font-weight:800;white-space:nowrap} .trd .tp.u{color:var(--up)} .trd .tp.d{color:var(--down)}
+  .trd .trl{font-family:var(--mono);font-size:11.5px;color:var(--ink2);font-variant-numeric:tabular-nums} .trd .trl b{color:var(--ink);font-size:13.5px} .trd .trl .arr{color:var(--ink3);margin:0 5px}
+  .trd .track{background:linear-gradient(90deg,color-mix(in srgb,var(--short) 22%,transparent),var(--panel2),color-mix(in srgb,var(--long) 22%,transparent))}
+  .trd .tick{position:absolute;top:-4px;width:2px;height:14px;border-radius:1px;background:var(--ink3);transform:translateX(-50%)}
+  .trd .trm{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font-family:var(--mono);font-size:10px;color:var(--ink3);white-space:nowrap}
+  .trd .trm .ok{color:var(--up);font-weight:700;overflow:hidden;text-overflow:ellipsis}
 </style>
 
 <div class="wrap">
@@ -236,19 +247,23 @@
         <div class="pos"><span class="badge flat">No chasing above the gap</span><span class="act">1.0 ticks cheap · 4.163%</span><span class="meta">US 10Y −16.65 → +89-tick open<br>10Y 4.147 — support 4.165 (award)</span></div>
       </div>
 
-      <div class="card">
-        <div class="chd"><div class="name">KR–US 10Y · 2-3 <span>KR10−US10 · 3Y−2Y cash</span></div><div class="pxwrap"><span class="px">−81 · 6.2</span><span class="pxsub" style="color:var(--up)">+16.35 · +1.7</span></div></div>
+      <div class="card tcard">
+        <div class="chd"><div class="name">Positions <span>2 open</span></div><div class="pxwrap"><span class="pxsub">Both in profit</span></div></div>
         <div class="bands">
-          <div class="bd">
-            <div class="bl"><span class="k">KR–US 10Y</span><span class="r">entered −94 → −81 <span class="cw" style="color:var(--ink3);font-size:10px">· target −82 hit · remainder −72 / stop −90</span></span></div>
-            <div class="track"><div class="dot" style="left:55%"></div></div>
+          <div class="trd">
+            <div class="trh"><span class="tn">KR–US 10Y <span>KR10−US10</span></span><span class="tp u">+13bp</span></div>
+            <div class="trl">entered −94<span class="arr">→</span><b>−81</b></div>
+            <div class="track"><div class="dot" style="left:50%"></div></div>
+            <div class="trm"><span>stop −90</span><span class="ok">−82 target hit · half taken</span><span>remaining target −72</span></div>
           </div>
-          <div class="bd">
-            <div class="bl"><span class="k">2-3</span><span class="r">entered 4.2 → 6.2 <span class="cw" style="color:var(--ink3);font-size:10px">· target 12 / stop 3</span></span></div>
-            <div class="track"><div class="dot" style="left:36%"></div></div>
+          <div class="trd">
+            <div class="trh"><span class="tn">2-3 steepener <span>3Y−2Y cash</span></span><span class="tp u">+2.0bp</span></div>
+            <div class="trl">entered 4.2<span class="arr">→</span><b>6.2</b></div>
+            <div class="track"><div class="dot" style="left:36%"></div><div class="tick" style="left:13%"></div></div>
+            <div class="trm"><span>stop 3</span><span>target 12</span></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">Take half · hold</span><span class="act">Both in profit</span><span class="meta">KR–US: re-enter the remainder on an opening re-widening (−90)<br>2-3 is underpinned by offshore 2Y buying</span></div>
+        <div class="pos"><span class="badge flat">Take half · hold</span><span class="act">Re-enter the remainder on an opening re-widening (−90)</span><span class="meta">2-3 is underpinned by offshore 2Y buying · no 3-10 steepener re-entry</span></div>
       </div>
 
     </div>

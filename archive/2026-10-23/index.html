@@ -169,6 +169,17 @@
   section.fold.closed>.sec-h .fold-t{color:var(--gold);border-color:var(--gold)}
   section.fold.closed>*:not(.sec-h){display:none}
   @media print{section.fold.closed>*:not(.sec-h){display:block}section.fold>.sec-h .fold-t{display:none}}
+  /* trd */
+  .tcard .bands{gap:12px}
+  .trd{display:flex;flex-direction:column;gap:5px}
+  .trd .trh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .trd .tn{font-weight:800;font-size:13px;color:var(--ink)} .trd .tn span{color:var(--ink3);font-weight:500;font-size:10.5px;margin-left:3px}
+  .trd .tp{font-family:var(--mono);font-size:12.5px;font-weight:800;white-space:nowrap} .trd .tp.u{color:var(--up)} .trd .tp.d{color:var(--down)}
+  .trd .trl{font-family:var(--mono);font-size:11.5px;color:var(--ink2);font-variant-numeric:tabular-nums} .trd .trl b{color:var(--ink);font-size:13.5px} .trd .trl .arr{color:var(--ink3);margin:0 5px}
+  .trd .track{background:linear-gradient(90deg,color-mix(in srgb,var(--short) 22%,transparent),var(--panel2),color-mix(in srgb,var(--long) 22%,transparent))}
+  .trd .tick{position:absolute;top:-4px;width:2px;height:14px;border-radius:1px;background:var(--ink3);transform:translateX(-50%)}
+  .trd .trm{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font-family:var(--mono);font-size:10px;color:var(--ink3);white-space:nowrap}
+  .trd .trm .ok{color:var(--up);font-weight:700;overflow:hidden;text-overflow:ellipsis}
 </style>
 
 <div class="wrap">
@@ -241,19 +252,23 @@
         <div class="pos"><span class="badge flat">갭 위 추격 없음</span><span class="act">저평 1.0틱 · 4.163%</span><span class="meta">미 10Y −16.65 → 시초 +89틱<br>10Y 4.147 — 지지 4.165(낙찰)</span></div>
       </div>
 
-      <div class="card">
-        <div class="chd"><div class="name">한미 10-10 · 2-3 <span>KR10−US10 · 국고 3년−2년</span></div><div class="pxwrap"><span class="px">−81 · 6.2</span><span class="pxsub" style="color:var(--up)">+16.35 · +1.7</span></div></div>
+      <div class="card tcard">
+        <div class="chd"><div class="name">포지션 <span>진행 중 2건</span></div><div class="pxwrap"><span class="pxsub">둘 다 이익</span></div></div>
         <div class="bands">
-          <div class="bd">
-            <div class="bl"><span class="k">한미 10-10</span><span class="r">−94 진입 → −81 <span class="cw" style="color:var(--ink3);font-size:10px">· 목표 −82 도달 · 잔여 −72 / 손절 −90</span></span></div>
-            <div class="track"><div class="dot" style="left:55%"></div></div>
+          <div class="trd">
+            <div class="trh"><span class="tn">한미 10-10 <span>KR10−US10</span></span><span class="tp u">+13bp</span></div>
+            <div class="trl">진입 −94<span class="arr">→</span><b>−81</b></div>
+            <div class="track"><div class="dot" style="left:50%"></div></div>
+            <div class="trm"><span>손절 −90</span><span class="ok">목표 −82 도달 · 절반 실현</span><span>잔여 목표 −72</span></div>
           </div>
-          <div class="bd">
-            <div class="bl"><span class="k">2-3</span><span class="r">4.2 진입 → 6.2 <span class="cw" style="color:var(--ink3);font-size:10px">· 목표 12 / 손절 3</span></span></div>
-            <div class="track"><div class="dot" style="left:36%"></div></div>
+          <div class="trd">
+            <div class="trh"><span class="tn">2-3 스티프너 <span>국고 3년−2년</span></span><span class="tp u">+2.0bp</span></div>
+            <div class="trl">진입 4.2<span class="arr">→</span><b>6.2</b></div>
+            <div class="track"><div class="dot" style="left:36%"></div><div class="tick" style="left:13%"></div></div>
+            <div class="trm"><span>손절 3</span><span>목표 12</span></div>
           </div>
         </div>
-        <div class="pos"><span class="badge flat">절반 실현 · 유지</span><span class="act">둘 다 이익</span><span class="meta">한미는 시초 되벌어짐(−90)에서 잔여 재진입<br>2-3는 2년 외국인 매수가 받친다</span></div>
+        <div class="pos"><span class="badge flat">절반 실현 · 유지</span><span class="act">시초 되벌어짐(−90)에서 잔여 재진입</span><span class="meta">2-3는 2년 외국인 매수가 받친다 · 3-10 스티프너 재진입 없음</span></div>
       </div>
 
     </div>
