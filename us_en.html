@@ -1,4 +1,4 @@
-<title>US Rates Daily · 2026-11-09</title>
+<title>US Rates Daily · 2026-11-10</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -127,6 +127,58 @@
   .trd .tick{position:absolute;top:-4px;width:2px;height:14px;border-radius:1px;background:var(--ink3);transform:translateX(-50%)}
   .trd .trm{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font-family:var(--mono);font-size:10px;color:var(--ink3);white-space:nowrap}
   .trd .trm .ok{color:var(--up);font-weight:700;overflow:hidden;text-overflow:ellipsis}
+  /* v1110 */
+  .play{margin-top:16px;background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:14px 16px 12px}
+  .play .pk{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--gold)}
+  .play .pv1{margin:5px 0 0;font-size:20px;line-height:1.38;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+  .play .pv1 em{font-style:normal;color:var(--gold);white-space:nowrap}
+  .play .psub{margin:6px 0 0;font-size:12.5px;color:var(--ink2)}
+  .plays{margin-top:12px}
+  .play{container-type:inline-size}
+  .ply{display:grid;grid-template-columns:18px minmax(0,1fr) minmax(0,1.15fr) minmax(64px,auto);grid-template-areas:"rk ph lv pn" ". ws ws ws";gap:6px 12px;align-items:center;padding:10px 0;border-top:1px solid var(--line2)}
+  .ply .rk{grid-area:rk;font-family:var(--mono);font-size:13px;font-weight:800;color:var(--ink3)}
+  .ply .ph{grid-area:ph;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 8px}
+  .ply .nm{font-size:14.5px;font-weight:800;color:var(--ink)}
+  .ply .sb{font-size:10.5px;color:var(--ink3)}
+  .ply .ws{grid-area:ws;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .ply .why{font-size:11.5px;line-height:1.45;color:var(--ink2);display:flex;gap:7px}
+  .ply .why b{flex:none;min-width:36px;font-family:var(--mono);font-size:10px;font-weight:700;color:var(--ink3);padding-top:1px}
+  .ply .lv4{grid-area:lv;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .ply .lv4 span{display:flex;flex-direction:column;gap:1px;background:var(--panel2);border-radius:6px;padding:5px 6px;min-width:0}
+  .ply .lv4 i{font-style:normal;font-size:9.5px;font-weight:700;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ply .lv4 b{font-family:var(--mono);font-size:11.5px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;overflow-wrap:anywhere;line-height:1.25}
+  .ply .pn{grid-area:pn;font-family:var(--mono);font-size:14px;font-weight:800;text-align:right;color:var(--ink2);white-space:nowrap}
+  .ply .pn.u{color:var(--up)} .ply .pn.d{color:var(--down)}
+  @container (max-width:700px){.ply{grid-template-columns:18px minmax(0,1fr) auto;grid-template-areas:"rk ph pn" "lv lv lv" "ws ws ws"}.ply .pn{font-size:13px}}
+  @container (max-width:420px){.ply .lv4{gap:4px}.ply .lv4 span{padding:4px 5px}.ply .lv4 b{font-size:11px}.ply .lv4 i{font-size:9px}.ply.minor .ws{display:none}.ply .nm{font-size:14px}}
+  .badge.obs{color:var(--ink2);background:var(--panel2)}
+  .dont{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-top:10px;border-top:1px solid var(--line2);font-size:11.5px}
+  .dont .dk{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--short)}
+  .dont .dx{color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+  .dont .dx::before{content:"✕ ";color:var(--short);font-weight:700}
+  @media(max-width:560px){.play{padding:12px 12px 10px}.play .pv1{font-size:17px}}
+  .nums{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:8px;margin-top:12px}
+  .num{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0}
+  .num .k{font-size:10px;font-weight:700;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .num .v{font-family:var(--mono);font-size:14.5px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.3;white-space:nowrap}
+  .num .c{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink3);white-space:nowrap}
+  .num .c.u{color:var(--up)} .num .c.d{color:var(--down)}
+  @media(max-width:1500px){.nums{grid-template-columns:repeat(5,minmax(0,1fr))}}
+  @media(max-width:560px){.nums{gap:5px}.num{padding:6px 6px}.num .v{font-size:12px}.num .c{font-size:10px}.num .k{font-size:9.5px}}
+  .play+.nums+.keys,.nums+.keys{margin-top:10px}
+  .keychip.hot{color:var(--ink)}
+  @media(max-width:560px){.mast .sub{display:none}.keychip{min-width:100%}}
+  .lad{display:flex;flex-direction:column}
+  .lr{display:grid;grid-template-columns:36px 1fr 1.35fr 50px;gap:8px;align-items:baseline;padding:5px 0;border-bottom:1px solid var(--line2);font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
+  .lr:last-child{border-bottom:0}
+  .lr span{text-align:right} .lr span:first-child{text-align:left}
+  .lr.lh{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--ink3);padding-top:0}
+  .lr .lt{font-weight:800;color:var(--ink)}
+  .lr .la i{font-style:normal;font-size:10px;color:var(--ink3);margin-left:3px}
+  .lr .ld{font-weight:800;color:var(--up)}
+  .lr.near{background:var(--flat-bg);border-radius:5px;padding-left:6px;padding-right:6px;border-bottom-color:transparent}
+  .lr.near .ld{color:var(--gold)}
+  /* /v1110 */
 </style>
 
 <div class="wrap">
@@ -140,22 +192,118 @@
       <div class="lang"><a href="en.html">KTB</a><a class="on" href="us_en.html">UST</a><a href="us.html">KO</a><a class="on" href="us_en.html">EN</a></div>
       <div class="histwrap">📅 <select id="histsel" aria-label="Past reports"><option>Past reports</option></select></div>
       <span class="tag">Desk Daily</span><br>
-      Report <span class="d">2026-11-09 (Mon)</span><br>
-      Based on 11-06 US close
+      Report <span class="d">2026-11-10 (Tue)</span><br>
+      Based on 11-09 US close
     </div>
   </div>
 
+  <!--BODY-->
+  <section class="play">
+    <div class="pk">TODAY'S PLAYBOOK · 11-10 (TUE) · WHERE THE MONEY IS</div>
+    <h2 class="pv1">No position before CPI (22:30) — <em>the next money is selling the 2Y on a return to 4.37–4.41</em></h2>
+    <p class="psub">Today's ranges 2Y 4.494~4.644 · 10Y 4.836~4.969 — the 2Y bottom is still above the entry zone. The direction (flatter, weaker 2Y) was right, but the entry never came. Not chased; the CPI print decides.</p>
+    <div class="plays">
+      <div class="ply">
+        <div class="rk">1</div>
+        <div class="ph"><span class="badge flat">Waiting</span><span class="nm">2Y short</span><span class="sb">flat or short the 2Y is the comfortable side</span></div>
+        <div class="lv4"><span><i>Now</i><b>4.566</b></span><span><i>Entry</i><b>4.37–4.41</b></span><span><i>Distance</i><b>+16–20bp</b></span><span><i>Catalyst</i><b>CPI 22:30</b></span></div>
+        <div class="pn ">pending</div>
+        <div class="ws"><div class="why"><b>Why</b><span>The 2Y is +10bp in two days and 2-10 went 37.4 → 32.0. A December hike is priced near 80%.</span></div><div class="why"><b>Risk</b><span>Today's range bottom of 4.494 is still above the entry zone — a firm CPI takes it further away. Not chased.</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">2</div>
+        <div class="ph"><span class="badge obs">Watch</span><span class="nm">2-10 flattener</span><span class="sb">a second day of bear flattening</span></div>
+        <div class="lv4"><span><i>Now</i><b>32.0</b></span><span><i>DTD</i><b>−2.4</b></span><span><i>60d avg</i><b>38.0</b></span><span><i>z (60d)</i><b>−0.73</b></span></div>
+        <div class="pn ">−5.4 / 2 days</div>
+        <div class="ws"><div class="why"><b>Why</b><span>Hike pricing after payrolls pushes the front end; oil −4.4% caps the long end.</span></div><div class="why"><b>Risk</b><span>A core CPI below 0.2% retraces the front end first and turns this into a steepening.</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">3</div>
+        <div class="ph"><span class="badge obs">Closed</span><span class="nm">Delta (long 2Y · 10Y)</span><span class="sb">from the 10/20 close · closed off the 11/5 close</span></div>
+        <div class="lv4"><span><i>Entry</i><b>4.78 · 5.11</b></span><span><i>Exit</i><b>4.463 · 4.837</b></span><span><i>Now</i><b>4.566 · 4.886</b></span><span><i>Target</i><b>4.37–4.41 · 4.75</b></span></div>
+        <div class="pn u">+32 · +28bp</div>
+        <div class="ws"><div class="why"><b>Why</b><span>Since the close-out the 2Y is +10bp and the 10Y +5bp — turned short of the targets.</span></div><div class="why"><b>Risk</b><span>No plan to re-buy — the next entry is on the 2Y short side.</span></div></div>
+      </div>
+    </div>
+    <div class="dont"><span class="dk">NOT DOING</span><span class="dx">Chasing direction before CPI</span><span class="dx">Selling at 4.566</span></div>
+  </section>
+
+  <div class="nums">
+    <div class="num"><div class="k">2Y</div><div class="v">4.566</div><div class="c d">+5.0bp</div></div>
+    <div class="num"><div class="k">5Y</div><div class="v">4.679</div><div class="c d">+3.1bp</div></div>
+    <div class="num"><div class="k">10Y</div><div class="v">4.886</div><div class="c d">+2.6bp</div></div>
+    <div class="num"><div class="k">30Y</div><div class="v">5.282</div><div class="c d">+1.4bp</div></div>
+    <div class="num"><div class="k">2-10</div><div class="v">32.0</div><div class="c f">−2.4</div></div>
+    <div class="num"><div class="k">Dow</div><div class="v">52,390</div><div class="c f">+2.15%</div></div>
+    <div class="num"><div class="k">Nasdaq</div><div class="v">25,253</div><div class="c f">+2.74%</div></div>
+    <div class="num"><div class="k">VIX</div><div class="v">19.9</div><div class="c f">−5.7</div></div>
+    <div class="num"><div class="k">WTI</div><div class="v">86.85</div><div class="c f">−4.4%</div></div>
+    <div class="num"><div class="k">USD/JPY</div><div class="v">158.00</div><div class="c f">−0.08</div></div>
+  </div>
+
   <div class="keys">
-    <div class="keychip hot"><div class="dd">11-06</div><div class="ev">📈 <b>Payrolls +165K (consensus 65K) · September revised 29K → 60K · unemployment 4.1% · AHE +0.4% m/m · 3.1% y/y</b> — <b>2Y 4.516 (+5.3) · 5Y 4.648 (+4.3) · 10Y 4.860 (+2.3) · 20Y 5.297 (+1.85) · 30Y 5.268 (+1.2)</b> · 2-10 34.4 (−3.0), a bear flattening</div><div class="dt">payrolls surprise · front end gives back</div></div>
-    <div class="keychip hot"><div class="dd">View</div><div class="ev">🧭 <b>ZT turned from a 102'17 high — the 102'24 resistance was never tested. The 2Y turned without touching the 4.37–4.41 target, and "beyond here flat or short the 2Y is the comfortable side" is playing out as written.</b> a VIX above 30 can bring selling across every asset, bonds included — careful there · the 2Y short waits for a return to 4.37–4.41 · <b>CPI tomorrow 22:30</b></div><div class="dt">flat · 2Y short pending</div></div>
-    <div class="keychip"><div class="dd">Markets</div><div class="ev">📈 Dow 51,285.7 (−0.46%) · Nasdaq 24,579.4 (+1.09%) · gold 4,074.9 (−0.9%) · Bitcoin 74,232 (−2.2%) · WTI 90.83 (+0.3%) · USD/JPY 158.08 · USD/KRW 1,356.6 (+14.5) · <b>KR10−US10 −100.5 (−4.3), a 60-day low</b></div><div class="dt">11/10 CPI · 11/10–13 3Y, 10Y, 30Y auctions</div></div>
+    <div class="keychip hot"><div class="dd">11-09</div><div class="ev">Oil −4.4%, yet yields rose — <b>2Y 4.566 (+5.0) · 10Y 4.886 (+2.6) · 30Y 5.282 (+1.4)</b>, 2-10 32.0 (−2.4), a second day of bear flattening</div><div class="dt">December hike near 80%</div></div>
+    <div class="keychip hot"><div class="dd">Today</div><div class="ev"><b>October CPI 22:30</b> — consensus MoM 0.3% · core 0.2%. With no YoY print because of last year's shutdown, the focus is on core MoM</div><div class="dt">16–20bp to the 2Y sell zone</div></div>
+    <div class="keychip"><div class="dd">Markets</div><div class="ev">Dow 52,389.8 (+2.15%) · Nasdaq 25,253.1 (+2.74%) · WTI 86.85 (−4.4%) · gold 4,074.9 (−0.9%) · Bitcoin 75,286 (+1.0%) · <b>KR10−US10 −102.9, a 60-day low</b></div><div class="dt">risk appetite back · VIX 19.9</div></div>
   </div>
 
   <section>
-    <h3 class="sec-h"><span class="n">01</span> Upcoming Calendar</h3>
+    <h3 class="sec-h"><span class="n">01</span> Level Bands</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="chd"><div class="name">2Y <span>UST</span></div><div class="pxwrap"><span class="px">4.566</span><span class="pxsub" style="color:var(--down)">11/9 +5.0bp · ZT 102'10</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">4.4939</span><span class="sep">~</span><span class="hi">4.6442</span></span></div>
+            <div class="track"><div class="dot" style="left:47%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">60-day realised range</span><span class="r"><span class="lo">4.144</span><span class="sep">~</span><span class="hi">4.932</span></span></div>
+            <div class="track"><div class="dot" style="left:54%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">16–20bp to the sell zone</span><span class="act">No chasing · CPI 22:30</span><span class="meta">Range bottom 4.494 still above the 4.37–4.41 sell zone<br>60-day average 4.561 · 2-5 11.3 (−1.9)</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">10Y <span>UST</span></div><div class="pxwrap"><span class="px">4.886</span><span class="pxsub" style="color:var(--down)">11/9 +2.6bp · above 4.75 support</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">4.836</span><span class="sep">~</span><span class="hi">4.969</span></span></div>
+            <div class="track"><div class="dot" style="left:37%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">60-day realised range</span><span class="r"><span class="lo">4.629</span><span class="sep">~</span><span class="hi">5.288</span></span></div>
+            <div class="track"><div class="dot" style="left:39%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">Delta closed · CPI next</span><span class="act">10Y auction 11/11 03:00</span><span class="meta">2-10 32.0 (−2.4), a second day of bear flattening<br>KR10−US10 −102.9, a 60-day low</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">30Y <span>UST</span></div><div class="pxwrap"><span class="px">5.282</span><span class="pxsub" style="color:var(--down)">11/9 +1.4bp · 20Y +1.4</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">10–30 spread</span><span class="r">39.6bp <span style="color:var(--ink3);font-size:10px">· −1.2 · z60 −0.14</span></span></div>
+            <div class="track"><div class="dot" style="left:38%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">20–30 spread</span><span class="r">−2.9bp <span style="color:var(--ink3);font-size:10px">· 0.0 · z60 −0.13</span></span></div>
+            <div class="track"><div class="dot" style="left:41%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">Flattening · same side as the 2Y short</span><span class="act">30Y auction 11/13 03:00</span><span class="meta">Oil −4.4% and the long end still +1.4 — hike pricing won<br>WTI 86.85</span></div>
+      </div>
+
+    </div>
+    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ The daily expected ranges are the desk's own calls (2Y 4.4939~4.6442 · 10Y 4.836~4.969). The dot is the <b>11-09 close</b>.</p>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">02</span> Upcoming Calendar</h3>
     <div class="cal">
-      <div class="row today"><span class="cd">11/9</span><span class="cw">Mon</span><span class="pill cpi">Inflation</span><span class="ev"><b>China October CPI/PPI 10:30</b> <span class="cw">CPI YoY prev 0.9% · PPI 5.0%</span> · Eurogroup · Korea 3Y auction 2.2tn</span></div>
-      <div class="row"><span class="cd">11/10</span><span class="cw">Tue</span><span class="pill cpi">Inflation</span><span class="ev"><b>October CPI 22:30</b> <span class="cw">prev MoM 0.6% · core 0.3% · YoY 3.7% · core 2.6%</span> · 3Y auction 03:00 (last 4.932) · Waller 18:00 · Bailey 02:25</span></div>
+      <div class="row today"><span class="cd">11/10</span><span class="cw">Tue</span><span class="pill cpi">Inflation</span><span class="ev"><b>October CPI 22:30</b> <span class="cw">consensus MoM 0.3% · core 0.2% · prev 0.6% · 0.3% · no YoY print</span> · Waller 18:00</span></div>
       <div class="row"><span class="cd">11/11</span><span class="cw">Wed</span><span class="pill auc">Auction</span><span class="ev"><b>10Y auction 03:00</b> <span class="cw">last 5.300</span> · German October CPI 16:00 (consensus 2.8%) · 11/12 initial claims 22:30</span></div>
       <div class="row"><span class="cd">11/13</span><span class="cw">Fri</span><span class="pill cpi">Inflation</span><span class="ev"><b>October PPI 22:30</b> <span class="cw">prev MoM 1.3% · core 0.7%</span> · 30Y auction 03:00 (last 5.618) · euro-area Q3 GDP 19:00</span></div>
       <div class="row"><span class="cd">11/17</span><span class="cw">Tue</span><span class="pill cpi">Data</span><span class="ev"><b>October retail sales 22:30</b> <span class="cw">prev 0.8% · control 0.9%</span> · industrial production 23:15 (prev 0.7%) · 11/18 housing starts · 11/19 Philly Fed (prev 20.9)</span></div>
@@ -164,80 +312,27 @@
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">02</span> Level Bands</h3>
-    <div class="cards">
-
-      <div class="card">
-        <div class="chd"><div class="name">2Y <span>UST</span></div><div class="pxwrap"><span class="px">4.516</span><span class="pxsub" style="color:var(--down)">11/6 +5.3bp · ZT 102'12.5</span></div></div>
-        <div class="bands">
-          <div class="bd">
-            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">4.457</span><span class="sep">~</span><span class="hi">4.61</span></span></div>
-            <div class="track"><div class="dot" style="left:38%"></div></div>
-          </div>
-          <div class="bd">
-            <div class="bl"><span class="k">60-day realised range</span><span class="r"><span class="lo">4.144</span><span class="sep">~</span><span class="hi">4.932</span></span></div>
-            <div class="track"><div class="dot" style="left:47%"></div></div>
-          </div>
-        </div>
-        <div class="pos"><span class="badge flat">Bottom 4.457 still above target · no sell today</span><span class="act">ZT high 102'17 · 102'24 untouched</span><span class="meta">VIX 25.6 — above 30, selling across all assets is the risk<br>2-5 13.2 (−1.0)</span></div>
-      </div>
-
-      <div class="card">
-        <div class="chd"><div class="name">10Y <span>UST</span></div><div class="pxwrap"><span class="px">4.860</span><span class="pxsub" style="color:var(--down)">11/6 +2.3bp · above 4.75 support</span></div></div>
-        <div class="bands">
-          <div class="bd">
-            <div class="bl"><span class="k">Daily exp. range</span><span class="r"><span class="lo">4.78</span><span class="sep">~</span><span class="hi">4.917</span></span></div>
-            <div class="track"><div class="dot" style="left:58%"></div></div>
-          </div>
-          <div class="bd">
-            <div class="bl"><span class="k">60-day realised range</span><span class="r"><span class="lo">4.629</span><span class="sep">~</span><span class="hi">5.288</span></span></div>
-            <div class="track"><div class="dot" style="left:35%"></div></div>
-          </div>
-        </div>
-        <div class="pos"><span class="badge flat">Delta closed · waiting for CPI</span><span class="act">CPI 11/10 22:30 · 10Y auction 11/11</span><span class="meta">2-10 34.4 (−3.0), a bear flattening<br>KR10−US10 −100.5, a 60-day low</span></div>
-      </div>
-
-      <div class="card">
-        <div class="chd"><div class="name">30Y <span>UST</span></div><div class="pxwrap"><span class="px">5.268</span><span class="pxsub" style="color:var(--down)">11/6 +1.2bp · 20Y +1.85</span></div></div>
-        <div class="bands">
-          <div class="bd">
-            <div class="bl"><span class="k">10–30 spread</span><span class="r">40.8bp <span style="color:var(--ink3);font-size:10px">· −1.1 · z60 −0.03</span></span></div>
-            <div class="track"><div class="dot" style="left:43%"></div></div>
-          </div>
-          <div class="bd">
-            <div class="bl"><span class="k">20–30 spread</span><span class="r">−2.9bp <span style="color:var(--ink3);font-size:10px">· −0.65 · z60 −0.14</span></span></div>
-            <div class="track"><div class="dot" style="left:48%"></div></div>
-          </div>
-        </div>
-        <div class="pos"><span class="badge flat">Flattening · same side as the 2Y short</span><span class="act">Fifteenth session below the 5.50 box · 30Y auction 11/13</span><span class="meta">The oil give-back caps the long end<br>WTI 90.83 (+0.3%)</span></div>
-      </div>
-
-    </div>
-    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ The daily expected ranges are the desk's own calls (2Y 4.457~4.61 · 10Y 4.78~4.917). The dot is the <b>11-06 close</b>.</p>
-  </section>
-
-  <section>
     <h3 class="sec-h"><span class="n">03</span> Macro Issues &amp; Curve Dislocations</h3>
     <div class="mc">
       <div class="box">
-        <p><b>The payrolls surprise took the front end back — 2Y +5.3 · 10Y +2.3.</b> October nonfarm <b>+165K (consensus 65K)</b>, September revised 29K → 60K, unemployment 4.1% (from 4.2), average hourly earnings +0.4% m/m · 3.1% y/y — grounds for more tightening. 11/6 closes <b>2Y 4.516 · 5Y 4.648 · 10Y 4.860 · 20Y 5.297 · 30Y 5.268</b>, 2-10 34.4 (−3.0) · 2-5 13.2 (−1.0), a bear flattening. The long end was capped by oil (WTI 90.8 — the war premium came out on post-midterm hopes of a US–Iran diplomatic path, while tanker incidents around Hormuz continue) and the AI-capex slowdown worry. Nasdaq +1.1% · VIX 28.2 → 25.6.</p>
-        <p><b>View — the resistance broke the move without being tested.</b> ZT reached 102'17 before payrolls and closed 102'12.5, never touching 102'24. The 2Y at 4.516 sits 10bp above the 4.37–4.41 target. The 11/6 line, <b>"further gains are hard; beyond here flat or short the 2Y is the comfortable side,"</b> is playing out as written. The VIX is 25.6; above 30 it can bring selling across every asset, bonds included — a level to be careful at. The 2Y short stays pending — <b>if the retracement touches 4.37–4.41 again, that is the place to sell</b>; it is not chased before. Tomorrow's CPI (22:30) and the 3Y, 10Y and 30Y auctions (11/10–13) are the next forks.</p>
-        <p><b>Curve — from a bull steepening to a bear flattening in a day.</b> 2-10 34.4 (−3.0) · 10-30 40.8 (−1.1) · 2-5-10 fly 8.0 (−1.0). Payrolls unwound the steepening the 11/5 equity rout had built — the 2Y-short scenario sits on the side of this flattening continuing. <b>KR10−US10 −100.5 (−4.3)</b>, a 60-day low.</p>
+        <p><b>Oil fell more than 4% and yields still rose — 2Y +5.0 · 10Y +2.6.</b> WTI 86.85 (−4.4%): the war premium came out on remarks that further military action is unlikely while talks run, and on Qatar-brokered moves to restart them. Yields fell early and came back — a 25bp December hike is priced near 80% after payrolls, with caution ahead of today's CPI. 11/9 closes <b>2Y 4.566 · 5Y 4.679 · 10Y 4.886 · 20Y 5.311 · 30Y 5.282</b>. Dow +2.2% · Nasdaq +2.7% · VIX 25.6 → 19.9.</p>
+        <p><b>View — the direction was right; the entry never came.</b> The 2Y is +10bp in two days from the 11/5 close of 4.463, and 2-10 went 37.4 → 32.0. "Flat or short the 2Y is the comfortable side" played out, but the 4.37–4.41 sell zone was never reached — <b>not chased at 4.566.</b> A soft CPI (22:30) brings the entry zone back into view; a firm one settles the 2Y above its 60-day average of 4.561. Core MoM consensus 0.2% — the oil drop helps future prints, but October can still carry higher freight and goods prices.</p>
+        <p><b>Curve — a second day of bear flattening.</b> 2-10 32.0 (−2.4) · 2-5 11.3 (−1.9, z −1.24) · 10-30 39.6 (−1.2) · 2-5-10 fly 9.4 (+1.4). The 2Y-short scenario sits on the side of this flattening continuing. <b>KR10−US10 −102.9 (−2.4)</b>, a 60-day low — the Korea 10Y yields 103bp below the US.</p>
       </div>
       <div class="box">
         <table class="ctable">
-          <thead><tr><th>Curve</th><th>11-06 (bp)</th><th>DTD</th><th>z (60d)</th></tr></thead>
+          <thead><tr><th>Curve</th><th>11-09 (bp)</th><th>DTD</th><th>z (60d)</th></tr></thead>
           <tbody>
-            <tr><td>2-5</td><td>13.2</td><td class="cool">−1.0</td><td class="zbar">−0.77σ</td></tr>
-            <tr><td>2-10</td><td>34.4</td><td class="cool">−3.0</td><td class="zbar">−0.47σ</td></tr>
-            <tr><td>5-10</td><td>21.2</td><td class="cool">−2.0</td><td class="zbar">−0.17σ</td></tr>
-            <tr><td>10-20</td><td>43.7</td><td class="cool">−0.5</td><td class="zbar">0.00σ</td></tr>
-            <tr><td>10-30</td><td>40.8</td><td class="cool">−1.1</td><td class="zbar">−0.03σ</td></tr>
-            <tr><td>20-30</td><td>−2.9</td><td class="cool">−0.7</td><td class="zbar">−0.14σ</td></tr>
-            <tr><td>2-5-10 fly</td><td>8.0</td><td class="cool">−1.0</td><td class="zbar">+0.43σ</td></tr>
+            <tr><td>2-5</td><td>11.3</td><td class="cool">−1.9</td><td class="zbar">−1.24σ</td></tr>
+            <tr><td>2-10</td><td>32.0</td><td class="cool">−2.4</td><td class="zbar">−0.73σ</td></tr>
+            <tr><td>5-10</td><td>20.7</td><td class="cool">−0.5</td><td class="zbar">−0.24σ</td></tr>
+            <tr><td>10-20</td><td>42.5</td><td class="cool">−1.2</td><td class="zbar">−0.15σ</td></tr>
+            <tr><td>10-30</td><td>39.6</td><td class="cool">−1.2</td><td class="zbar">−0.14σ</td></tr>
+            <tr><td>20-30</td><td>−2.9</td><td>0.0</td><td class="zbar">−0.13σ</td></tr>
+            <tr><td>2-5-10 fly</td><td>9.4</td><td class="hot">+1.4</td><td class="zbar">+0.75σ</td></tr>
           </tbody>
         </table>
-        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ <b>11-06 US Treasury cash yields</b> · changes are 11/5 → 11/6 · z is a <b>60-business-day rolling</b> measure<br>※ <b>2-10 34.4 (−3.0) · 2-5 13.2 (−1.0)</b> — a bear flattening on payrolls<br>※ Outright <b>2Y 4.516 · 10Y 4.860</b> — 60-day z −0.16 / −0.39 · 60-day ranges 2Y 4.144~4.932 · 10Y 4.629~5.288</p>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ <b>11-09 US Treasury cash yields</b> · changes are 11/6 → 11/9 · z is a <b>60-business-day rolling</b> measure<br>※ <b>2-10 32.0 (−2.4) · 2-5 11.3 (−1.9)</b> — a second day of bear flattening<br>※ Outright <b>2Y 4.566 · 10Y 4.886</b> — 60-day z +0.02 / −0.28 · 60-day ranges 2Y 4.144~4.932 · 10Y 4.629~5.288</p>
       </div>
     </div>
   </section>

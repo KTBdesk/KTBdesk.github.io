@@ -1,4 +1,4 @@
-<title>US 금리 데일리 · 2026-11-09</title>
+<title>US 금리 데일리 · 2026-11-10</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -127,6 +127,58 @@
   .trd .tick{position:absolute;top:-4px;width:2px;height:14px;border-radius:1px;background:var(--ink3);transform:translateX(-50%)}
   .trd .trm{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font-family:var(--mono);font-size:10px;color:var(--ink3);white-space:nowrap}
   .trd .trm .ok{color:var(--up);font-weight:700;overflow:hidden;text-overflow:ellipsis}
+  /* v1110 */
+  .play{margin-top:16px;background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:14px 16px 12px}
+  .play .pk{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--gold)}
+  .play .pv1{margin:5px 0 0;font-size:20px;line-height:1.38;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+  .play .pv1 em{font-style:normal;color:var(--gold);white-space:nowrap}
+  .play .psub{margin:6px 0 0;font-size:12.5px;color:var(--ink2)}
+  .plays{margin-top:12px}
+  .play{container-type:inline-size}
+  .ply{display:grid;grid-template-columns:18px minmax(0,1fr) minmax(0,1.15fr) minmax(64px,auto);grid-template-areas:"rk ph lv pn" ". ws ws ws";gap:6px 12px;align-items:center;padding:10px 0;border-top:1px solid var(--line2)}
+  .ply .rk{grid-area:rk;font-family:var(--mono);font-size:13px;font-weight:800;color:var(--ink3)}
+  .ply .ph{grid-area:ph;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 8px}
+  .ply .nm{font-size:14.5px;font-weight:800;color:var(--ink)}
+  .ply .sb{font-size:10.5px;color:var(--ink3)}
+  .ply .ws{grid-area:ws;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .ply .why{font-size:11.5px;line-height:1.45;color:var(--ink2);display:flex;gap:7px}
+  .ply .why b{flex:none;min-width:36px;font-family:var(--mono);font-size:10px;font-weight:700;color:var(--ink3);padding-top:1px}
+  .ply .lv4{grid-area:lv;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .ply .lv4 span{display:flex;flex-direction:column;gap:1px;background:var(--panel2);border-radius:6px;padding:5px 6px;min-width:0}
+  .ply .lv4 i{font-style:normal;font-size:9.5px;font-weight:700;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ply .lv4 b{font-family:var(--mono);font-size:11.5px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;overflow-wrap:anywhere;line-height:1.25}
+  .ply .pn{grid-area:pn;font-family:var(--mono);font-size:14px;font-weight:800;text-align:right;color:var(--ink2);white-space:nowrap}
+  .ply .pn.u{color:var(--up)} .ply .pn.d{color:var(--down)}
+  @container (max-width:700px){.ply{grid-template-columns:18px minmax(0,1fr) auto;grid-template-areas:"rk ph pn" "lv lv lv" "ws ws ws"}.ply .pn{font-size:13px}}
+  @container (max-width:420px){.ply .lv4{gap:4px}.ply .lv4 span{padding:4px 5px}.ply .lv4 b{font-size:11px}.ply .lv4 i{font-size:9px}.ply.minor .ws{display:none}.ply .nm{font-size:14px}}
+  .badge.obs{color:var(--ink2);background:var(--panel2)}
+  .dont{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-top:10px;border-top:1px solid var(--line2);font-size:11.5px}
+  .dont .dk{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--short)}
+  .dont .dx{color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+  .dont .dx::before{content:"✕ ";color:var(--short);font-weight:700}
+  @media(max-width:560px){.play{padding:12px 12px 10px}.play .pv1{font-size:17px}}
+  .nums{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:8px;margin-top:12px}
+  .num{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0}
+  .num .k{font-size:10px;font-weight:700;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .num .v{font-family:var(--mono);font-size:14.5px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.3;white-space:nowrap}
+  .num .c{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink3);white-space:nowrap}
+  .num .c.u{color:var(--up)} .num .c.d{color:var(--down)}
+  @media(max-width:1500px){.nums{grid-template-columns:repeat(5,minmax(0,1fr))}}
+  @media(max-width:560px){.nums{gap:5px}.num{padding:6px 6px}.num .v{font-size:12px}.num .c{font-size:10px}.num .k{font-size:9.5px}}
+  .play+.nums+.keys,.nums+.keys{margin-top:10px}
+  .keychip.hot{color:var(--ink)}
+  @media(max-width:560px){.mast .sub{display:none}.keychip{min-width:100%}}
+  .lad{display:flex;flex-direction:column}
+  .lr{display:grid;grid-template-columns:36px 1fr 1.35fr 50px;gap:8px;align-items:baseline;padding:5px 0;border-bottom:1px solid var(--line2);font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
+  .lr:last-child{border-bottom:0}
+  .lr span{text-align:right} .lr span:first-child{text-align:left}
+  .lr.lh{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--ink3);padding-top:0}
+  .lr .lt{font-weight:800;color:var(--ink)}
+  .lr .la i{font-style:normal;font-size:10px;color:var(--ink3);margin-left:3px}
+  .lr .ld{font-weight:800;color:var(--up)}
+  .lr.near{background:var(--flat-bg);border-radius:5px;padding-left:6px;padding-right:6px;border-bottom-color:transparent}
+  .lr.near .ld{color:var(--gold)}
+  /* /v1110 */
 </style>
 
 <div class="wrap">
@@ -140,22 +192,118 @@
       <div class="lang"><a href="index.html">KTB</a><a class="on" href="us.html">UST</a><a class="on" href="us.html">KO</a><a href="us_en.html">EN</a></div>
       <div class="histwrap">📅 <select id="histsel" aria-label="지난 리포트"><option>지난 리포트</option></select></div>
       <span class="tag">Desk Daily</span><br>
-      리포트 <span class="d">2026-11-09 (금)</span><br>
-      11-06 미국 종가 기준
+      리포트 <span class="d">2026-11-10 (화)</span><br>
+      11-09 미국 종가 기준
     </div>
   </div>
 
+  <!--BODY-->
+  <section class="play">
+    <div class="pk">오늘의 플레이북 · 11-10 (화) · 뭘로 돈을 버나</div>
+    <h2 class="pv1">CPI(22:30) 전 포지션 없음 — <em>다음 돈은 2Y가 4.37~4.41로 돌아올 때의 매도</em></h2>
+    <p class="psub">오늘 레인지 2Y 4.494~4.644 · 10Y 4.836~4.969 — 2Y 하단도 진입 구간 위. 방향(플랫 · 2년 약세)은 맞았지만 진입 자리가 오지 않았다. 쫓지 않고 CPI 결과를 본다.</p>
+    <div class="plays">
+      <div class="ply">
+        <div class="rk">1</div>
+        <div class="ph"><span class="badge flat">대기</span><span class="nm">2Y 매도</span><span class="sb">플랫 또는 2년 매도가 편한 쪽</span></div>
+        <div class="lv4"><span><i>현재</i><b>4.566</b></span><span><i>진입</i><b>4.37~4.41</b></span><span><i>거리</i><b>+16~20bp</b></span><span><i>재료</i><b>CPI 22:30</b></span></div>
+        <div class="pn ">진입 대기</div>
+        <div class="ws"><div class="why"><b>근거</b><span>2Y는 이틀간 +10bp, 2-10은 37.4 → 32.0. 12월 인상 확률 약 80%.</span></div><div class="why"><b>리스크</b><span>오늘 레인지 하단 4.494도 진입 구간 위 — CPI가 강하면 더 멀어진다. 쫓아 팔지 않는다.</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">2</div>
+        <div class="ph"><span class="badge obs">관찰</span><span class="nm">2-10 플래트너</span><span class="sb">이틀째 베어플랫</span></div>
+        <div class="lv4"><span><i>현재</i><b>32.0</b></span><span><i>전일 대비</i><b>−2.4</b></span><span><i>60일 평균</i><b>38.0</b></span><span><i>z(60d)</i><b>−0.73</b></span></div>
+        <div class="pn ">−5.4 / 2일</div>
+        <div class="ws"><div class="why"><b>근거</b><span>고용 뒤 인상 기대가 앞단을 밀고, 유가 −4.4%가 장기 상단을 누른다.</span></div><div class="why"><b>리스크</b><span>CPI 근원이 0.2%를 밑돌면 앞단부터 되돌아 스팁으로 바뀐다.</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">3</div>
+        <div class="ph"><span class="badge obs">정리 완료</span><span class="nm">델타(2Y · 10Y 매수)</span><span class="sb">10/20 종가부터 · 11/5 종가 기준 정리</span></div>
+        <div class="lv4"><span><i>진입</i><b>4.78 · 5.11</b></span><span><i>정리</i><b>4.463 · 4.837</b></span><span><i>현재</i><b>4.566 · 4.886</b></span><span><i>타겟</i><b>4.37~4.41 · 4.75</b></span></div>
+        <div class="pn u">+32 · +28bp</div>
+        <div class="ws"><div class="why"><b>근거</b><span>정리 뒤 2Y +10bp · 10Y +5bp 되돌림 — 타겟 미도달에 꺾였다.</span></div><div class="why"><b>리스크</b><span>재매수 계획 없음 — 다음 진입은 2년 매도 쪽.</span></div></div>
+      </div>
+    </div>
+    <div class="dont"><span class="dk">하지 않는다</span><span class="dx">CPI 전 방향 추격</span><span class="dx">4.566에서 쫓아 팔기</span></div>
+  </section>
+
+  <div class="nums">
+    <div class="num"><div class="k">2년</div><div class="v">4.566</div><div class="c d">+5.0bp</div></div>
+    <div class="num"><div class="k">5년</div><div class="v">4.679</div><div class="c d">+3.1bp</div></div>
+    <div class="num"><div class="k">10년</div><div class="v">4.886</div><div class="c d">+2.6bp</div></div>
+    <div class="num"><div class="k">30년</div><div class="v">5.282</div><div class="c d">+1.4bp</div></div>
+    <div class="num"><div class="k">2-10</div><div class="v">32.0</div><div class="c f">−2.4</div></div>
+    <div class="num"><div class="k">다우</div><div class="v">52,390</div><div class="c f">+2.15%</div></div>
+    <div class="num"><div class="k">나스닥</div><div class="v">25,253</div><div class="c f">+2.74%</div></div>
+    <div class="num"><div class="k">VIX</div><div class="v">19.9</div><div class="c f">−5.7</div></div>
+    <div class="num"><div class="k">WTI</div><div class="v">86.85</div><div class="c f">−4.4%</div></div>
+    <div class="num"><div class="k">달러/엔</div><div class="v">158.00</div><div class="c f">−0.08</div></div>
+  </div>
+
   <div class="keys">
-    <div class="keychip hot"><div class="dd">11-06</div><div class="ev">📈 <b>고용 +165K(예상 65K) · 9월 29K → 60K 상향 · 실업률 4.1% · 임금 +0.4% m/m · 3.1% y/y</b> — <b>2년 4.516(+5.3) · 5년 4.648(+4.3) · 10년 4.860(+2.3) · 20년 5.297(+1.85) · 30년 5.268(+1.2)</b> · 2-10 34.4(−3.0) 베어플랫</div><div class="dt">고용 서프라이즈 · 앞단 되돌림</div></div>
-    <div class="keychip hot"><div class="dd">뷰</div><div class="ev">🧭 <b>ZT 고점 102'17에서 되돌림 — 102'24 저항은 시험도 못 했다. 2Y는 4.37~4.41 타겟에 닿지 않고 돌았고, "그 뒤는 플랫 또는 2년 매도가 편하다"는 그림 그대로.</b> VIX 30 위면 채권·주식 등 모든 자산 매도 가능성, 조심 · 2년 매도는 4.37~4.41 재접근 시 · <b>내일 CPI 22:30</b></div><div class="dt">플랫 · 2년 매도 대기</div></div>
-    <div class="keychip"><div class="dd">시장</div><div class="ev">📈 다우 51,285.7(−0.46%) · 나스닥 24,579.4(+1.09%) · 금 4,074.9(−0.9%) · 비트코인 74,232(−2.2%) · WTI 90.83(+0.3%) · USD/JPY 158.08 · 원달러 1,356.6(+14.5) · <b>KR10−US10 −100.5(−4.3) 60일 최저</b></div><div class="dt">11/10 CPI · 11/10~13 3·10·30년 입찰</div></div>
+    <div class="keychip hot"><div class="dd">11-09</div><div class="ev">유가 −4.4%에도 금리는 올랐다 — <b>2년 4.566(+5.0) · 10년 4.886(+2.6) · 30년 5.282(+1.4)</b>, 2-10 32.0(−2.4) 이틀째 베어플랫</div><div class="dt">12월 인상 확률 약 80%</div></div>
+    <div class="keychip hot"><div class="dd">오늘</div><div class="ev"><b>10월 CPI 22:30</b> — 예상 전월비 0.3% · 근원 0.2%. 셧다운 영향으로 전년비는 발표되지 않아 근원 전월비에 시선이 모인다</div><div class="dt">2년 매도 구간까지 16~20bp</div></div>
+    <div class="keychip"><div class="dd">시장</div><div class="ev">다우 52,389.8(+2.15%) · 나스닥 25,253.1(+2.74%) · WTI 86.85(−4.4%) · 금 4,074.9(−0.9%) · 비트코인 75,286(+1.0%) · <b>KR10−US10 −102.9 60일 최저</b></div><div class="dt">위험선호 회복 · VIX 19.9</div></div>
   </div>
 
   <section>
-    <h3 class="sec-h"><span class="n">01</span> 다가오는 일정</h3>
+    <h3 class="sec-h"><span class="n">01</span> 레벨 밴드</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="chd"><div class="name">2년 <span>UST</span></div><div class="pxwrap"><span class="px">4.566</span><span class="pxsub" style="color:var(--down)">11/9 +5.0bp · ZT 102'10</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">4.4939</span><span class="sep">~</span><span class="hi">4.6442</span></span></div>
+            <div class="track"><div class="dot" style="left:47%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">60일 실현 레인지</span><span class="r"><span class="lo">4.144</span><span class="sep">~</span><span class="hi">4.932</span></span></div>
+            <div class="track"><div class="dot" style="left:54%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">매도 구간까지 16~20bp</span><span class="act">추격 없음 · CPI 22:30</span><span class="meta">레인지 하단 4.494도 매도 구간 4.37~4.41 위<br>60일 평균 4.561 · 2-5 11.3(−1.9)</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">10년 <span>UST</span></div><div class="pxwrap"><span class="px">4.886</span><span class="pxsub" style="color:var(--down)">11/9 +2.6bp · 4.75 지지 위</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">4.836</span><span class="sep">~</span><span class="hi">4.969</span></span></div>
+            <div class="track"><div class="dot" style="left:37%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">60일 실현 레인지</span><span class="r"><span class="lo">4.629</span><span class="sep">~</span><span class="hi">5.288</span></span></div>
+            <div class="track"><div class="dot" style="left:39%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">델타 정리 완료 · CPI 대기</span><span class="act">10년 입찰 11/11 03:00</span><span class="meta">2-10 32.0(−2.4) 이틀째 베어플랫<br>KR10−US10 −102.9 60일 최저</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">30년 <span>UST</span></div><div class="pxwrap"><span class="px">5.282</span><span class="pxsub" style="color:var(--down)">11/9 +1.4bp · 20년 +1.4</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">10–30 스프레드</span><span class="r">39.6bp <span style="color:var(--ink3);font-size:10px">· −1.2 · 60일 z −0.14</span></span></div>
+            <div class="track"><div class="dot" style="left:38%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">20–30 스프레드</span><span class="r">−2.9bp <span style="color:var(--ink3);font-size:10px">· 0.0 · 60일 z −0.13</span></span></div>
+            <div class="track"><div class="dot" style="left:41%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">플랫 — 2년 매도와 같은 방향</span><span class="act">30년 입찰 11/13 03:00</span><span class="meta">유가 −4.4%에도 장기 +1.4 — 인상 기대가 눌렀다<br>WTI 86.85</span></div>
+      </div>
+
+    </div>
+    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ 데일리 예상레인지는 담당자 제시값(2Y 4.4939~4.6442 · 10Y 4.836~4.969). dot은 <b>11-09 종가</b>.</p>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">02</span> 다가오는 일정</h3>
     <div class="cal">
-      <div class="row today"><span class="cd">11/9</span><span class="cw">월</span><span class="pill cpi">물가</span><span class="ev"><b>중국 10월 CPI·PPI 10:30</b> <span class="cw">CPI YoY 이전 0.9% · PPI 5.0%</span> · 유로존 재무장관 회의 · 한국 3년 입찰 2.2조</span></div>
-      <div class="row"><span class="cd">11/10</span><span class="cw">화</span><span class="pill cpi">물가</span><span class="ev"><b>10월 CPI 22:30</b> <span class="cw">이전 MoM 0.6% · 근원 0.3% · YoY 3.7% · 근원 2.6%</span> · 3년 입찰 03:00(직전 4.932) · 월러 18:00 · 베일리 02:25</span></div>
+      <div class="row today"><span class="cd">11/10</span><span class="cw">화</span><span class="pill cpi">물가</span><span class="ev"><b>10월 CPI 22:30</b> <span class="cw">예상 전월비 0.3% · 근원 0.2% · 이전 0.6% · 0.3% · 전년비는 미발표</span> · 월러 18:00</span></div>
       <div class="row"><span class="cd">11/11</span><span class="cw">수</span><span class="pill auc">입찰</span><span class="ev"><b>10년 입찰 03:00</b> <span class="cw">직전 5.300</span> · 독일 10월 CPI 16:00(예측 2.8%) · 11/12 신규 실업수당 22:30</span></div>
       <div class="row"><span class="cd">11/13</span><span class="cw">금</span><span class="pill cpi">물가</span><span class="ev"><b>10월 PPI 22:30</b> <span class="cw">이전 MoM 1.3% · 근원 0.7%</span> · 30년 입찰 03:00(직전 5.618) · 유로존 3Q GDP 19:00</span></div>
       <div class="row"><span class="cd">11/17</span><span class="cw">화</span><span class="pill cpi">지표</span><span class="ev"><b>10월 소매판매 22:30</b> <span class="cw">이전 0.8% · 근원 0.9%</span> · 산업생산 23:15(이전 0.7%) · 11/18 주택착공 · 11/19 필라델피아 연은(이전 20.9)</span></div>
@@ -164,80 +312,27 @@
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">02</span> 레벨 밴드</h3>
-    <div class="cards">
-
-      <div class="card">
-        <div class="chd"><div class="name">2년 <span>UST</span></div><div class="pxwrap"><span class="px">4.516</span><span class="pxsub" style="color:var(--down)">11/6 +5.3bp · ZT 102'12.5</span></div></div>
-        <div class="bands">
-          <div class="bd">
-            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">4.457</span><span class="sep">~</span><span class="hi">4.61</span></span></div>
-            <div class="track"><div class="dot" style="left:38%"></div></div>
-          </div>
-          <div class="bd">
-            <div class="bl"><span class="k">60일 실현 레인지</span><span class="r"><span class="lo">4.144</span><span class="sep">~</span><span class="hi">4.932</span></span></div>
-            <div class="track"><div class="dot" style="left:47%"></div></div>
-          </div>
-        </div>
-        <div class="pos"><span class="badge flat">하단 4.457도 타겟 위 · 오늘 매도 자리 아님</span><span class="act">ZT 고점 102'17 · 102'24 미도달</span><span class="meta">VIX 25.6 — 30 위면 전 자산 매도 주의<br>2-5 13.2(−1.0)</span></div>
-      </div>
-
-      <div class="card">
-        <div class="chd"><div class="name">10년 <span>UST</span></div><div class="pxwrap"><span class="px">4.860</span><span class="pxsub" style="color:var(--down)">11/6 +2.3bp · 4.75 지지 위</span></div></div>
-        <div class="bands">
-          <div class="bd">
-            <div class="bl"><span class="k">데일리 예상레인지</span><span class="r"><span class="lo">4.78</span><span class="sep">~</span><span class="hi">4.917</span></span></div>
-            <div class="track"><div class="dot" style="left:58%"></div></div>
-          </div>
-          <div class="bd">
-            <div class="bl"><span class="k">60일 실현 레인지</span><span class="r"><span class="lo">4.629</span><span class="sep">~</span><span class="hi">5.288</span></span></div>
-            <div class="track"><div class="dot" style="left:35%"></div></div>
-          </div>
-        </div>
-        <div class="pos"><span class="badge flat">델타 정리 완료 · CPI 대기</span><span class="act">CPI 11/10 22:30 · 10년 입찰 11/11</span><span class="meta">2-10 34.4(−3.0) 베어플랫<br>KR10−US10 −100.5 60일 최저</span></div>
-      </div>
-
-      <div class="card">
-        <div class="chd"><div class="name">30년 <span>UST</span></div><div class="pxwrap"><span class="px">5.268</span><span class="pxsub" style="color:var(--down)">11/6 +1.2bp · 20년 +1.85</span></div></div>
-        <div class="bands">
-          <div class="bd">
-            <div class="bl"><span class="k">10–30 스프레드</span><span class="r">40.8bp <span style="color:var(--ink3);font-size:10px">· −1.1 · 60일 z −0.03</span></span></div>
-            <div class="track"><div class="dot" style="left:43%"></div></div>
-          </div>
-          <div class="bd">
-            <div class="bl"><span class="k">20–30 스프레드</span><span class="r">−2.9bp <span style="color:var(--ink3);font-size:10px">· −0.65 · 60일 z −0.14</span></span></div>
-            <div class="track"><div class="dot" style="left:48%"></div></div>
-          </div>
-        </div>
-        <div class="pos"><span class="badge flat">플랫 전환 — 2년 매도와 같은 방향</span><span class="act">5.50 박스 아래 보름째 · 30년 입찰 11/13</span><span class="meta">유가 되돌림이 장기 상단을 누른다<br>WTI 90.83(+0.3%)</span></div>
-      </div>
-
-    </div>
-    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ 데일리 예상레인지는 담당자 제시값(2Y 4.457~4.61 · 10Y 4.78~4.917). dot은 <b>11-06 종가</b>.</p>
-  </section>
-
-  <section>
     <h3 class="sec-h"><span class="n">03</span> 매크로 현안 &amp; 커브 괴리</h3>
     <div class="mc">
       <div class="box">
-        <p><b>고용 서프라이즈에 앞단이 되돌았다 — 2년 +5.3 · 10년 +2.3.</b> 10월 비농업 <b>+165K(예상 65K)</b>, 9월 29K → 60K 상향, 실업률 4.1%(4.2), 시간당임금 +0.4% m/m · 3.1% y/y — 추가 긴축 쪽 근거. 11/6 종가 <b>2Y 4.516 · 5Y 4.648 · 10Y 4.860 · 20Y 5.297 · 30Y 5.268</b>, 2-10 34.4(−3.0) · 2-5 13.2(−1.0) 베어플랫. 장기 상단은 유가(WTI 90.8 — 중간선거 뒤 미·이란 외교적 해결 기대로 전쟁 프리미엄 축소, 호르무즈 선박 사고는 계속)와 AI 투자 둔화 우려가 눌렀다. 나스닥 +1.1% · VIX 28.2 → 25.6.</p>
-        <p><b>뷰 — 저항은 시험도 못 하고 꺾였다.</b> ZT는 고용 전 102'17까지 갔다가 102'12.5로 마감, 102'24에 닿지 않았다. 2Y 4.516은 타겟 4.37~4.41에서 10bp 위. 11/6에 적은 <b>"추가 이익은 어렵다, 그 뒤는 플랫 또는 2년 매도가 편하다"</b>가 그대로 진행 중이고, VIX 25.6 — 다만 30 위로 올라가면 채권·주식 등 모든 자산 매도가 나올 수 있어 조심해야 한다. 2년 매도는 대기 — <b>되돌림이 4.37~4.41에 다시 닿으면 그 자리가 매도 자리</b>, 그 전엔 쫓지 않는다. 내일 CPI(22:30)와 3·10·30년 입찰(11/10~13)이 다음 분기점.</p>
-        <p><b>커브 — 불스팁에서 베어플랫으로 하루 만에 반전.</b> 2-10 34.4(−3.0) · 10-30 40.8(−1.1) · 2-5-10 버터 8.0(−1.0). 11/5 주식 급락이 만든 스팁을 고용이 되돌렸다 — 2년 매도 시나리오는 이 플랫이 이어지는 쪽에 선다. <b>KR10−US10 −100.5(−4.3)</b>, 60일 최저.</p>
+        <p><b>유가가 4% 넘게 빠졌는데 금리는 올랐다 — 2년 +5.0 · 10년 +2.6.</b> WTI 86.85(−4.4%): 협상이 진행되는 동안 추가 군사행동 가능성이 낮다는 발언과 카타르 중재 움직임에 전쟁 프리미엄이 빠졌다. 금리는 장 초반 내렸다가 되올랐다 — 고용 호조 뒤 12월 25bp 인상 확률이 약 80%, 오늘 CPI 앞 경계. 11/9 종가 <b>2Y 4.566 · 5Y 4.679 · 10Y 4.886 · 20Y 5.311 · 30Y 5.282</b>. 다우 +2.2% · 나스닥 +2.7% · VIX 25.6 → 19.9.</p>
+        <p><b>뷰 — 방향은 맞았고 진입 자리는 오지 않았다.</b> 2Y는 11/5 종가 4.463에서 이틀간 +10bp, 2-10은 37.4 → 32.0. "플랫 또는 2년 매도가 편하다"는 그림대로 갔지만 매도 구간 4.37~4.41은 닿지 않았다 — <b>지금 4.566에서 쫓아 팔지 않는다.</b> 오늘 CPI(22:30)가 약하면 진입 구간으로 되돌아오는지, 강하면 2Y가 60일 평균 4.561 위에 자리 잡는지를 본다. 근원 전월비 예상 0.2% — 유가 급락은 앞으로의 물가엔 좋지만 10월 수치엔 운송비 · 상품가격 상승분이 남아 있을 수 있다.</p>
+        <p><b>커브 — 이틀째 베어플랫.</b> 2-10 32.0(−2.4) · 2-5 11.3(−1.9, z −1.24) · 10-30 39.6(−1.2) · 2-5-10 버터 9.4(+1.4). 2년 매도 시나리오는 이 플랫이 이어지는 쪽에 선다. <b>KR10−US10 −102.9(−2.4)</b> 60일 최저 — 한국 10년이 미국보다 103bp 낮다.</p>
       </div>
       <div class="box">
         <table class="ctable">
-          <thead><tr><th>커브</th><th>11-06(bp)</th><th>전일 대비</th><th>z(60d)</th></tr></thead>
+          <thead><tr><th>커브</th><th>11-09(bp)</th><th>전일 대비</th><th>z(60d)</th></tr></thead>
           <tbody>
-            <tr><td>2-5</td><td>13.2</td><td class="cool">−1.0</td><td class="zbar">−0.77σ</td></tr>
-            <tr><td>2-10</td><td>34.4</td><td class="cool">−3.0</td><td class="zbar">−0.47σ</td></tr>
-            <tr><td>5-10</td><td>21.2</td><td class="cool">−2.0</td><td class="zbar">−0.17σ</td></tr>
-            <tr><td>10-20</td><td>43.7</td><td class="cool">−0.5</td><td class="zbar">0.00σ</td></tr>
-            <tr><td>10-30</td><td>40.8</td><td class="cool">−1.1</td><td class="zbar">−0.03σ</td></tr>
-            <tr><td>20-30</td><td>−2.9</td><td class="cool">−0.7</td><td class="zbar">−0.14σ</td></tr>
-            <tr><td>2-5-10 버터</td><td>8.0</td><td class="cool">−1.0</td><td class="zbar">+0.43σ</td></tr>
+            <tr><td>2-5</td><td>11.3</td><td class="cool">−1.9</td><td class="zbar">−1.24σ</td></tr>
+            <tr><td>2-10</td><td>32.0</td><td class="cool">−2.4</td><td class="zbar">−0.73σ</td></tr>
+            <tr><td>5-10</td><td>20.7</td><td class="cool">−0.5</td><td class="zbar">−0.24σ</td></tr>
+            <tr><td>10-20</td><td>42.5</td><td class="cool">−1.2</td><td class="zbar">−0.15σ</td></tr>
+            <tr><td>10-30</td><td>39.6</td><td class="cool">−1.2</td><td class="zbar">−0.14σ</td></tr>
+            <tr><td>20-30</td><td>−2.9</td><td>0.0</td><td class="zbar">−0.13σ</td></tr>
+            <tr><td>2-5-10 버터</td><td>9.4</td><td class="hot">+1.4</td><td class="zbar">+0.75σ</td></tr>
           </tbody>
         </table>
-        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ <b>11-06 미국 국채 현물 금리</b> 기준 · 변화는 11/5 → 11/6 · z는 <b>60영업일 롤링</b><br>※ <b>2-10 34.4(−3.0) · 2-5 13.2(−1.0)</b> — 고용에 베어플랫<br>※ 절대 레벨 <b>2년 4.516 · 10년 4.860</b> — 60일 z −0.16 / −0.39 · 60일 레인지 2Y 4.144~4.932 · 10Y 4.629~5.288</p>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ <b>11-09 미국 국채 현물 금리</b> 기준 · 변화는 11/6 → 11/9 · z는 <b>60영업일 롤링</b><br>※ <b>2-10 32.0(−2.4) · 2-5 11.3(−1.9)</b> — 이틀째 베어플랫<br>※ 절대 레벨 <b>2년 4.566 · 10년 4.886</b> — 60일 z +0.02 / −0.28 · 60일 레인지 2Y 4.144~4.932 · 10Y 4.629~5.288</p>
       </div>
     </div>
   </section>
