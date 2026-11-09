@@ -199,6 +199,25 @@
   .ply .pn.u{color:var(--up)} .ply .pn.d{color:var(--down)}
   @container (max-width:700px){.ply{grid-template-columns:18px minmax(0,1fr) auto;grid-template-areas:"rk ph pn" "lv lv lv" "ws ws ws"}.ply .pn{font-size:13px}}
   @container (max-width:420px){.ply .lv4{gap:4px}.ply .lv4 span{padding:4px 5px}.ply .lv4 b{font-size:11px}.ply .lv4 i{font-size:9px}.ply.minor .ws{display:none}.ply .nm{font-size:14px}}
+  .play.top{padding:12px 14px 4px}
+  .rgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+  .rg{background:var(--panel2);border-radius:8px;padding:8px 11px;display:flex;flex-direction:column;gap:1px;min-width:0}
+  .rg .rk2{font-size:10.5px;font-weight:700;color:var(--ink3);letter-spacing:.03em}
+  .rg .rv{font-family:var(--mono);font-size:19px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums;line-height:1.3}
+  .rg .rv .lo{color:var(--long)} .rg .rv .hi{color:var(--short)} .rg .rv i{font-style:normal;font-weight:500;color:var(--ink3);margin:0 5px}
+  .rg .rs{font-family:var(--mono);font-size:10.5px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .rg .rs b{color:var(--gold)}
+  .rg.sm .rv{font-size:15px;line-height:1.65}
+  .p3h{margin:10px 0 5px;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--gold)}
+  .p3r{display:grid;grid-template-columns:14px auto auto minmax(0,1fr) auto;grid-template-areas:"rk bd nm lv pn";gap:3px 9px;align-items:baseline;padding:7px 0;border-top:1px solid var(--line2)}
+  .p3r .rk{grid-area:rk;font-family:var(--mono);font-size:12.5px;font-weight:800;color:var(--ink3)}
+  .p3r .badge{grid-area:bd} .p3r .nm{grid-area:nm;font-size:14px;font-weight:800;white-space:nowrap}
+  .p3r .lvt{grid-area:lv;min-width:0;font-size:12px;color:var(--ink2)} .p3r .lvt b{color:var(--ink);font-family:var(--mono);font-size:12px}
+  .p3r .pn{grid-area:pn;font-family:var(--mono);font-size:13px;font-weight:800;color:var(--ink2);white-space:nowrap;text-align:right}
+  .p3r .pn.u{color:var(--up)} .p3r .pn.d{color:var(--down)}
+  @container (max-width:640px){.p3r{grid-template-columns:14px auto minmax(0,1fr) auto;grid-template-areas:"rk bd nm pn" ". lv lv lv"}.p3r .nm{white-space:normal}}
+  @container (max-width:420px){.rgs{grid-template-columns:1fr 1fr;gap:6px}.rg{padding:7px 9px}.rg .rv{font-size:15px}.rg .rv i{margin:0 3px}.rg.sm .rv{font-size:13px}}
+  .play.dtl{margin-top:0;border-top:1px solid var(--line);padding-top:2px}
+  .play.dtl .ply:first-child{border-top:0}
   .badge.obs{color:var(--ink2);background:var(--panel2)}
   .dont{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-top:10px;border-top:1px solid var(--line2);font-size:11.5px}
   .dont .dk{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--short)}
@@ -248,55 +267,17 @@
   <div class="cols">
   <div class="colmain">
   <!--BODY-->
-  <section class="play">
-    <div class="pk">TODAY'S PLAYBOOK · 11-10 (TUE) · WHERE THE MONEY IS</div>
-    <h2 class="pv1">No new direction before CPI (22:30) — <em>the money now is the 10-30 steepener</em>; the next is <em>the US 2Y short at 4.37–4.41</em></h2>
-    <p class="psub">Today's ranges 3Y 103.67~103.93 · 10Y 108.69~109.61 (opens 103.77 · 109.29). The Korea long is held and trimmed, futures first, the day securities cover. The 3.650 3Y award is the near barrier — the 3Y at 3.635 sits 1.5bp below it.</p>
-    <div class="plays">
-      <div class="ply">
-        <div class="rk">1</div>
-        <div class="ph"><span class="badge long">Held</span><span class="nm">10-30 steepener</span><span class="sb">buy 10Y / sell 30Y · DV01-neutral</span></div>
-        <div class="lv4"><span><i>Now</i><b>11.8</b></span><span><i>Entry</i><b>7.9</b></span><span><i>Target</i><b>14</b></span><span><i>Stop</i><b>4</b></span></div>
-        <div class="pn u">+3.9bp</div>
-        <div class="ws"><div class="why"><b>Why</b><span>Offshore selling now reaches the 30Y benchmark (26-8 −109bn · 24-8 −100). The 10Y contract closed 40 ticks off its low.</span></div><div class="why"><b>Risk</b><span>Insurers and pensions 30Y +205bn — the buying is widening from 26-8 into off-the-runs and strips.</span></div></div>
-      </div>
-      <div class="ply">
-        <div class="rk">2</div>
-        <div class="ph"><span class="badge long">Held</span><span class="nm">Korea long — trimmed on a signal</span><span class="sb">3Y · 10Y futures</span></div>
-        <div class="lv4"><span><i>3Y fut</i><b>103.81</b></span><span><i>10Y fut</i><b>109.39</b></span><span><i>Trim on</i><b>sec. covering</b></span><span><i>3Y care</i><b>above 3.650</b></span></div>
-        <div class="pn ">hold</div>
-        <div class="ws"><div class="why"><b>Why</b><span>Offshore 3Y +8,729 (net 198,611, a six-month high). The 3Y closed at 3.635, below the 3.650 award.</span></div><div class="why"><b>Risk</b><span>Securities net −156,370, a record short. The 1,500 bought back after 15:00 is not the signal yet · CPI today.</span></div></div>
-      </div>
-      <div class="ply">
-        <div class="rk">3</div>
-        <div class="ph"><span class="badge flat">Waiting</span><span class="nm">US 2Y short</span><span class="sb">flat or short the 2Y is the comfortable side</span></div>
-        <div class="lv4"><span><i>Now</i><b>4.566</b></span><span><i>Entry</i><b>4.37–4.41</b></span><span><i>Distance</i><b>+16–20bp</b></span><span><i>Catalyst</i><b>CPI 22:30</b></span></div>
-        <div class="pn ">pending</div>
-        <div class="ws"><div class="why"><b>Why</b><span>The 2Y is +10bp in two days and 2-10 went 37.4 → 32.0 — the direction was right, the entry zone was never reached.</span></div><div class="why"><b>Risk</b><span>Today's range bottom of 4.494 is still above the entry zone — a firm CPI takes it further away. Not chased at 4.566.</span></div></div>
-      </div>
-      <div class="ply minor">
-        <div class="rk">4</div>
-        <div class="ph"><span class="badge obs">On hold</span><span class="nm">2-3 steepener re-entry</span><span class="sb">buy 2Y / sell 3Y · stopped on 11/6</span></div>
-        <div class="lv4"><span><i>Now</i><b>1.0</b></span><span><i>60d low</i><b>0.5</b></span><span><i>60d avg</i><b>8.8</b></span><span><i>z (60d)</i><b>−1.38</b></span></div>
-        <div class="pn d">−0.8</div>
-        <div class="ws"><div class="why"><b>Why</b><span>The 26-12 issue is done and 2-3 is 0.5bp from its 60-day low — little room left to compress.</span></div><div class="why"><b>Risk</b><span>On days hike pricing builds, the 2Y sells more than the 3Y (11/9: 2Y +2.8 vs 3Y +2.0).</span></div></div>
-      </div>
-      <div class="ply minor">
-        <div class="rk">5</div>
-        <div class="ph"><span class="badge obs">Watch</span><span class="nm">Credit — finance companies expensive, agencies lagging</span><span class="sb">yield gap to the KTB benchmark · MSB 2Y</span></div>
-        <div class="lv4"><span><i>3Y cards</i><b>−2.5~3bp</b></span><span><i>2–3Y fin. cos</i><b>−2bp</b></span><span><i>2–3Y agencies</i><b>+1~2bp</b></span><span><i>1Y banks</i><b>+4 won</b></span></div>
-        <div class="pn ">no chasing</div>
-        <div class="ws"><div class="why"><b>Why</b><span>Spreads tightened while KTBs sold — card AA+ 3Y 57.6 (−0.7) · bank AAA 1Y 45.1 (−0.9). The room left is in agencies.</span></div><div class="why"><b>Risk</b><span>Finance-company primaries close 3bp under the mark — chasing in secondary means paying up.</span></div></div>
-      </div>
-      <div class="ply minor">
-        <div class="rk">6</div>
-        <div class="ph"><span class="badge obs">Watch</span><span class="nm">3Y basket — 25-10 is expensive</span><span class="sb">25-4 vs 25-10</span></div>
-        <div class="lv4"><span><i>Now</i><b>−1.3</b></span><span><i>3M avg</i><b>5.5</b></span><span><i>z (3M)</i><b>−2.38</b></span><span><i>Borrow</i><b>12.70%</b></span></div>
-        <div class="pn ">z −2.38</div>
-        <div class="ws"><div class="why"><b>Why</b><span>25-10 yields 1.3bp below 25-4 — the average is 5.5bp above.</span></div><div class="why"><b>Risk</b><span>While the 3Y contract stays 6.8 ticks rich, the basket lines can stay expensive.</span></div></div>
-      </div>
+  <section class="play top">
+    <div class="rgs">
+      <div class="rg"><span class="rk2">3Y futures today</span><span class="rv"><b class="lo">103.67</b><i>~</i><b class="hi">103.93</b></span><span class="rs">open <b>103.77</b> (−4 ticks)</span></div>
+      <div class="rg"><span class="rk2">10Y futures today</span><span class="rv"><b class="lo">108.69</b><i>~</i><b class="hi">109.61</b></span><span class="rs">open <b>109.29</b> (−10 ticks)</span></div>
+      <div class="rg sm"><span class="rk2">UST 2Y</span><span class="rv"><b class="lo">4.494</b><i>~</i><b class="hi">4.644</b></span><span class="rs">prev 4.566</span></div>
+      <div class="rg sm"><span class="rk2">UST 10Y</span><span class="rv"><b class="lo">4.836</b><i>~</i><b class="hi">4.969</b></span><span class="rs">prev 4.886</span></div>
     </div>
-    <div class="dont"><span class="dk">NOT DOING</span><span class="dx">Chasing direction before CPI</span><span class="dx">Selling the US 2Y at 4.566</span><span class="dx">Chasing 1Y credit · finance companies</span></div>
+    <div class="p3h">RECOMMENDED POSITIONS</div>
+      <div class="p3r"><span class="rk">1</span><span class="badge long">Held</span><span class="nm">10-30 steepener</span><span class="lvt">now <b>11.8</b> · entry 7.9 · target <b>14</b> · stop <b>4</b></span><span class="pn u">+3.9bp</span></div>
+      <div class="p3r"><span class="rk">2</span><span class="badge long">Held</span><span class="nm">Korea long (3Y · 10Y fut)</span><span class="lvt"><b>trim futures first when securities cover</b> · care above the 3.650 3Y award</span><span class="pn ">hold</span></div>
+      <div class="p3r"><span class="rk">3</span><span class="badge flat">Waiting</span><span class="nm">US 2Y short</span><span class="lvt">entry <b>4.37–4.41</b> · now 4.566 · today's 4.494 bottom still above it · CPI 22:30</span><span class="pn ">pending</span></div>
   </section>
 
   <div class="nums">
@@ -373,7 +354,7 @@
   <section>
     <h3 class="sec-h"><span class="n">02</span> Upcoming Calendar</h3>
     <div class="cal">
-      <div class="row today"><span class="cd">11/10</span><span class="cw">Tue</span><span class="pill cpi">Inflation</span><span class="ev"><b>US October CPI 22:30</b> <span class="cw">consensus MoM 0.3% · core 0.2% · prev 0.6% · 0.3% · no YoY print</span> · Waller 18:00 · MSB 2Y 2.3tn</span></div>
+      <div class="row today"><span class="cd">11/10</span><span class="cw">Tue</span><span class="pill cpi">Inflation</span><span class="ev"><b>US October CPI 22:30</b> <span class="cw">consensus MoM 0.3% · core 0.2% · prev 0.6% · 0.3% · no YoY print</span> · Waller 18:00 · MSB 2Y 2.3tn · UST 3Y auction this morning 4.627% (last 4.932%)</span></div>
       <div class="row"><span class="cd">11/11</span><span class="cw">Wed</span><span class="pill auc">Auction</span><span class="ev"><b>KTB 50Y 26-11, KRW 700bn</b> <span class="cw">· last award 4.195 · 50Y 3.879 · 30-50 −9.6</span> · UST 10Y auction 03:00 (last 5.300) · Korea October unemployment 08:00</span></div>
       <div class="row"><span class="cd">11/13</span><span class="cw">Fri</span><span class="pill cpi">Inflation</span><span class="ev"><b>US October PPI 22:30</b> <span class="cw">prev MoM 1.3% · core 0.7%</span> · UST 30Y auction 03:00 (last 5.618) · 11/12 initial claims 22:30</span></div>
       <div class="row"><span class="cd">11/16</span><span class="cw">Mon</span><span class="pill auc">Auction</span><span class="ev"><b>KTB 10Y 26-6 1.1tn + new line 26-13 1.1tn</b> <span class="cw">· last award 4.165 · 10Y 3.857</span> · 11/15 Korea trade balance · 11/17 US retail sales 22:30 (prev 0.8%)</span></div>
@@ -383,7 +364,56 @@
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">03</span> Macro Issues &amp; Curve Dislocations</h3>
+    <h3 class="sec-h"><span class="n">03</span> Recommended Positions in Detail &amp; Watchlist</h3>
+    <div class="play dtl">
+      <div class="ply">
+        <div class="rk">1</div>
+        <div class="ph"><span class="badge long">Held</span><span class="nm">10-30 steepener</span><span class="sb">buy 10Y / sell 30Y · DV01-neutral</span></div>
+        <div class="lv4"><span><i>Now</i><b>11.8</b></span><span><i>Entry</i><b>7.9</b></span><span><i>Target</i><b>14</b></span><span><i>Stop</i><b>4</b></span></div>
+        <div class="pn u">+3.9bp</div>
+        <div class="ws"><div class="why"><b>Why</b><span>Offshore selling now reaches the 30Y benchmark (26-8 −109bn · 24-8 −100). The 10Y contract closed 40 ticks off its low.</span></div><div class="why"><b>Risk</b><span>Insurers and pensions 30Y +205bn — the buying is widening from 26-8 into off-the-runs and strips.</span></div></div>
+      </div>
+      <div class="ply">
+        <div class="rk">2</div>
+        <div class="ph"><span class="badge long">Held</span><span class="nm">Korea long — trimmed on a signal</span><span class="sb">3Y · 10Y futures</span></div>
+        <div class="lv4"><span><i>3Y fut</i><b>103.81</b></span><span><i>10Y fut</i><b>109.39</b></span><span><i>Trim on</i><b>sec. covering</b></span><span><i>3Y care</i><b>above 3.650</b></span></div>
+        <div class="pn ">hold</div>
+        <div class="ws"><div class="why"><b>Why</b><span>Offshore 3Y +8,729 (net 198,611, a six-month high). The 3Y closed at 3.635, below the 3.650 award.</span></div><div class="why"><b>Risk</b><span>Securities net −156,370, a record short. The 1,500 bought back after 15:00 is not the signal yet · CPI today.</span></div></div>
+      </div>
+      <div class="ply">
+        <div class="rk">3</div>
+        <div class="ph"><span class="badge flat">Waiting</span><span class="nm">US 2Y short</span><span class="sb">flat or short the 2Y is the comfortable side</span></div>
+        <div class="lv4"><span><i>Now</i><b>4.566</b></span><span><i>Entry</i><b>4.37–4.41</b></span><span><i>Distance</i><b>+16–20bp</b></span><span><i>Catalyst</i><b>CPI 22:30</b></span></div>
+        <div class="pn ">pending</div>
+        <div class="ws"><div class="why"><b>Why</b><span>The 2Y is +10bp in two days and 2-10 went 37.4 → 32.0 — the direction was right, the entry zone was never reached.</span></div><div class="why"><b>Risk</b><span>Today's range bottom of 4.494 is still above the entry zone — a firm CPI takes it further away. Not chased at 4.566.</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">4</div>
+        <div class="ph"><span class="badge obs">On hold</span><span class="nm">2-3 steepener re-entry</span><span class="sb">buy 2Y / sell 3Y · stopped on 11/6</span></div>
+        <div class="lv4"><span><i>Now</i><b>1.0</b></span><span><i>60d low</i><b>0.5</b></span><span><i>60d avg</i><b>8.8</b></span><span><i>z (60d)</i><b>−1.38</b></span></div>
+        <div class="pn d">−0.8</div>
+        <div class="ws"><div class="why"><b>Why</b><span>The 26-12 issue is done and 2-3 is 0.5bp from its 60-day low — little room left to compress.</span></div><div class="why"><b>Risk</b><span>On days hike pricing builds, the 2Y sells more than the 3Y (11/9: 2Y +2.8 vs 3Y +2.0).</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">5</div>
+        <div class="ph"><span class="badge obs">Watch</span><span class="nm">Credit — finance companies expensive, agencies lagging</span><span class="sb">yield gap to the KTB benchmark · MSB 2Y</span></div>
+        <div class="lv4"><span><i>3Y cards</i><b>−2.5~3bp</b></span><span><i>2–3Y fin. cos</i><b>−2bp</b></span><span><i>2–3Y agencies</i><b>+1~2bp</b></span><span><i>1Y banks</i><b>+4 won</b></span></div>
+        <div class="pn ">no chasing</div>
+        <div class="ws"><div class="why"><b>Why</b><span>Spreads tightened while KTBs sold — card AA+ 3Y 57.6 (−0.7) · bank AAA 1Y 45.1 (−0.9). The room left is in agencies.</span></div><div class="why"><b>Risk</b><span>Finance-company primaries close 3bp under the mark — chasing in secondary means paying up.</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">6</div>
+        <div class="ph"><span class="badge obs">Watch</span><span class="nm">3Y basket — 25-10 is expensive</span><span class="sb">25-4 vs 25-10</span></div>
+        <div class="lv4"><span><i>Now</i><b>−1.3</b></span><span><i>3M avg</i><b>5.5</b></span><span><i>z (3M)</i><b>−2.38</b></span><span><i>Borrow</i><b>12.70%</b></span></div>
+        <div class="pn ">z −2.38</div>
+        <div class="ws"><div class="why"><b>Why</b><span>25-10 yields 1.3bp below 25-4 — the average is 5.5bp above.</span></div><div class="why"><b>Risk</b><span>While the 3Y contract stays 6.8 ticks rich, the basket lines can stay expensive.</span></div></div>
+      </div>
+      <div class="dont"><span class="dk">NOT DOING</span><span class="dx">Chasing direction before CPI</span><span class="dx">Selling the US 2Y at 4.566</span><span class="dx">Chasing 1Y credit · finance companies</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">04</span> Macro Issues &amp; Curve Dislocations</h3>
     <div class="mc">
       <div class="box">
         <p><b>Korea 11/9 — the front end sold after the 3Y auction; the 10Y recovered in the last 40 minutes.</b> KTB <b>2Y 3.625 (+2.8) · 3Y 3.635 (+2.0) · 5Y 3.727 (+1.2) · 10Y 3.857 (+0.2) · 30Y 3.975 (+0.3)</b>, 3Y fut 103.81 (−4 ticks) · 10Y fut 109.39 (+2, low 108.99). The 3Y awards were 3.650 for 26-5 and 3.645 for the new 26-12 — both closed below their awards (3.635 · 3.610). → <b>The 3.650 award is the near barrier</b>; the curve sits around 60-day lows, 3-10 22.2 (−1.8) · 3-5 9.2.</p>
@@ -420,7 +450,7 @@
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">04</span> Futures Fair Value &amp; Basket <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">11-09 · Dec 2026 contract · 35 days left</span></h3>
+    <h3 class="sec-h"><span class="n">05</span> Futures Fair Value &amp; Basket <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">11-09 · Dec 2026 contract · 35 days left</span></h3>
     <div class="low">
       <div class="box flow">
         <table>
@@ -462,7 +492,7 @@
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">05</span> Flows · Futures Positioning</h3>
+    <h3 class="sec-h"><span class="n">06</span> Flows · Futures Positioning</h3>
     <div class="low">
       <div class="box flow">
         <table>
@@ -500,7 +530,7 @@
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">06</span> OTC Cash Flows — Offshore vs Domestic <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">11-09 · KRW 100mn · KTBs</span></h3>
+    <h3 class="sec-h"><span class="n">07</span> OTC Cash Flows — Offshore vs Domestic <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">11-09 · KRW 100mn · KTBs</span></h3>
     <div class="low">
       <div class="box flow">
         <table>
@@ -535,7 +565,7 @@
   </section>
 
   <section>
-    <h3 class="sec-h"><span class="n">07</span> Securities Lending Balances <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">as of 11-09 · KRW 100mn</span></h3>
+    <h3 class="sec-h"><span class="n">08</span> Securities Lending Balances <span style="font-family:var(--mono);font-size:10px;color:var(--ink3);text-transform:none;letter-spacing:0">as of 11-09 · KRW 100mn</span></h3>
     <div class="low">
       <div class="box flow">
         <table>
@@ -570,7 +600,7 @@
   </div><!--/colmain-->
   <aside class="colside">
   <section>
-    <h3 class="sec-h"><span class="n">08</span> Live Feed <span class="live">LIVE</span></h3>
+    <h3 class="sec-h"><span class="n">09</span> Live Feed <span class="live">LIVE</span></h3>
     <div id="feed" class="feed-list"><div class="feed-empty">Loading…</div></div>
   </section>
   </aside>
