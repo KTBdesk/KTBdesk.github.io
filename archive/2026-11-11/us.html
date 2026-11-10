@@ -1,0 +1,406 @@
+<title>US 금리 데일리 · 2026-11-11</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#f5f3ec; --panel:#fffdf8; --panel2:#efece2; --ink:#1c2129; --ink2:#4a525e; --ink3:#828b98;
+    --line:#ddd8ca; --line2:#e9e5d8; --gold:#9a7320; --gold-soft:#c8a24a;
+    --long:#1f7a5c; --long-bg:#e2efe7; --short:#b23b3b; --short-bg:#f4e3e0; --flat:#9a7320; --flat-bg:#f0e8d4;
+    --up:#1f7a5c; --down:#b23b3b;
+    --rate:#7a5bb2; --rate-bg:#ece5f5; --cpi:#2f6fb0; --cpi-bg:#e2edf6; --auc:#9a7320; --auc-bg:#f0e8d4;
+    --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+    --sans:system-ui,-apple-system,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root{
+      --bg:#0e1218; --panel:#161c25; --panel2:#1c232e; --ink:#e8eaed; --ink2:#a7b0bd; --ink3:#6b7480;
+      --line:#2a323d; --line2:#232b35; --gold:#d7ad52; --gold-soft:#8a6d2b;
+      --long:#3fae83; --long-bg:#16302a; --short:#e0716e; --short-bg:#331f1f; --flat:#d7ad52; --flat-bg:#2c2718;
+      --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}}
+  :root[data-theme="light"]{
+    --bg:#f5f3ec; --panel:#fffdf8; --panel2:#efece2; --ink:#1c2129; --ink2:#4a525e; --ink3:#828b98;
+    --line:#ddd8ca; --line2:#e9e5d8; --gold:#9a7320; --gold-soft:#c8a24a;
+    --long:#1f7a5c; --long-bg:#e2efe7; --short:#b23b3b; --short-bg:#f4e3e0; --flat:#9a7320; --flat-bg:#f0e8d4;
+    --up:#1f7a5c; --down:#b23b3b; --rate:#7a5bb2; --rate-bg:#ece5f5; --cpi:#2f6fb0; --cpi-bg:#e2edf6; --auc:#9a7320; --auc-bg:#f0e8d4;}
+  :root[data-theme="dark"]{
+    --bg:#0e1218; --panel:#161c25; --panel2:#1c232e; --ink:#e8eaed; --ink2:#a7b0bd; --ink3:#6b7480;
+    --line:#2a323d; --line2:#232b35; --gold:#d7ad52; --gold-soft:#8a6d2b;
+    --long:#3fae83; --long-bg:#16302a; --short:#e0716e; --short-bg:#331f1f; --flat:#d7ad52; --flat-bg:#2c2718;
+    --up:#3fae83; --down:#e0716e; --rate:#b49ae0; --rate-bg:#241d33; --cpi:#6ea8db; --cpi-bg:#16273a; --auc:#d7ad52; --auc-bg:#2c2718;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:26px 22px 46px}
+  section{margin-top:22px}
+  .sec-h{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);font-weight:700;display:flex;align-items:center;gap:10px;margin:0 0 12px}
+  .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .sec-h .n{font-family:var(--mono);color:var(--ink3);font-weight:600}
+  .mast{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;border-bottom:2px solid var(--ink);padding-bottom:12px;flex-wrap:wrap}
+  .mast h1{margin:0;font-size:24px;letter-spacing:-.01em;font-weight:800}
+  .mast .sub{color:var(--ink2);font-size:12.5px;margin-top:4px}
+  .upd{display:inline-block;margin-top:9px;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--gold);background:var(--flat-bg);border:1px solid var(--gold-soft);border-radius:999px;padding:4px 12px}
+  .upd b{color:var(--ink);font-weight:800}
+  .contact{margin-top:7px;font-size:11.5px;color:var(--ink2)}
+  .contact b{color:var(--ink);font-weight:600}
+  .contact a{color:var(--gold);text-decoration:none}
+  .contact .sep{color:var(--line);margin:0 8px}
+  .brand{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+  .brand .emblem{height:26px;width:auto;flex:none;display:block}
+  .lang{display:flex;gap:5px;justify-content:flex-end;margin-bottom:7px}
+  .lang a{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink3);text-decoration:none;padding:1px 7px;border:1px solid var(--line);border-radius:4px}
+  .lang a.on{color:var(--gold);border-color:var(--gold-soft)}
+  .histwrap{display:flex;justify-content:flex-end;align-items:center;gap:5px;margin-bottom:7px;font-size:11px;color:var(--ink3)}
+  .histwrap select{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ink2);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:2px 5px;cursor:pointer}
+  .asof{text-align:right;font-size:11.5px;color:var(--ink2);line-height:1.7}
+  .asof .d{font-family:var(--mono);color:var(--ink);font-size:13px;font-weight:700}
+  .tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-soft);border-radius:3px;padding:1px 6px}
+
+  .keys{display:flex;gap:10px;margin:16px 0 0;flex-wrap:wrap}
+  .keychip{flex:1;min-width:150px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:9px 13px}
+  .keychip.hot{border-left-color:var(--down)}
+  .keychip .dd{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--gold);letter-spacing:.03em}
+  .keychip.hot .dd{color:var(--down)}
+  .keychip .ev{font-size:13px;font-weight:600;margin-top:2px}
+  .keychip .dt{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-top:1px}
+
+  .cal{columns:2;column-gap:16px}
+  @media(max-width:720px){.cal{columns:1}}
+  .cal .row{break-inside:avoid;display:flex;align-items:center;gap:9px;padding:5px 0;border-bottom:1px solid var(--line2);font-size:12.5px}
+  .cal .cd{font-family:var(--mono);font-weight:700;color:var(--ink);white-space:nowrap;font-size:12px}
+  .cal .cw{color:var(--ink3);font-size:11px}
+  .pill{font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;white-space:nowrap}
+  .pill.auc{color:var(--auc);background:var(--auc-bg)} .pill.rate{color:var(--rate);background:var(--rate-bg)} .pill.cpi{color:var(--cpi);background:var(--cpi-bg)}
+  .cal .ev{color:var(--ink2)}
+  .cal .row.today{background:var(--panel2);border-radius:5px;padding-left:6px;padding-right:6px}
+
+  .mc{display:grid;grid-template-columns:1.15fr 1fr;gap:16px}
+  @media(max-width:820px){.mc{grid-template-columns:1fr}}
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .box p{margin:0 0 8px;font-size:13px;color:var(--ink2)} .box p:last-child{margin-bottom:0} .box p b{color:var(--ink)}
+  .ctable{width:100%;border-collapse:collapse;font-size:12.5px}
+  .ctable th,.ctable td{padding:5px 8px;text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;border-bottom:1px solid var(--line2)}
+  .ctable th{font-family:var(--sans);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+  .ctable td:first-child,.ctable th:first-child{text-align:left;font-weight:700;color:var(--ink)}
+  .ctable tr:last-child td{border-bottom:0}
+  .zbar{color:var(--short);font-weight:700} .hot{color:var(--down)} .cool{color:var(--up)}
+
+  .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 13px 11px;display:flex;flex-direction:column;gap:10px;min-width:0}
+  .chd{display:flex;justify-content:space-between;align-items:baseline}
+  .chd .name{font-weight:800;font-size:16px}
+  .chd .name span{color:var(--ink3);font-weight:500;font-size:11px;margin-left:2px}
+  .chd .px{font-family:var(--mono);font-size:18px;font-weight:800}
+  .pxwrap{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
+  .pxsub{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--ink3);margin-top:1px}
+  .pxsub b{color:var(--gold)}
+  .bands{display:flex;flex-direction:column;gap:9px}
+  .bd .bl{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;flex-wrap:wrap;gap:0 6px}
+  .bd .bl .k{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+  .bd .bl .r{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink)}
+  .bd .bl .r .lo{color:var(--long)} .bd .bl .r .hi{color:var(--short)} .bd .bl .r .sep{color:var(--ink3);margin:0 3px}
+  .track{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,color-mix(in srgb,var(--long) 22%,transparent),var(--panel2),color-mix(in srgb,var(--short) 22%,transparent));border:1px solid var(--line2)}
+  .dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--gold);transform:translate(-50%,-50%);border:2px solid var(--panel);box-shadow:0 0 0 1px var(--gold-soft)}
+  .pos{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-top:9px;border-top:1px solid var(--line2)}
+  .badge{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:5px;white-space:nowrap}
+  .badge.long{color:var(--long);background:var(--long-bg)} .badge.short{color:var(--short);background:var(--short-bg)} .badge.flat{color:var(--flat);background:var(--flat-bg)}
+  .pos .act{font-size:11.5px;color:var(--ink);font-weight:600}
+  .pos .meta{flex-basis:100%;font-family:var(--mono);font-size:10px;color:var(--ink3);text-align:left;line-height:1.55}
+  .foot{margin-top:20px;font-size:11px;color:var(--ink3);line-height:1.7;border-top:1px solid var(--line);padding-top:12px}
+  .foot b{color:var(--ink2)}
+  /* fold */
+  section.fold>.sec-h{cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+  section.fold>.sec-h::after{order:1}
+  section.fold>.sec-h .fold-t{order:2;font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink2);text-transform:none;letter-spacing:0;border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--card,transparent);white-space:nowrap}
+  section.fold.closed>.sec-h{margin-bottom:0}
+  section.fold.closed>.sec-h .fold-t{color:var(--gold);border-color:var(--gold)}
+  section.fold.closed>*:not(.sec-h){display:none}
+  @media print{section.fold.closed>*:not(.sec-h){display:block}section.fold>.sec-h .fold-t{display:none}}
+  /* trd */
+  .tcard .bands{gap:12px}
+  .trd{display:flex;flex-direction:column;gap:5px}
+  .trd .trh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .trd .tn{font-weight:800;font-size:13px;color:var(--ink)} .trd .tn span{color:var(--ink3);font-weight:500;font-size:10.5px;margin-left:3px}
+  .trd .tp{font-family:var(--mono);font-size:12.5px;font-weight:800;white-space:nowrap} .trd .tp.u{color:var(--up)} .trd .tp.d{color:var(--down)}
+  .trd .trl{font-family:var(--mono);font-size:11.5px;color:var(--ink2);font-variant-numeric:tabular-nums} .trd .trl b{color:var(--ink);font-size:13.5px} .trd .trl .arr{color:var(--ink3);margin:0 5px}
+  .trd .track{background:linear-gradient(90deg,color-mix(in srgb,var(--short) 22%,transparent),var(--panel2),color-mix(in srgb,var(--long) 22%,transparent))}
+  .trd .tick{position:absolute;top:-4px;width:2px;height:14px;border-radius:1px;background:var(--ink3);transform:translateX(-50%)}
+  .trd .trm{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font-family:var(--mono);font-size:10px;color:var(--ink3);white-space:nowrap}
+  .trd .trm .ok{color:var(--up);font-weight:700;overflow:hidden;text-overflow:ellipsis}
+  /* v1110 */
+  .play{margin-top:16px;background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:14px 16px 12px}
+  .play .pk{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--gold)}
+  .play .pv1{margin:5px 0 0;font-size:20px;line-height:1.38;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+  .play .pv1 em{font-style:normal;color:var(--gold);white-space:nowrap}
+  .play .psub{margin:6px 0 0;font-size:12.5px;color:var(--ink2)}
+  .plays{margin-top:12px}
+  .play{container-type:inline-size}
+  .ply{display:grid;grid-template-columns:18px minmax(0,1fr) minmax(0,1.15fr) minmax(64px,auto);grid-template-areas:"rk ph lv pn" ". ws ws ws";gap:6px 12px;align-items:center;padding:10px 0;border-top:1px solid var(--line2)}
+  .ply .rk{grid-area:rk;font-family:var(--mono);font-size:13px;font-weight:800;color:var(--ink3)}
+  .ply .ph{grid-area:ph;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 8px}
+  .ply .nm{font-size:14.5px;font-weight:800;color:var(--ink)}
+  .ply .sb{font-size:10.5px;color:var(--ink3)}
+  .ply .ws{grid-area:ws;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .ply .why{font-size:11.5px;line-height:1.45;color:var(--ink2);display:flex;gap:7px}
+  .ply .why b{flex:none;min-width:36px;font-family:var(--mono);font-size:10px;font-weight:700;color:var(--ink3);padding-top:1px}
+  .ply .lv4{grid-area:lv;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .ply .lv4 span{display:flex;flex-direction:column;gap:1px;background:var(--panel2);border-radius:6px;padding:5px 6px;min-width:0}
+  .ply .lv4 i{font-style:normal;font-size:9.5px;font-weight:700;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ply .lv4 b{font-family:var(--mono);font-size:11.5px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;overflow-wrap:anywhere;line-height:1.25}
+  .ply .pn{grid-area:pn;font-family:var(--mono);font-size:14px;font-weight:800;text-align:right;color:var(--ink2);white-space:nowrap}
+  .ply .pn.u{color:var(--up)} .ply .pn.d{color:var(--down)}
+  @container (max-width:700px){.ply{grid-template-columns:18px minmax(0,1fr) auto;grid-template-areas:"rk ph pn" "lv lv lv" "ws ws ws"}.ply .pn{font-size:13px}}
+  @container (max-width:420px){.ply .lv4{gap:4px}.ply .lv4 span{padding:4px 5px}.ply .lv4 b{font-size:11px}.ply .lv4 i{font-size:9px}.ply.minor .ws{display:none}.ply .nm{font-size:14px}}
+  .play.top{padding:12px 14px 4px}
+  .rgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+  .rg{background:var(--panel2);border-radius:8px;padding:8px 11px;display:flex;flex-direction:column;gap:1px;min-width:0}
+  .rg .rk2{font-size:10.5px;font-weight:700;color:var(--ink3);letter-spacing:.03em}
+  .rg .rv{font-family:var(--mono);font-size:19px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums;line-height:1.3}
+  .rg .rv .lo{color:var(--long)} .rg .rv .hi{color:var(--short)} .rg .rv i{font-style:normal;font-weight:500;color:var(--ink3);margin:0 5px}
+  .rg .rs{font-family:var(--mono);font-size:10.5px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .rg .rs b{color:var(--gold)}
+  .rg.sm .rv{font-size:15px;line-height:1.65}
+  .p3h{margin:10px 0 5px;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--gold)}
+  .p3r{display:grid;grid-template-columns:14px auto auto minmax(0,1fr) auto;grid-template-areas:"rk bd nm lv pn";gap:3px 9px;align-items:baseline;padding:7px 0;border-top:1px solid var(--line2)}
+  .p3r .rk{grid-area:rk;font-family:var(--mono);font-size:12.5px;font-weight:800;color:var(--ink3)}
+  .p3r .badge{grid-area:bd} .p3r .nm{grid-area:nm;font-size:14px;font-weight:800;white-space:nowrap}
+  .p3r .lvt{grid-area:lv;min-width:0;font-size:12px;color:var(--ink2)} .p3r .lvt b{color:var(--ink);font-family:var(--mono);font-size:12px}
+  .p3r .pn{grid-area:pn;font-family:var(--mono);font-size:13px;font-weight:800;color:var(--ink2);white-space:nowrap;text-align:right}
+  .p3r .pn.u{color:var(--up)} .p3r .pn.d{color:var(--down)}
+  @container (max-width:640px){.p3r{grid-template-columns:14px auto minmax(0,1fr) auto;grid-template-areas:"rk bd nm pn" ". lv lv lv"}.p3r .nm{white-space:normal}}
+  @container (max-width:420px){.rgs{grid-template-columns:1fr 1fr;gap:6px}.rg{padding:7px 9px}.rg .rv{font-size:15px}.rg .rv i{margin:0 3px}.rg.sm .rv{font-size:13px}}
+  .play.dtl{margin-top:0;border-top:1px solid var(--line);padding-top:2px}
+  .play.dtl .ply:first-child{border-top:0}
+  .badge.obs{color:var(--ink2);background:var(--panel2)}
+  .dont{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-top:10px;border-top:1px solid var(--line2);font-size:11.5px}
+  .dont .dk{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--short)}
+  .dont .dx{color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+  .dont .dx::before{content:"✕ ";color:var(--short);font-weight:700}
+  @media(max-width:560px){.play{padding:12px 12px 10px}.play .pv1{font-size:17px}}
+  .nums{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:8px;margin-top:12px}
+  .num{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0}
+  .num .k{font-size:10px;font-weight:700;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .num .v{font-family:var(--mono);font-size:14.5px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.3;white-space:nowrap}
+  .num .c{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink3);white-space:nowrap}
+  .num .c.u{color:var(--up)} .num .c.d{color:var(--down)}
+  @media(max-width:1500px){.nums{grid-template-columns:repeat(5,minmax(0,1fr))}}
+  @media(max-width:560px){.nums{gap:5px}.num{padding:6px 6px}.num .v{font-size:12px}.num .c{font-size:10px}.num .k{font-size:9.5px}}
+  .play+.nums+.keys,.nums+.keys{margin-top:10px}
+  .keychip.hot{color:var(--ink)}
+  @media(max-width:560px){.mast .sub{display:none}.keychip{min-width:100%}}
+  .lad{display:flex;flex-direction:column}
+  .lr{display:grid;grid-template-columns:36px 1fr 1.35fr 50px;gap:8px;align-items:baseline;padding:5px 0;border-bottom:1px solid var(--line2);font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
+  .lr:last-child{border-bottom:0}
+  .lr span{text-align:right} .lr span:first-child{text-align:left}
+  .lr.lh{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--ink3);padding-top:0}
+  .lr .lt{font-weight:800;color:var(--ink)}
+  .lr .la i{font-style:normal;font-size:10px;color:var(--ink3);margin-left:3px}
+  .lr .ld{font-weight:800;color:var(--up)}
+  .lr.near{background:var(--flat-bg);border-radius:5px;padding-left:6px;padding-right:6px;border-bottom-color:transparent}
+  .lr.near .ld{color:var(--gold)}
+  /* /v1110 */
+</style>
+
+<div class="wrap">
+  <div class="mast">
+    <div>
+      <h1>US 금리 데일리</h1>
+      <div class="sub">일정 · 매크로 현안 &amp; 커브 괴리 · 레벨 밴드 — 미국 국채</div>
+      <div class="upd">매일 <b>08:30~09:00</b> KST 업데이트 · 전일 뉴욕 19:30 종가 반영</div>
+    </div>
+    <div class="asof">
+      <div class="lang"><a href="index.html">KTB</a><a class="on" href="us.html">UST</a><a class="on" href="us.html">KO</a><a href="us_en.html">EN</a></div>
+      <div class="histwrap">📅 <select id="histsel" aria-label="지난 리포트"><option>지난 리포트</option></select></div>
+      <span class="tag">Desk Daily</span><br>
+      리포트 <span class="d">2026-11-11 (수)</span><br>
+      11-10 미국 종가 기준
+    </div>
+  </div>
+
+  <!--BODY-->
+  <section class="play top">
+    <div class="rgs">
+      <div class="rg"><span class="rk2">미 2Y · 11/10 제시</span><span class="rv"><b class="lo">4.494</b><i>~</i><b class="hi">4.644</b></span><span class="rs">종가 <b>4.742</b> · 상단 +9.8bp</span></div>
+      <div class="rg"><span class="rk2">미 10Y · 11/10 제시</span><span class="rv"><b class="lo">4.836</b><i>~</i><b class="hi">4.969</b></span><span class="rs">종가 <b>4.993</b> · 상단 +2.4bp</span></div>
+    </div>
+    <div class="p3h">추천 포지션</div>
+      <div class="p3r"><span class="rk">1</span><span class="badge flat">대기</span><span class="nm">2Y 매도</span><span class="lvt">현재 <b>4.742</b>(+17.6) · 진입 구간 4.37~4.41은 33~37bp 아래 — 추격 없음</span><span class="pn ">대기</span></div>
+      <div class="p3r"><span class="rk">2</span><span class="badge obs">관찰</span><span class="nm">2-10 플래트너</span><span class="lvt">현재 <b>25.1</b>(−6.9) · 사흘 −12.3 · 60일 최저 20.3</span><span class="pn ">관찰</span></div>
+      <div class="p3r"><span class="rk">3</span><span class="badge obs">정리 완료</span><span class="nm">델타(2Y · 10Y 매수)</span><span class="lvt">11/5 종가 정리 4.463 · 4.837 — 정리 뒤 2Y +28bp · 10Y +16bp</span><span class="pn u">+32 · +28bp</span></div>
+  </section>
+
+  <div class="nums">
+    <div class="num"><div class="k">2년</div><div class="v">4.742</div><div class="c d">+17.6bp</div></div>
+    <div class="num"><div class="k">5년</div><div class="v">4.822</div><div class="c d">+14.3bp</div></div>
+    <div class="num"><div class="k">10년</div><div class="v">4.993</div><div class="c d">+10.7bp</div></div>
+    <div class="num"><div class="k">30년</div><div class="v">5.355</div><div class="c d">+7.3bp</div></div>
+    <div class="num"><div class="k">2-10</div><div class="v">25.1</div><div class="c f">−6.9</div></div>
+    <div class="num"><div class="k">다우</div><div class="v">52,232</div><div class="c f">−0.30%</div></div>
+    <div class="num"><div class="k">나스닥</div><div class="v">25,066</div><div class="c f">−0.74%</div></div>
+    <div class="num"><div class="k">WTI</div><div class="v">86.04</div><div class="c f">−0.9%</div></div>
+    <div class="num"><div class="k">금</div><div class="v">4,114.5</div><div class="c f">+1.0%</div></div>
+    <div class="num"><div class="k">달러/엔</div><div class="v">158.07</div><div class="c f">+0.07</div></div>
+  </div>
+
+  <div class="keys">
+    <div class="keychip hot"><div class="dd">11-10</div><div class="ev">10월 CPI 전월비 0.4% · 근원 0.3%(예상 0.3% · 0.2%) — <b>2년 4.742(+17.6) · 10년 4.993(+10.7) · 30년 5.355(+7.3)</b>, 2-10 25.1(−6.9) 사흘째 베어플랫</div><div class="dt">12월 50bp 가능성 재반영</div></div>
+    <div class="keychip hot"><div class="dd">뷰</div><div class="ev"><b>플랫 또는 2년 매도가 편한 쪽 — 그 그림 그대로.</b> 2Y 사흘간 +28bp · 2-10 37.4 → 25.1 · 진입 구간 4.37~4.41은 닿지 않았다. 주식 시간표(앤트로픽 상장 목표 11/16 · 날짜 미확정)도 그대로</div><div class="dt">4.742에서 추격 없음</div></div>
+    <div class="keychip"><div class="dd">시장</div><div class="ev">다우 52,231.9(−0.30%) · 나스닥 25,065.9(−0.74%) · WTI 86.04(−0.9%) · 금 4,114.5(+1.0%) · 비트코인 73,888(−1.9%) · <b>KR10−US10 −114.3 60일 최저</b></div><div class="dt">주식 · 채권 동반 약세</div></div>
+  </div>
+
+  <section>
+    <h3 class="sec-h"><span class="n">01</span> 레벨 밴드</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="chd"><div class="name">2년 <span>UST</span></div><div class="pxwrap"><span class="px">4.742</span><span class="pxsub" style="color:var(--down)">11/10 +17.6bp · CPI</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">11/10 제시 레인지</span><span class="r"><span class="lo">4.494</span><span class="sep">~</span><span class="hi">4.644</span></span></div>
+            <div class="track"><div class="dot" style="left:100%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">60일 실현 레인지</span><span class="r"><span class="lo">4.144</span><span class="sep">~</span><span class="hi">4.932</span></span></div>
+            <div class="track"><div class="dot" style="left:76%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">매도 구간까지 33~37bp</span><span class="act">추격 없음 · PPI 11/13</span><span class="meta">11/10 제시 상단 4.644를 9.8bp 넘겨 마감<br>60일 평균 4.570 · 2-5 8.0(−3.3)</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">10년 <span>UST</span></div><div class="pxwrap"><span class="px">4.993</span><span class="pxsub" style="color:var(--down)">11/10 +10.7bp · 5.00 바로 아래</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">11/10 제시 레인지</span><span class="r"><span class="lo">4.836</span><span class="sep">~</span><span class="hi">4.969</span></span></div>
+            <div class="track"><div class="dot" style="left:100%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">60일 실현 레인지</span><span class="r"><span class="lo">4.629</span><span class="sep">~</span><span class="hi">5.288</span></span></div>
+            <div class="track"><div class="dot" style="left:55%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">델타 정리 완료</span><span class="act">10년 입찰 11/11 03:00</span><span class="meta">2-10 25.1(−6.9) 사흘째 베어플랫<br>KR10−US10 −114.3 60일 최저</span></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="name">30년 <span>UST</span></div><div class="pxwrap"><span class="px">5.355</span><span class="pxsub" style="color:var(--down)">11/10 +7.3bp · 20년 +8.6</span></div></div>
+        <div class="bands">
+          <div class="bd">
+            <div class="bl"><span class="k">10–30 스프레드</span><span class="r">36.2bp <span style="color:var(--ink3);font-size:10px">· −3.4 · 60일 z −0.52</span></span></div>
+            <div class="track"><div class="dot" style="left:26%"></div></div>
+          </div>
+          <div class="bd">
+            <div class="bl"><span class="k">20–30 스프레드</span><span class="r">−4.2bp <span style="color:var(--ink3);font-size:10px">· −1.3 · 60일 z −0.68</span></span></div>
+            <div class="track"><div class="dot" style="left:23%"></div></div>
+          </div>
+        </div>
+        <div class="pos"><span class="badge flat">플랫 — 2년 매도와 같은 방향</span><span class="act">30년 입찰 11/13 03:00</span><span class="meta">앞단 +17.6 · 장기 +7.3 — 인상 가격이 앞단에 몰렸다<br>WTI 86.04(−0.9%)</span></div>
+      </div>
+
+    </div>
+    <p style="margin:10px 0 0;font-size:11px;color:var(--ink3)">※ 오늘 예상레인지 수령 전 — 첫 밴드는 11/10 제시 레인지(2Y 4.494~4.644 · 10Y 4.836~4.969), 종가가 둘 다 상단을 넘었다. 수령 즉시 교체. dot은 <b>11-10 종가</b>.</p>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">02</span> 다가오는 일정</h3>
+    <div class="cal">
+      <div class="row today"><span class="cd">11/11</span><span class="cw">수</span><span class="pill auc">입찰</span><span class="ev"><b>10년 입찰 03:00</b> <span class="cw">직전 5.300 · 11/10 3년은 4.627%(직전 4.932%)에 낙찰</span> · 독일 10월 CPI 16:00(예측 2.8%) · 11/12 신규 실업수당 22:30</span></div>
+      <div class="row"><span class="cd">11/13</span><span class="cw">금</span><span class="pill cpi">물가</span><span class="ev"><b>10월 PPI 22:30</b> <span class="cw">이전 MoM 1.3% · 근원 0.7%</span> · 30년 입찰 03:00(직전 5.618) · 유로존 3Q GDP 19:00</span></div>
+      <div class="row"><span class="cd">11/16</span><span class="cw">월</span><span class="pill cpi">지표</span><span class="ev"><b>앤트로픽 상장 목표일</b> <span class="cw">정확한 날짜는 미확정</span> · 11/17 10월 소매판매 22:30(이전 0.8% · 근원 0.9%) · 산업생산 23:15(이전 0.7%)</span></div>
+      <div class="row"><span class="cd">11/18</span><span class="cw">수</span><span class="pill cpi">지표</span><span class="ev"><b>10월 주택착공 22:30</b> <span class="cw">이전 1.221M</span> · 11/19 필라델피아 연은(이전 20.9) · 11/21 미시간 확정</span></div>
+      <div class="row"><span class="cd">11/23</span><span class="cw">월</span><span class="pill cpi">지표</span><span class="ev"><b>11월 S&amp;P 글로벌 PMI 23:45</b> <span class="cw">이전 서비스 56.1 · 제조 54.9</span> · 11/25 CB 소비자신뢰(이전 91.7) · <b>12/9 FOMC(SEP)</b></span></div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">03</span> 추천 포지션 상세 &amp; 관찰</h3>
+    <div class="play dtl">
+      <div class="ply">
+        <div class="rk">1</div>
+        <div class="ph"><span class="badge flat">대기</span><span class="nm">2Y 매도</span><span class="sb">플랫 또는 2년 매도가 편한 쪽 — 그 그림 그대로</span></div>
+        <div class="lv4"><span><i>현재</i><b>4.742</b></span><span><i>진입</i><b>4.37~4.41</b></span><span><i>거리</i><b>+33~37bp</b></span><span><i>2-10</i><b>25.1</b></span></div>
+        <div class="pn ">진입 대기</div>
+        <div class="ws"><div class="why"><b>근거</b><span>2Y는 11/5 4.463에서 사흘간 +28bp, 2-10은 37.4 → 25.1 — 방향은 그대로, 진입 구간은 닿지 않았다.</span></div><div class="why"><b>리스크</b><span>12월 50bp까지 가격에 들어오는 중 — 4.742에서 쫓아 팔면 되돌림에 약하다. 60일 고점 4.932.</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">2</div>
+        <div class="ph"><span class="badge obs">관찰</span><span class="nm">2-10 플래트너</span><span class="sb">사흘째 베어플랫</span></div>
+        <div class="lv4"><span><i>현재</i><b>25.1</b></span><span><i>전일 대비</i><b>−6.9</b></span><span><i>60일 평균</i><b>37.7</b></span><span><i>z(60d)</i><b>−1.51</b></span></div>
+        <div class="pn ">−12.3 / 3일</div>
+        <div class="ws"><div class="why"><b>근거</b><span>CPI 뒤 인상 가격이 앞단에 몰렸다 — 2년 +17.6 vs 30년 +7.3.</span></div><div class="why"><b>리스크</b><span>60일 최저 20.3까지 5bp — PPI(11/13)가 약하면 앞단부터 되돌아 스팁으로 바뀐다.</span></div></div>
+      </div>
+      <div class="ply minor">
+        <div class="rk">3</div>
+        <div class="ph"><span class="badge obs">정리 완료</span><span class="nm">델타(2Y · 10Y 매수)</span><span class="sb">10/20 종가부터 · 11/5 종가 기준 정리</span></div>
+        <div class="lv4"><span><i>진입</i><b>4.78 · 5.11</b></span><span><i>정리</i><b>4.463 · 4.837</b></span><span><i>현재</i><b>4.742 · 4.993</b></span><span><i>타겟</i><b>4.37~4.41 · 4.75</b></span></div>
+        <div class="pn u">+32 · +28bp</div>
+        <div class="ws"><div class="why"><b>근거</b><span>정리 뒤 2Y +28bp · 10Y +16bp — 진입 레벨(4.78 · 5.11) 근처까지 되돌아왔다.</span></div><div class="why"><b>리스크</b><span>재매수 계획 없음 — 다음 진입은 2년 매도 쪽, 매수는 상장 뒤 조정 때.</span></div></div>
+      </div>
+      <div class="dont"><span class="dk">하지 않는다</span><span class="dx">4.742에서 쫓아 팔기</span><span class="dx">PPI(11/13) 전 방향 추격</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="sec-h"><span class="n">04</span> 매크로 현안 &amp; 커브 괴리</h3>
+    <div class="mc">
+      <div class="box">
+        <p><b>10월 CPI가 예상을 넘었다 — 2년 +17.6 · 10년 +10.7.</b> 전월비 0.4%(예상 0.3% · 이전 0.6%), 근원 0.3%(예상 0.2%)로 석 달째 0.3%. 에너지 상승률이 5.2% → 0.7%로 줄었는데도 근원이 버텼다 — 주거 0.3%(자가주거비 0.3% · 임대료 0.2%) · 운송서비스 0.8% · 의료서비스 0.3%. 월러 이사는 물가가 여전히 높고 넓게 퍼져 있다고 했고(9월 근원 PCE 서비스 항목의 70% 이상이 전년비 3% 초과), 로건 총재는 지금 금리가 충분히 긴축적이지 않을 수 있다고 했다. 11/10 종가 <b>2Y 4.742 · 5Y 4.822 · 10Y 4.993 · 20Y 5.397 · 30Y 5.355</b>. → 12월 25bp가 기본이고 50bp 가능성이 다시 가격에 들어왔다. 다우 −0.3% · 나스닥 −0.7%.</p>
+        <p><b>뷰 — 플랫 또는 2년 매도가 편한 쪽, 그 그림 그대로.</b> 2Y는 11/5 4.463에서 사흘간 +28bp, 2-10은 37.4 → 25.1. 매도 구간 4.37~4.41은 닿지 않았고 4.742에서 쫓아 팔지 않는다 — 11/10 제시 레인지 상단 4.644를 10bp 가까이 넘겨 마감한 자리. 주식 시간표(앤트로픽 상장 목표 11/16 · 날짜 미확정)도 그대로 — 다만 11/10은 주식이 빠지는데 금리가 올랐다. → <b>주식이 물가·긴축 탓에 빠지는 날에는 채권이 같이 밀린다. 상장 뒤 매수는 인상 가격이 멈추는지 보고 판단.</b></p>
+        <p><b>커브 — 사흘째 베어플랫, 속도가 붙었다.</b> 2-10 25.1(−6.9) · 2-5 8.0(−3.3, z −2.00) · 5-10 17.1(−3.6) · 10-30 36.2(−3.4). 2-10의 60일 최저는 20.3. <b>KR10−US10 −114.3(−11.4)</b> 60일 최저 — 한국 10년이 미국보다 114bp 낮다, 한국은 CPI 반영 전 마감.</p>
+      </div>
+      <div class="box">
+        <table class="ctable">
+          <thead><tr><th>커브</th><th>11-10(bp)</th><th>전일 대비</th><th>z(60d)</th></tr></thead>
+          <tbody>
+            <tr><td>2-5</td><td>8.0</td><td class="cool">−3.3</td><td class="zbar">−2.00σ</td></tr>
+            <tr><td>2-10</td><td>25.1</td><td class="cool">−6.9</td><td class="zbar">−1.51σ</td></tr>
+            <tr><td>5-10</td><td>17.1</td><td class="cool">−3.6</td><td class="zbar">−0.87σ</td></tr>
+            <tr><td>10-20</td><td>40.4</td><td class="cool">−2.1</td><td class="zbar">−0.45σ</td></tr>
+            <tr><td>10-30</td><td>36.2</td><td class="cool">−3.4</td><td class="zbar">−0.52σ</td></tr>
+            <tr><td>20-30</td><td>−4.2</td><td class="cool">−1.3</td><td class="zbar">−0.68σ</td></tr>
+            <tr><td>2-5-10 버터</td><td>9.1</td><td class="cool">−0.3</td><td class="zbar">+0.71σ</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:8px 0 0;font-size:10px;color:var(--ink3)">※ <b>11-10 미국 국채 현물 금리</b> 기준 · 변화는 11/9 → 11/10 · z는 <b>60영업일 롤링</b><br>※ <b>2-10 25.1(−6.9) · 2-5 8.0(−3.3)</b> — 사흘째 베어플랫<br>※ 절대 레벨 <b>2년 4.742 · 10년 4.993</b> — 60일 z +0.74 / +0.24 · 60일 레인지 2Y 4.144~4.932 · 10Y 4.629~5.288</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script>
+(function(){
+  var sel=document.getElementById('histsel'); if(!sel) return;
+  var inArc=location.pathname.indexOf('/archive/')>=0;
+  var root=inArc?'../../':'';
+  var parts=location.pathname.split('/');
+  var page=parts[parts.length-1]||'index.html';
+  fetch(root+'archive/dates.json?_='+Date.now()).then(function(r){return r.json();}).then(function(dates){
+    var cur=inArc?location.pathname.split('/archive/')[1].split('/')[0]:'latest';
+    var h='<option value="latest"'+(cur==='latest'?' selected':'')+'>최신</option>';
+    dates.slice().sort().reverse().forEach(function(d){h+='<option value="'+d+'"'+(cur===d?' selected':'')+'>'+d+'</option>';});
+    sel.innerHTML=h;
+    sel.onchange=function(){
+      var v=sel.value;
+      location.href=(v==='latest')?(root+page):(root+'archive/'+v+'/'+page);
+    };
+  }).catch(function(){ if(sel.parentNode) sel.parentNode.style.display='none'; });
+})();
+</script>
+<script>
+(function(){
+  var ko=true;
+  var L=ko?['펼치기 ▾','접기 ▴']:['Show ▾','Hide ▴'];
+  Array.prototype.forEach.call(document.querySelectorAll('section'),function(sec){
+    if(sec.closest&&sec.closest('aside'))return;
+    var h=sec.querySelector(':scope>.sec-h'),n=h&&h.querySelector('.n');
+    if(!n||parseInt(n.textContent,10)<3)return;
+    sec.classList.add('fold','closed');
+    var t=document.createElement('span');t.className='fold-t';h.appendChild(t);
+    h.setAttribute('role','button');h.tabIndex=0;
+    function upd(){t.textContent=sec.classList.contains('closed')?L[0]:L[1];h.setAttribute('aria-expanded',!sec.classList.contains('closed'));}
+    function tog(){sec.classList.toggle('closed');upd();}
+    h.addEventListener('click',tog);
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tog();}});
+    upd();
+  });
+})();
+</script>
